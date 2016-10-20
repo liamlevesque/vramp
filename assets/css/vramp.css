@@ -1,0 +1,1641 @@
+@charset "UTF-8";
+/**********************
+  TEXT FORMATTING
+**********************/
+.smalltext {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 0.9rem;
+  text-transform: uppercase; }
+
+label, .label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 0.9rem;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #959595; }
+
+body {
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  color: black; }
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 3px; }
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px; }
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 7.5px;
+  color: #E87722; }
+
+h4 {
+  margin-bottom: 7.5px; }
+
+h5 {
+  color: inherit;
+  margin-bottom: 5px; }
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  margin-top: 0; }
+
+.p-100 {
+  font-size: 1rem;
+  line-height: 1.6rem; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none; }
+  a:hover {
+    text-decoration: underline;
+    outline: none; }
+  a:active, a:focus {
+    outline: none; }
+  a.a--img {
+    line-height: 0;
+    display: inline-block;
+    max-width: 100%; }
+    a.a--img img {
+      max-width: 100%; }
+
+hr {
+  height: 0;
+  border: none;
+  border-bottom: 1px dotted #bdbdbd; }
+
+.link {
+  color: #E87722;
+  text-decoration: underline; }
+
+.logo {
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  margin: 10px 5px 10px 10px;
+  -webkit-transform: scale(1.15) translateX(15px);
+          transform: scale(1.15) translateX(15px); }
+
+@font-face {
+  font-family: 'ritchie-icons';
+  src: url("../fonts/ritchie-icons.eot?o9cbw0");
+  src: url("../fonts/ritchie-icons.eot?o9cbw0#iefix") format("embedded-opentype"), url("../fonts/ritchie-icons.ttf?o9cbw0") format("truetype"), url("../fonts/ritchie-icons.woff?o9cbw0") format("woff"), url("../fonts/ritchie-icons.svg?o9cbw0#ritchie-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ritchie-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.i-size-med {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.icon-pause:before {
+  content: "\e926"; }
+
+.icon-arrow-left:before {
+  content: "\e925"; }
+
+.icon-max-4:before {
+  content: "\e923"; }
+
+.icon-max-1:before {
+  content: "\e922"; }
+
+.icon-max-3:before {
+  content: "\e924"; }
+
+.icon-mail:before {
+  content: "\e921"; }
+
+.icon-sold:before {
+  content: "\e920"; }
+
+.icon-error-1:before {
+  content: "\e91f"; }
+
+.icon-trash:before {
+  content: "\e91e"; }
+
+.icon-ccy:before {
+  content: "\e91a"; }
+
+.icon-calculator:before {
+  content: "\e91b"; }
+
+.icon-unlocked:before {
+  content: "\e918"; }
+
+.icon-lock:before {
+  content: "\e919"; }
+
+.icon-settings:before {
+  content: "\e917"; }
+
+.icon-check-inner:before {
+  content: "\e915"; }
+
+.icon-info:before {
+  content: "\e916"; }
+
+.icon-popout:before {
+  content: "\e90b"; }
+
+.icon-next:before {
+  content: "\e90e"; }
+
+.icon-prev:before {
+  content: "\e914"; }
+
+.icon-arrow-down:before {
+  content: "\e900"; }
+
+.icon-audio:before {
+  content: "\e901"; }
+
+.icon-bid:before {
+  content: "\e902"; }
+
+.icon-cart:before {
+  content: "\e903"; }
+
+.icon-check:before {
+  content: "\e904"; }
+
+.icon-clock:before {
+  content: "\e905"; }
+
+.icon-close:before {
+  content: "\e906"; }
+
+.icon-dei:before {
+  content: "\e907"; }
+
+.icon-eye:before {
+  content: "\e908"; }
+
+.icon-help:before {
+  content: "\e909"; }
+
+.icon-loading:before {
+  content: "\e90a"; }
+
+.icon-Photos:before {
+  content: "\e90c"; }
+
+.icon-plus:before {
+  content: "\e90d"; }
+
+.icon-sale:before {
+  content: "\e90f"; }
+
+.icon-search:before {
+  content: "\e910"; }
+
+.icon-user:before {
+  content: "\e911"; }
+
+.icon-warning:before {
+  content: "\e912"; }
+
+.icon-warranty:before {
+  content: "\e913"; }
+
+label {
+  color: inherit; }
+
+body {
+  overflow: hidden; }
+
+.fullscreenbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+.prototype-controls {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 2; }
+  .prototype-controls button {
+    margin-bottom: 10px; }
+
+@font-face {
+  font-family: 'Frutiger LT Std';
+  src: url("../fonts/FrutigerLTStd-BlackCn.eot");
+  src: url("../fonts/FrutigerLTStd-BlackCn.eot?#iefix") format("embedded-opentype"), url("../fonts/FrutigerLTStd-BlackCn.woff") format("woff"), url("../fonts/FrutigerLTStd-BlackCn.ttf") format("truetype"), url("../fonts/FrutigerLTStd-BlackCn.svg#FrutigerLTStd-BlackCn") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Frutiger LT Std';
+  src: url("../fonts/FrutigerLTStd-BoldCn.eot");
+  src: url("../fonts/FrutigerLTStd-BoldCn.eot?#iefix") format("embedded-opentype"), url("../fonts/FrutigerLTStd-BoldCn.woff") format("woff"), url("../fonts/FrutigerLTStd-BoldCn.ttf") format("truetype"), url("../fonts/FrutigerLTStd-BoldCn.svg#FrutigerLTStd-BoldCn") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+body {
+  font-family: 'Frutiger LT Std', 'Trebuchet MS', Verdana, sans-serif; }
+
+.font--120, .lot--number label, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
+  font-size: 10px;
+  font-size: 1rem; }
+
+.font--150 {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.font--180, .ask--price:before {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+.font--200 {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+.font--250 {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+.font--300 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+.font--400 {
+  font-size: 30px;
+  font-size: 3rem; }
+
+.font--600 {
+  font-size: 40px;
+  font-size: 4rem; }
+
+@media (min-width: 1280px) {
+  .font--120, .lot--number label, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+  .font--150 {
+    font-size: 15px;
+    font-size: 1.5rem; }
+
+  .font--180, .ask--price:before {
+    font-size: 16px;
+    font-size: 1.6rem; }
+
+  .font--200 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+  .font--250 {
+    font-size: 22px;
+    font-size: 2.2rem; }
+
+  .font--300 {
+    font-size: 30px;
+    font-size: 3rem; }
+
+  .font--400 {
+    font-size: 30px;
+    font-size: 3rem; }
+
+  .font--600 {
+    font-size: 40px;
+    font-size: 4rem; } }
+@media (min-width: 1600px) {
+  .font--150 {
+    font-size: 15px;
+    font-size: 1.5rem; }
+
+  .font--180, .ask--price:before {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+  .font--200 {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  .font--250 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+
+  .font--300 {
+    font-size: 30px;
+    font-size: 3rem; }
+
+  .font--400 {
+    font-size: 40px;
+    font-size: 4rem; }
+
+  .font--600 {
+    font-size: 60px;
+    font-size: 6rem; } }
+@media (min-width: 1920px) {
+  .font--150 {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  .font--180, .ask--price:before {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  .font--200 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+
+  .font--250 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+
+  .font--300 {
+    font-size: 35px;
+    font-size: 3.5rem; }
+
+  .font--400 {
+    font-size: 50px;
+    font-size: 5rem; }
+
+  .font--600 {
+    font-size: 70px;
+    font-size: 7rem; } }
+.lot-preview {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 30%;
+  background-color: #333333;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  @media (min-width: 1280px) {
+    .lot-preview {
+      right: 30%; } }
+  .s-other-rings_all .lot-preview {
+    bottom: 40px; }
+    @media (min-width: 1280px) {
+      .s-other-rings_all .lot-preview {
+        bottom: 50px; } }
+  .s-auction-paused .lot-preview, .s-auction-pre .lot-preview, .s-auction-post .lot-preview {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+
+.lot--title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 70px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: white; }
+  @media (min-width: 1280px) {
+    .lot--title {
+      height: 100px; } }
+  @media (min-width: 1920px) {
+    .lot--title {
+      max-width: 1200px; } }
+
+.lot--number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  padding: 13.3333333333px;
+  background-color: #E87722;
+  color: white; }
+  .lot--number label {
+    display: block;
+    opacity: 0.8;
+    margin-bottom: 5px; }
+    @media (min-width: 1280px) {
+      .lot--number label {
+        margin-bottom: 10px; } }
+  .lot--number label {
+    margin-bottom: 0;
+    opacity: 1; }
+  @media (min-width: 1280px) {
+    .lot--number {
+      width: 200px;
+      padding: 20px; } }
+  @media (min-width: 1920px) {
+    .lot--number {
+      width: 225px; } }
+  .lot--number .sale-ring {
+    opacity: 0.8;
+    margin-right: 10px; }
+
+.lot--description {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 160px;
+  right: 0;
+  padding: 20px;
+  line-height: 1.8rem; }
+  @media (min-width: 1280px) {
+    .lot--description {
+      left: 200px;
+      line-height: 2.5rem; } }
+  @media (min-width: 1920px) {
+    .lot--description {
+      left: 225px; } }
+  .lot--description span {
+    padding-right: 20px; }
+
+.lot--media {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  top: 70px; }
+  @media (min-width: 1280px) {
+    .lot--media {
+      top: 100px; } }
+  @media (min-width: 1920px) {
+    .lot--media {
+      top: 0; } }
+  .lot--media img {
+    width: 100%;
+    max-width: 100%;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: absolute; }
+
+.details-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  background-color: #E87722;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  @media (min-width: 1280px) {
+    .details-area {
+      width: 30%; } }
+  .s-other-rings_single .details-area {
+    bottom: 40px; }
+    @media (min-width: 1280px) {
+      .s-other-rings_single .details-area {
+        bottom: 50px; } }
+  .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
+    top: 60px;
+    bottom: 60px; }
+    @media (min-width: 1280px) {
+      .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
+        right: 60px; } }
+
+.active-details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .s-auction-paused .active-details, .s-auction-pre .active-details, .s-auction-post .active-details {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+
+.prices {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35%;
+  text-align: center; }
+  @media (min-width: 1280px) {
+    .prices {
+      height: 40%; } }
+  .prices > div {
+    width: 100%; }
+  .prices.s-sold {
+    background-color: #585858; }
+
+.CAD .divider:before {
+  content: ","; }
+
+.CAD .dollars:before {
+  content: "$"; }
+
+.CAD .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.CAD:before {
+  content: "CAD"; }
+
+.ccy.CAD:after {
+  background-position: 0 -30px; }
+
+.auction-ccy.CAD:after {
+  background-position: 0 -30px; }
+
+.auction-ccy.CAD:before {
+  content: " - $ CAD "; }
+
+.USD .divider:before {
+  content: ","; }
+
+.USD .dollars:before {
+  content: "$"; }
+
+.USD .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.USD:before {
+  content: "USD"; }
+
+.ccy.USD:after {
+  background-position: 0 -210px; }
+
+.auction-ccy.USD:after {
+  background-position: 0 -210px; }
+
+.auction-ccy.USD:before {
+  content: " - $ USD "; }
+
+.SGD .divider:before {
+  content: ","; }
+
+.SGD .dollars:before {
+  content: "$"; }
+
+.SGD .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.SGD:before {
+  content: "SGD"; }
+
+.ccy.SGD:after {
+  background-position: 0 -180px; }
+
+.auction-ccy.SGD:after {
+  background-position: 0 -180px; }
+
+.auction-ccy.SGD:before {
+  content: " - $ SGD "; }
+
+.NZD .divider:before {
+  content: ","; }
+
+.NZD .dollars:before {
+  content: "$"; }
+
+.NZD .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.NZD:before {
+  content: "NZD"; }
+
+.ccy.NZD:after {
+  background-position: 0 -150px; }
+
+.auction-ccy.NZD:after {
+  background-position: 0 -150px; }
+
+.auction-ccy.NZD:before {
+  content: " - $ NZD "; }
+
+.AUD .divider:before {
+  content: ","; }
+
+.AUD .dollars:before {
+  content: "$"; }
+
+.AUD .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.AUD:before {
+  content: "AUD"; }
+
+.ccy.AUD:after {
+  background-position: 0 -0px; }
+
+.auction-ccy.AUD:after {
+  background-position: 0 -0px; }
+
+.auction-ccy.AUD:before {
+  content: " - $ AUD "; }
+
+.MXN .divider:before {
+  content: ","; }
+
+.MXN .dollars:before {
+  content: "$"; }
+
+.MXN .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.MXN:before {
+  content: "MXN"; }
+
+.ccy.MXN:after {
+  background-position: 0 -120px; }
+
+.auction-ccy.MXN:after {
+  background-position: 0 -120px; }
+
+.auction-ccy.MXN:before {
+  content: " - $ MXN "; }
+
+.ZAR .divider:before {
+  content: ","; }
+
+.ZAR .dollars:before {
+  content: "R"; }
+
+.ZAR .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.ZAR:before {
+  content: "ZAR"; }
+
+.ccy.ZAR:after {
+  background-position: 0 -225px; }
+
+.auction-ccy.ZAR:after {
+  background-position: 0 -225px; }
+
+.auction-ccy.ZAR:before {
+  content: " - R ZAR "; }
+
+.PLN .divider:before {
+  content: " "; }
+
+.PLN .dollars:before {
+  content: ""; }
+
+.PLN .dollars:after {
+  content: "zł";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.PLN:before {
+  content: "PLN"; }
+
+.ccy.PLN:after {
+  background-position: 0 -165px; }
+
+.auction-ccy.PLN:after {
+  background-position: 0 -165px; }
+
+.auction-ccy.PLN:before {
+  content: " -  PLN zł"; }
+
+.GBP .divider:before {
+  content: ","; }
+
+.GBP .dollars:before {
+  content: "£"; }
+
+.GBP .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.GBP:before {
+  content: "GBP"; }
+
+.ccy.GBP:after {
+  background-position: 0 -75px; }
+
+.auction-ccy.GBP:after {
+  background-position: 0 -75px; }
+
+.auction-ccy.GBP:before {
+  content: " - £ GBP "; }
+
+.EUR .divider:before {
+  content: " "; }
+
+.EUR .dollars:before {
+  content: "€"; }
+
+.EUR .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.EUR:before {
+  content: "EUR"; }
+
+.ccy.EUR:after {
+  background-position: 0 -60px; }
+
+.auction-ccy.EUR:after {
+  background-position: 0 -60px; }
+
+.auction-ccy.EUR:before {
+  content: " - € EUR "; }
+
+.CNY .divider:before {
+  content: ","; }
+
+.CNY .dollars:before {
+  content: "¥"; }
+
+.CNY .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.CNY:before {
+  content: "CNY"; }
+
+.ccy.CNY:after {
+  background-position: 0 -45px; }
+
+.auction-ccy.CNY:after {
+  background-position: 0 -45px; }
+
+.auction-ccy.CNY:before {
+  content: " - ¥ CNY "; }
+
+.JPY .divider:before {
+  content: ","; }
+
+.JPY .dollars:before {
+  content: "¥"; }
+
+.JPY .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.JPY:before {
+  content: "JPY"; }
+
+.ccy.JPY:after {
+  background-position: 0 -105px; }
+
+.auction-ccy.JPY:after {
+  background-position: 0 -105px; }
+
+.auction-ccy.JPY:before {
+  content: " - ¥ JPY "; }
+
+.INR .divider:before {
+  content: ","; }
+
+.INR .dollars:before {
+  content: " ₹"; }
+
+.INR .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.INR:before {
+  content: "INR"; }
+
+.ccy.INR:after {
+  background-position: 0 -90px; }
+
+.auction-ccy.INR:after {
+  background-position: 0 -90px; }
+
+.auction-ccy.INR:before {
+  content: " -  ₹ INR "; }
+
+.AED .divider:before {
+  content: ","; }
+
+.AED .dollars:before {
+  content: ""; }
+
+.AED .dollars:after {
+  content: "د.إ";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.AED:before {
+  content: "AED"; }
+
+.ccy.AED:after {
+  background-position: 0 -15px; }
+
+.auction-ccy.AED:after {
+  background-position: 0 -15px; }
+
+.auction-ccy.AED:before {
+  content: " -  AED د.إ"; }
+
+.NOK .divider:before {
+  content: ","; }
+
+.NOK .dollars:before {
+  content: "kr"; }
+
+.NOK .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.NOK:before {
+  content: "NOK"; }
+
+.ccy.NOK:after {
+  background-position: 0 -135px; }
+
+.auction-ccy.NOK:after {
+  background-position: 0 -135px; }
+
+.auction-ccy.NOK:before {
+  content: " - kr NOK "; }
+
+.TRY .divider:before {
+  content: ","; }
+
+.TRY .dollars:before {
+  content: "₺"; }
+
+.TRY .dollars:after {
+  content: "";
+  margin-left: 3px;
+  display: inline-block; }
+
+.ccy.TRY:before {
+  content: "TRY"; }
+
+.ccy.TRY:after {
+  background-position: 0 -195px; }
+
+.auction-ccy.TRY:after {
+  background-position: 0 -195px; }
+
+.auction-ccy.TRY:before {
+  content: " - ₺ TRY "; }
+
+@media (min-width: 1280px) {
+  .auction-ccy {
+    display: none; } }
+.auction-ccy:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7px;
+  margin-right: 3px;
+  width: 30px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(../img/ccy-flags.png);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
+
+.ccy:after {
+  content: '';
+  display: block;
+  vertical-align: middle;
+  margin-right: 7px;
+  width: 30px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(../img/ccy-flags.png);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
+
+.ask {
+  padding: 0 10px; }
+  @media (min-width: 1280px) {
+    .ask {
+      padding: 0 20px; } }
+  .ask label {
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 0;
+    line-height: 1.5rem; }
+    @media (min-width: 1280px) {
+      .ask label {
+        margin-bottom: 5px; } }
+
+.ask--price {
+  display: inline-block;
+  position: relative; }
+  .ask--price:before {
+    vertical-align: top; }
+  .ask--price:after {
+    position: absolute; }
+    @media (min-width: 1280px) {
+      .ask--price:after {
+        left: 8px;
+        top: 30px;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); } }
+    @media (min-width: 1600px) {
+      .ask--price:after {
+        left: 10px;
+        top: 35px; } }
+    @media (min-width: 1920px) {
+      .ask--price:after {
+        left: 12px;
+        top: 40px;
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4); } }
+  .ask--price:before, .ask--price:after {
+    display: none; }
+    @media (min-width: 1280px) {
+      .ask--price:before, .ask--price:after {
+        display: inline-block; } }
+  .ask--price .dollars {
+    display: inline-block; }
+
+.conversions {
+  text-align: left;
+  margin: 10px;
+  margin-bottom: 0; }
+  @media (min-width: 1280px) {
+    .conversions {
+      margin: 20px;
+      margin-bottom: 0; } }
+
+.conversion {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 5px; }
+  @media (min-width: 1280px) {
+    .conversion {
+      padding: 10px;
+      margin-bottom: 10px; } }
+  .conversion.ccy:after {
+    display: inline-block; }
+    @media (min-width: 1280px) {
+      .conversion.ccy:after {
+        display: block; } }
+  .conversion .dollars {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    display: inline-block; }
+    @media (min-width: 1280px) {
+      .conversion .dollars {
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: absolute;
+        right: 10px; } }
+
+.high-bidder {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  height: 75px;
+  padding: 15px 10px;
+  background-color: #c35f14; }
+  .high-bidder label {
+    display: block;
+    opacity: 0.8;
+    margin-bottom: 5px; }
+    @media (min-width: 1280px) {
+      .high-bidder label {
+        margin-bottom: 10px; } }
+  @media (min-width: 1280px) {
+    .high-bidder {
+      top: 40%;
+      height: 90px;
+      padding: 20px; } }
+
+.lot-details {
+  padding: 15px 10px;
+  background-color: #ac5412;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - (35% + 75px)); }
+  @media (min-width: 1280px) {
+    .lot-details {
+      height: calc(100% - (40% + 90px));
+      padding: 20px; } }
+  .lot-details label {
+    display: block;
+    opacity: 0.8;
+    margin-bottom: 5px; }
+    @media (min-width: 1280px) {
+      .lot-details label {
+        margin-bottom: 10px; } }
+  .lot-details label {
+    line-height: 1.4rem; }
+
+.lot-detail:not(:last-of-type) {
+  margin-bottom: 10px; }
+  @media (min-width: 1280px) {
+    .lot-detail:not(:last-of-type) {
+      margin-bottom: 20px; } }
+
+.auctioneers-message, .open-offers {
+  background-color: #7d3d0d;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .auctioneers-message label, .open-offers label {
+    display: block;
+    opacity: 0.8;
+    margin-bottom: 5px; }
+    @media (min-width: 1280px) {
+      .auctioneers-message label, .open-offers label {
+        margin-bottom: 10px; } }
+  .auctioneers-message.s-shown, .open-offers.s-shown {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+.choice-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+.choice--header {
+  padding: 20px;
+  padding-bottom: 10px;
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0), #333333);
+  background: linear-gradient(top, rgba(51, 51, 51, 0), #333333);
+  text-transform: uppercase;
+  color: white; }
+
+.choice--body {
+  padding: 0 20px 20px;
+  background-color: #333333; }
+
+.choice--lot {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  height: 60px;
+  line-height: 60px;
+  width: calc(100% / 5);
+  background-color: white;
+  border: 5px solid transparent;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  color: #E87722;
+  text-align: center;
+  overflow: hidden; }
+  @media (min-width: 1280px) {
+    .choice--lot {
+      height: 130px;
+      line-height: 130px; } }
+  .choice--lot span {
+    vertical-align: middle;
+    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+    transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .choice--lot:before {
+    font-family: 'ritchie-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 40px;
+    content: '';
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    line-height: 40px;
+    vertical-align: middle;
+    opacity: 0;
+    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+    transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s; }
+  @media (max-width: 1280px) {
+    .choice--lot {
+      font-size: 20px;
+      font-size: 2rem; }
+      .choice--lot:before {
+        font-size: 30px; } }
+  .choice--lot.s-sold, .choice--lot.s-out {
+    background-color: #585858;
+    color: white; }
+    .choice--lot.s-sold span, .choice--lot.s-out span {
+      margin-left: 10px; }
+    .choice--lot.s-sold:before, .choice--lot.s-out:before {
+      opacity: 1; }
+    .choice--lot.s-sold div, .choice--lot.s-out div {
+      display: inline-block; }
+  .choice--lot.s-sold:before {
+    content: "\e920";
+    color: #E87722; }
+  .choice--lot.s-out {
+    background-color: #c4483a;
+    color: rgba(255, 255, 255, 0.8); }
+    .choice--lot.s-out span {
+      text-decoration: line-through; }
+    .choice--lot.s-out .out-text {
+      color: rgba(255, 255, 255, 0.5); }
+    .choice--lot.s-out:before {
+      content: "\e906";
+      color: rgba(255, 255, 255, 0.5); }
+  .choice--lot.s-active {
+    border-color: #E87722; }
+  .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+    width: calc((100% / 2) - 10px); }
+  .choice--lot:nth-last-child(n+3), .choice--lot:nth-last-child(n+3) ~ li {
+    width: calc((100% / 3) - 10px); }
+  .choice--lot:nth-last-child(n+4), .choice--lot:nth-last-child(n+4) ~ li {
+    width: calc((100% / 4) - 10px); }
+    @media (max-width: 1280px) {
+      .choice--lot:nth-last-child(n+4), .choice--lot:nth-last-child(n+4) ~ li {
+        font-size: 17px;
+        font-size: 1.7rem; }
+        .choice--lot:nth-last-child(n+4):before, .choice--lot:nth-last-child(n+4) ~ li:before {
+          font-size: 30px; } }
+  .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-size: 2rem;
+    width: calc((100% / 5) - 10px); }
+    .choice--lot:nth-last-child(n+5):before, .choice--lot:nth-last-child(n+5) ~ li:before {
+      font-size: 30px; }
+    @media (max-width: 1280px) {
+      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+        font-size: 13px;
+        font-size: 1.3rem; }
+        .choice--lot:nth-last-child(n+5):before, .choice--lot:nth-last-child(n+5) ~ li:before {
+          font-size: 25px; } }
+  .choice--lot:nth-last-child(n+6), .choice--lot:nth-last-child(n+6) ~ li {
+    width: calc((100% / 6) - 10px); }
+  .choice--lot:nth-last-child(n+7), .choice--lot:nth-last-child(n+7) ~ li {
+    width: calc((100% / 7) - 10px); }
+  .choice--lot:nth-last-child(n+8), .choice--lot:nth-last-child(n+8) ~ li {
+    width: calc((100% / 8) - 10px); }
+  .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+    width: calc((100% / 9) - 10px); }
+  .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+    width: calc((100% / 10) - 10px); }
+  .choice--lot:nth-last-child(n+11), .choice--lot:nth-last-child(n+11) ~ li {
+    width: calc((100% / 11) - 10px); }
+  .choice--lot:nth-last-child(n+12), .choice--lot:nth-last-child(n+12) ~ li {
+    width: calc((100% / 12) - 10px); }
+  .choice--lot:nth-last-child(n+12), .choice--lot:nth-last-child(n+12) ~ li {
+    height: 40px;
+    width: calc((100% / 12) - 10px);
+    margin-bottom: 10px;
+    padding-top: 0; }
+    .choice--lot:nth-last-child(n+12).s-sold, .choice--lot:nth-last-child(n+12).s-out, .choice--lot:nth-last-child(n+12) ~ li.s-sold, .choice--lot:nth-last-child(n+12) ~ li.s-out {
+      padding-left: 28px;
+      padding-top: 0;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
+
+.other-rings {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px; }
+  @media (min-width: 1280px) {
+    .other-rings {
+      height: 50px; } }
+
+.rings {
+  height: 50px; }
+
+.ring {
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  background-color: #e8e6e2; }
+  @media (min-width: 1280px) {
+    .ring {
+      height: 50px; } }
+  .ring.s-post {
+    background-color: #585858;
+    color: rgba(255, 255, 255, 0.7); }
+  .ring.s-pre {
+    background-color: #585858;
+    color: rgba(255, 255, 255, 0.7); }
+  .ring:not(:first-child) {
+    border-left: 1px solid #959595; }
+  .ring:only-child {
+    width: 30%;
+    float: right; }
+  .ring:nth-last-child(n+2), .ring:nth-last-child(n+2) ~ li {
+    width: 50%; }
+  .ring:nth-last-child(n+3), .ring:nth-last-child(n+3) ~ li {
+    width: 33.33333%; }
+
+.ring--number {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  width: 50px;
+  text-align: center;
+  color: #E87722; }
+  @media (min-width: 1280px) {
+    .ring--number {
+      width: 75px; } }
+  .ring--number label {
+    display: block;
+    font-size: 10px;
+    font-size: 1rem;
+    margin-top: 8px; }
+
+.ring--progress {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  left: 50px;
+  font-weight: 700; }
+  @media (min-width: 1280px) {
+    .ring--progress {
+      left: 75px; } }
+
+.paused-details, .pre-auction-details, .post-auction-details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  font-weight: 700; }
+
+.s-auction-paused .paused-details {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.s-auction-pre .pre-auction-details {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.s-auction-post .post-auction-details {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.ring-detail {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  padding: 15px; }
+  @media (min-width: 1280px) {
+    .ring-detail {
+      padding: 30px;
+      bottom: 40%; } }
+  .ring-detail label {
+    display: block;
+    line-height: 2rem;
+    opacity: 0.9; }
+
+.ring-detail_inactive {
+  background-color: #585858;
+  color: rgba(255, 255, 255, 0.8); }
+
+.ring-status {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7d3d0d;
+  text-align: center;
+  text-transform: uppercase; }
+  .ring-status .ring-status--content {
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 15px; }
+    @media (min-width: 1280px) {
+      .ring-status .ring-status--content {
+        padding: 30px; } }
+  .ring-status .status-icon {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 80px;
+    -webkit-animation: pulsate 2s ease-in-out infinite;
+            animation: pulsate 2s ease-in-out infinite; }
+
+.ring-status_focus {
+  background-color: #E87722; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+.paused-message, .pre-post-message {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 30%;
+  background-color: white;
+  padding: 120px;
+  color: #E87722;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+  @media (min-width: 1280px) {
+    .paused-message, .pre-post-message {
+      left: 60px;
+      right: calc(30% + (2 * 60px)); } }
+  .paused-message .h-valign, .pre-post-message .h-valign {
+    padding: 60px;
+    text-align: center;
+    left: 0;
+    right: 0; }
+
+.paused-message:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  background-color: white; }
+.s-auction-paused .paused-message {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1; }
+
+.s-auction-pre .pre-post-message, .s-auction-post .pre-post-message {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1; }
+
+/*******************
+	HELPER CLASSES
+********************/
+.h-overflow {
+  overflow: hidden; }
+
+.h-t-xs {
+  font-size: 0.6rem; }
+
+.h-t-s {
+  font-size: 0.8rem; }
+
+.h-t-m {
+  font-size: 1rem; }
+
+.h-t-l, .h-t-large {
+  font-size: 1.5rem; }
+
+.h-ta-center {
+  text-align: center; }
+
+.h-ta-left {
+  text-align: left; }
+
+.h-ta-right {
+  text-align: right; }
+
+.h-tt-uppercase {
+  text-transform: uppercase; }
+
+.h-t-ellipsize {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.h-valign {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute; }
+
+.h-mt-80 {
+  margin-top: 10px; }
+
+.h-mt-100 {
+  margin-top: 15px; }
+
+.h-mb-100 {
+  margin-bottom: 15px; }
+
+.h-mb-50 {
+  margin-bottom: 7.5px; }
+
+.h-mb-0 {
+  margin-bottom: 0; }
+
+.h-mr-100 {
+  margin-right: 15px; }
+
+.h-mr-50 {
+  margin-right: 7.5px; }
+
+.h-ml-100 {
+  margin-left: 15px; }
+
+.h-ml-50 {
+  margin-left: 7.5px; }
+
+.h-pt-100 {
+  padding-top: 15px; }
+
+.h-pb-100 {
+  padding-bottom: 15px; }
+
+.h-p-0 {
+  padding: 0; }
+
+.h-lh-200 {
+  line-height: 2; }
+
+.h-d-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+
+.h-d-block {
+  display: block; }
+
+.h-d-inline-block {
+  display: inline-block; }
+
+.h-pos-relative {
+  position: relative; }
+
+.h-pos-center {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center; }
+
+.h-va-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.h-mw-400 {
+  max-width: 430px;
+  margin: 0 auto; }
+
+.h-f-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: right; }
+
+.h-float-left {
+  float: left; }
+
+.h-float-right {
+  float: right; }
+
+.h-va-super {
+  vertical-align: super; }
+
+.h-ws-nowrap {
+  white-space: nowrap; }
+
+.h-icon--large {
+  font-size: 25px; }
+
+.s-viewer-mode .h-viewer-hidden {
+  display: none; }
+
+.h-viewer-shown {
+  display: none; }
+  .s-viewer-mode .h-viewer-shown {
+    display: initial; }
+
+/*******************
+	COLOUR OVERRIDES
+********************/
+.c-price {
+  color: #20579E; }
+
+.c-finance {
+  color: #24532B; }
+
+.c-brand {
+  color: #E87722; }
+
+.c-active {
+  color: #24532B; }
+
+.c-error {
+  color: #c4483a; }
+
+.c-link {
+  color: #1478BC; }
+
+.c-grey {
+  color: #959595; }
+
+.c-grey-700 {
+  color: #585858; }
+
+.c-white {
+  color: #ffffff !important; }
+
+.c-black {
+  color: #000000; }
+
+.bg-finance {
+  background-color: #D3E8CB; }
+
+.bg-brand {
+  background-color: #E87722; }
+
+.bg-grey {
+  background-color: #E9E9E9; }

@@ -1,0 +1,400 @@
+$bg-color-ask: $brand-color;
+$bg-color-high-bid: darken($brand-color, 10%);
+$bg-color-details: darken($brand-color,15%);
+$bg-color-auctioneer-message: darken($brand-color,25%);
+
+$text-color-details: white;
+
+$height-ask: 40%;
+$height-ask_small: 35%;
+
+$height-high-bid: 90px;
+$height-high-bid_small: 75px;
+
+$height-lot-details: 50%;
+
+.details-area{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+
+	width: $details-width_small;
+
+	background-color: $bg-color-ask;
+	text-align: left;
+	color: $text-color-details;
+
+	overflow: hidden;
+
+	transition: $transition;
+
+	@include vrampbreakpoint(medium){
+		width: $details-width;
+	}
+
+	.s-other-rings_single &{
+		bottom: $footer-height_small;
+
+		@include vrampbreakpoint(medium){
+			bottom: $footer-height;
+		}
+	}
+
+	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
+		top: 60px;
+		bottom: 60px;
+
+		@include vrampbreakpoint(medium){
+			right: 60px;
+		}
+	}
+}
+
+	.active-details{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		transform: translateX(0);
+		transition: $transition;
+
+		.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
+			transform: translateX(100%);
+		}
+
+	}
+
+	.prices{
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		height: $height-ask_small;
+
+		@include vrampbreakpoint(medium){
+			height: $height-ask;
+		}
+
+		text-align: center;
+
+		>div{
+			width: 100%;
+		}
+
+		&.s-sold{
+			background-color: $grey-700;
+		}
+	}
+
+
+		$ccys: 	"CAD" "$" "" "," "." true 2,
+			"USD" "$" "" "," "." true 14,
+			"SGD" "$" "" "," "." true 12,
+			"NZD" "$" "" "," "." true 10,
+			"AUD" "$" "" "," "." true 0,
+			"MXN" "$" "" "," "." true 8,
+			"ZAR" "R" "" "," "." true 15,
+			"PLN" "" "z\0142" " " "," true 11,
+			"GBP" "\00A3" "" "," "." true 5,
+			"EUR" "\20AC" "" " " "," true 4,
+			"CNY" "\00A5" "" "," "." true 3,
+			"JPY" "\00A5" "" "," "." false 7,
+			"INR" " \20B9" "" "," "." true 6,
+			"AED" "" "د.إ" "," "." true 1,
+			"NOK" "kr" "" "," "." true 9,
+			"TRY" "\20BA" "" "," "." true 13;
+
+
+		@each $ccy in $ccys{
+			
+			.divider:before{
+				.#{nth($ccy,1)} & {
+					content: "#{nth($ccy,4)}";
+				}
+			}
+			.dollars:before{
+				.#{nth($ccy,1)} & {
+					content: "#{nth($ccy,2)}";
+				}
+			}
+			.dollars:after{
+				.#{nth($ccy,1)} & {
+					content: "#{nth($ccy,3)}";
+					margin-left: 3px;
+					display: inline-block;
+				}
+			}
+			.ccy{
+				&.#{nth($ccy,1)}:before{
+					content: "#{nth($ccy,1)}";
+				}
+			}
+
+			.ccy{
+				&.#{nth($ccy,1)}:after{
+					background-position: 0 -#{nth($ccy,7)*15px};
+				}
+			}
+
+			.auction-ccy{
+				&.#{nth($ccy,1)}:after{
+					background-position: 0 -#{nth($ccy,7)*15px};
+				}
+			}
+
+			.auction-ccy{
+				&.#{nth($ccy,1)}:before {
+					content: " - #{nth($ccy,2)} #{nth($ccy,1)} #{nth($ccy,3)}"; 
+				}
+			}
+
+		}
+
+		.auction-ccy{
+			@include vrampbreakpoint(medium){
+				display: none;
+			}
+
+			&:after{
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 7px;
+				margin-right: 3px;
+				width: 30px;
+				height: 15px;
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-image: url(../img/ccy-flags.png);
+				box-shadow: $ritchie-shadow;
+			}
+
+			&:before{
+				 
+			}
+		}
+
+		.ccy:after{
+			content: '';
+			display: block;
+			vertical-align: middle;
+			margin-right: 7px;
+			width: 30px;
+			height: 15px;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-image: url(../img/ccy-flags.png);
+			box-shadow: $ritchie-shadow;
+		}
+
+
+		.ask{
+			
+			padding: 0 10px;
+
+			@include vrampbreakpoint(medium){
+				padding: 0 $default-padding;
+			}
+
+			label{
+				opacity: 0.8;
+				display: block;
+				margin-bottom: 0;
+				line-height: 1.5rem;
+
+				@include vrampbreakpoint(medium){
+					margin-bottom: 5px;
+				}
+			}
+			
+
+		}
+
+			.ask--price{
+				display: inline-block;
+				position: relative;
+			
+				&:before{
+					@extend .font--180;
+					vertical-align: top;
+				}
+
+				&:after{
+					position: absolute;
+					// left: 5px;
+					// top: 25px;
+					// transform: scale(1);
+
+					@include vrampbreakpoint(medium){
+						left: 8px;
+						top: 30px;
+						transform: scale(1.2);
+					}
+					
+					@include vrampbreakpoint(large){
+						left: 10px;
+						top: 35px;
+					}
+
+					@include vrampbreakpoint(xlarge){
+						left: 12px;
+						top: 40px;
+						transform: scale(1.4);
+					}
+				}
+				
+				&:before, &:after{
+					display: none;
+
+					@include vrampbreakpoint(medium){
+						display: inline-block;
+					}	
+				}
+
+				.dollars{
+					display: inline-block;
+				}
+			}
+
+
+		.conversions{
+			text-align: left;
+			margin: 10px;
+			margin-bottom: 0;
+
+			@include vrampbreakpoint(medium){
+				margin: $default-padding;
+				margin-bottom: 0;
+			}
+		}
+
+			.conversion{
+				padding: 5px;
+				background-color: rgba(0,0,0,0.1);
+				position: relative;
+				margin-bottom: 5px;
+
+				@include vrampbreakpoint(medium){
+					padding: 10px;
+					margin-bottom: 10px;
+				}
+
+				&.ccy:after{
+					display: inline-block; 
+
+					@include vrampbreakpoint(medium){
+						display: block;
+					}
+				}
+
+				.dollars{
+					position: absolute;
+					right: 5px;
+					top: 3px;
+					display: inline-block;
+
+					@include vrampbreakpoint(medium){
+						@include vert-align;
+						position: absolute;
+						right: 10px;
+					}
+				}
+			}
+
+
+	
+
+
+	.high-bidder{
+		position: absolute;
+		width: 100%;
+
+		top: $height-ask_small;
+		height: $height-high-bid_small;
+
+		padding: 15px 10px;
+
+		background-color: $bg-color-high-bid;
+
+		@include details-label;
+		
+		@include vrampbreakpoint(medium){
+			top: $height-ask;
+			height: $height-high-bid;
+
+			padding: $default-padding;
+		}
+
+	}
+
+	.lot-details{
+		
+		padding: 15px 10px;
+
+		background-color: $bg-color-details;
+
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		height: calc(100% - (#{$height-ask_small} + #{$height-high-bid_small}));
+
+		@include vrampbreakpoint(medium){
+			height: calc(100% - (#{$height-ask} + #{$height-high-bid}));
+			padding: $default-padding;
+		}
+		
+		@include details-label;
+
+		label{
+			line-height: 1.4rem;
+		}
+
+	}
+
+		.lot-detail{
+			&:not(:last-of-type){
+				margin-bottom: 10px;	
+
+				@include vrampbreakpoint(medium){
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+
+
+
+	.auctioneers-message, .open-offers{
+		background-color: $bg-color-auctioneer-message;
+		padding: $default-padding;
+
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		@include details-label;
+
+		transform: translateY(100%);
+		transition: $transition;
+
+		&.s-shown{
+			transform: translateY(0);	
+		}
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+

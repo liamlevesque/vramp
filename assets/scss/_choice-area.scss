@@ -1,0 +1,245 @@
+$choice-spacing: 10px;
+
+.choice-area{
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	z-index: 1;
+
+	.s-other-rings_all &{
+		//bottom: $footer-height;
+	}
+
+}
+
+	.choice--header{
+		padding: $default-padding;
+		padding-bottom: 10px;
+		background: linear-gradient(top, rgba($grey-900,0), rgba($grey-900,1));
+
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.choice--body{
+		padding: 0 $default-padding $default-padding;
+		background-color: $grey-900;
+
+	}
+
+		$large-height: 130px;
+		$med-height: 60px;
+		$small-height: 40px;
+
+		.choice--lot{
+			position: relative;
+			display: inline-block;
+			margin-right: $choice-spacing;
+			vertical-align: top;
+
+			height: $med-height;
+			line-height: $med-height;
+			
+			@include vrampbreakpoint(medium){
+				height: $large-height;
+				line-height: $large-height; 
+			}
+
+			width: calc(100% / 5);
+			
+			background-color: white;
+			border: 5px solid transparent;
+			box-shadow: $ritchie-shadow;
+			
+			color: $brand-color;
+			text-align: center;
+			
+			overflow: hidden;
+
+			span{
+				vertical-align: middle;
+				transition: $transition;
+			}
+
+			&:before{
+				@include icon-font;
+				font-size: 40px;
+				content: '';
+				
+				transform: translateY(-100%);
+
+				line-height: 40px;
+				vertical-align: middle;
+
+				opacity: 0;
+				
+				transition: $transition;
+				transition-delay: 0.3s;
+			}
+
+			@include vrampbreakpoint(smallmax){
+				@include font-size(2);
+
+				&:before{
+					font-size: 30px;
+				}
+			}
+			
+			&.s-sold, &.s-out{
+				background-color: $grey-700;
+				color: white;
+				
+				span{
+					margin-left: 10px;
+				}
+
+				&:before{
+					opacity: 1;
+				}
+
+				div{
+					display: inline-block;
+				}
+			}
+
+			&.s-sold:before{
+				content: "\e920";
+				color: $brand-color;
+			}
+
+			&.s-out{
+				background-color: $error-colour;
+				color: rgba(white,0.8);
+				
+				span{
+					text-decoration: line-through;
+				}
+
+				.out-text{
+					color: rgba(white, 0.5);
+				}
+
+				&:before{
+					content: "\e906";
+					color: rgba(white, 0.5);
+				}
+			}
+
+			&.s-active{
+				border-color: $brand-color;
+			}
+
+				&:nth-last-child(n+2),
+				&:nth-last-child(n+2) ~ li {
+					width: calc((100% / 2) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+3),
+				&:nth-last-child(n+3) ~ li {
+					width: calc((100% / 3) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+4),
+				&:nth-last-child(n+4) ~ li {
+					width: calc((100% / 4) - #{$choice-spacing});
+					
+					@include vrampbreakpoint(smallmax){
+						@include font-size(1.7);
+						&:before{
+							font-size: 30px;
+						}
+					}
+				}
+
+			//DIFFERENT STYLING FOR DIFFERENT QUANTITIES OF LOTS
+			&:nth-last-child(n+5),
+			&:nth-last-child(n+5) ~ li {
+				height: $med-height;
+				line-height: $med-height;
+				@include font-size(2);
+
+				width: calc((100% / 5) - #{$choice-spacing});
+
+				&:before{
+					//margin: 0;
+					
+					font-size: 30px;
+				}
+				
+				&.s-sold, &.s-out{
+					&:before{
+						//top: 50%;
+					}
+				}
+
+				@include vrampbreakpoint(smallmax){
+					@include font-size(1.3);
+					&:before{
+						font-size: 25px;
+					}
+				}
+			}
+
+
+
+				&:nth-last-child(n+6),
+				&:nth-last-child(n+6) ~ li {
+					width: calc((100% / 6) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+7),
+				&:nth-last-child(n+7) ~ li {
+					width: calc((100% / 7) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+8),
+				&:nth-last-child(n+8) ~ li {
+					width: calc((100% / 8) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+9),
+				&:nth-last-child(n+9) ~ li {
+					width: calc((100% / 9) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+10),
+				&:nth-last-child(n+10) ~ li {
+					width: calc((100% / 10) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+11),
+				&:nth-last-child(n+11) ~ li {
+					width: calc((100% / 11) - #{$choice-spacing});
+				}
+
+				&:nth-last-child(n+12),
+				&:nth-last-child(n+12) ~ li {
+					width: calc((100% / 12) - #{$choice-spacing});
+				}
+
+			&:nth-last-child(n+12),
+			&:nth-last-child(n+12) ~ li {
+				height: $small-height;
+				width: calc((100% / 12) - #{$choice-spacing});
+				margin-bottom: $choice-spacing;
+				padding-top: 0;
+
+				&.s-sold, &.s-out{
+					padding-left: 28px;
+					padding-top: 0;
+
+					@include font-size(1.2); 
+					line-height: 1.2rem;
+				}
+			}
+		}
+
+
+
+
+
+
+

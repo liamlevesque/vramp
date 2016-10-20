@@ -1,0 +1,146 @@
+
+$width-lot--number: 160px;
+$width-lot--number_medium: 200px;
+$width-lot--number_xlarge: 225px; 
+$height-header: 70px;
+$height-header_large: 100px;
+
+.lot-preview{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: $details-width_small;
+
+	@include vrampbreakpoint(medium){
+		right: $details-width;
+	}
+
+	background-color: $grey-900;
+
+	transform: translateX(0);
+
+	transition: $transition;
+
+	.s-other-rings_all &{
+		bottom: $footer-height_small;
+
+		@include vrampbreakpoint(medium){
+			bottom: $footer-height;
+		}
+	}
+
+	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
+		transform: translateX(-100%);
+	}
+}
+	
+	.lot--title{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		height: $height-header;
+
+		transform: translateX(-50%);
+
+		z-index: 1;
+		box-shadow: $ritchie-shadow;
+
+		background-color: white;
+
+		@include vrampbreakpoint(medium){
+			height: $height-header_large;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			max-width: 1200px;
+		}
+	}
+
+		.lot--number{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: $width-lot--number;
+			height: 100%;
+
+			padding: $default-padding/1.5;
+
+			background-color: $brand-color;
+			color: white;
+
+			@include details-label;
+			label{
+				margin-bottom: 0;
+				opacity: 1;
+			}
+			
+			@include vrampbreakpoint(medium){
+				width: $width-lot--number_medium;
+				padding: $default-padding;
+			}
+
+			@include vrampbreakpoint(xlarge){
+				width: $width-lot--number_xlarge;
+			}
+
+
+			.sale-ring{
+				opacity: 0.8;
+				margin-right: 10px;
+			}
+		}
+
+		.lot--description{
+			position: absolute;
+			top: 0;
+			height: 100%;
+			left: $width-lot--number;
+			right: 0;
+
+			padding: $default-padding;
+
+			line-height: 1.8rem;
+			
+			@include vrampbreakpoint(medium){
+				left: $width-lot--number_medium;
+				line-height: 2.5rem;
+			}
+
+			@include vrampbreakpoint(xlarge){
+				left: $width-lot--number_xlarge;
+			}
+
+			span{
+				padding-right: $default-padding;
+			}
+		}
+
+
+	.lot--media{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		overflow: hidden;
+
+		top: $height-header;
+
+		@include vrampbreakpoint(medium){
+			top: $height-header_large;;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			top: 0;
+		}
+
+		img{
+			width: 100%;
+			max-width: 100%;
+
+			@include vert-align;
+			position: absolute;
+		}
+	}

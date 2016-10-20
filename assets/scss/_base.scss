@@ -1,0 +1,65 @@
+$details-width_small: 30%;
+$details-width: 30%;
+
+$footer-height_small: 40px;
+$footer-height: 50px;
+
+$paused-spacing: 60px;
+
+$default-padding: 20px; 
+
+
+
+@mixin vrampbreakpoint($point) {
+  @if $point == xlarge {
+    @media (min-width: 1920px) { @content; }
+  }
+  
+  @if $point == large {
+    @media (min-width: 1600px) { @content; }
+  }
+
+  @if $point == medium {
+    @media (min-width: 1280px) { @content; }
+  }
+
+  @if $point == small {
+    @media (min-width: 960px) { @content; }
+  }
+
+  @if $point == smallmax {
+    @media (max-width: 1280px) { @content; }
+  }
+}
+
+label{
+	color: inherit;
+}
+
+body{
+	overflow: hidden;
+}
+
+.fullscreenbg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+.prototype-controls{
+	position: fixed;
+	top: 200px;
+	left: 0;
+	background-color: white;
+	box-shadow: $ritchie-shadow;
+	padding: 20px;
+	z-index: 2;
+
+	button{
+		margin-bottom: 10px;
+	}
+}
