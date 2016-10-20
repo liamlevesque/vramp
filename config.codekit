@@ -363,6 +363,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/_formatters.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/_formatters.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/_formatters-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/_vramp.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -3124,8 +3135,14 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/_vramp.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/_formatters.js",
 			"position": 2,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/js\/_vramp.js",
+			"position": 3,
 			"type": 1
 			}
 		]

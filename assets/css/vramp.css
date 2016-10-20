@@ -475,7 +475,7 @@ body {
   @media (min-width: 1920px) {
     .lot--media {
       top: 0; } }
-  .lot--media custom--media, .lot--media iframe {
+  .lot--media .custom--media, .lot--media iframe {
     width: 100%;
     height: 100%; }
   .lot--media img {
