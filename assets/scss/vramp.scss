@@ -1,8 +1,8 @@
-@import '../mixins';
-@import '../reset';
-@import '../icons';
-
+//@import '../mixins';
 @import 'base'; 
+@import 'reset';
+@import 'icons';
+
 @import 'font';
 @import 'lot-preview';
 @import 'details-area';
@@ -10,4 +10,4 @@
 @import 'other-rings';
 @import 'pre-post-paused';
 
-@import '../helpers';
+@import 'helpers';

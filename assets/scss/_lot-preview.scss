@@ -136,6 +136,11 @@ $height-header_large: 100px;
 			top: 0;
 		}
 
+		custom--media, iframe{
+			width: 100%;
+			height: 100%;
+		}
+
 		img{
 			width: 100%;
 			max-width: 100%;

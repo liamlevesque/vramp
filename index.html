@@ -27,7 +27,7 @@
 				<div class="custom--media" rv-if="vrampObject.lotDetail.video">
 		            <iframe src="https://www.youtube.com/embed/hWE7LRojEbQ" frameborder="0" allowfullscreen></iframe>
 		        </div>
-				<img rv-src="vrampObject.lotDetail.photo" rv-else="vrampObject.lotDetail.video"/>
+				<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
 			</div>
 
 			<div class="choice-area" rv-show="vrampObject.choiceGroup">

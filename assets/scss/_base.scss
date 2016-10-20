@@ -10,6 +10,27 @@ $default-padding: 20px;
 
 
 
+//COLOURS
+$brand-color: #E87722;
+$error-colour: #c4483a;
+$error-colour-light: #F3BFBF;
+
+$black: #000000;
+$white: #ffffff;
+
+$grey-50: #e8e6e2;
+$grey-100: #E9E9E9;
+$grey-300: #bfc0be;
+$grey-500: #959595;
+$grey-700: #585858;
+$grey-900: #333333;
+
+
+$ritchie-border: 1px dotted $brand-color;
+
+$ritchie-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
+
+
 @mixin vrampbreakpoint($point) {
   @if $point == xlarge {
     @media (min-width: 1920px) { @content; }
@@ -31,6 +52,42 @@ $default-padding: 20px;
     @media (max-width: 1280px) { @content; }
   }
 }
+
+@mixin ellipsize{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin vert-align{
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+//TRANSITIONS
+$transition-time_1: .2s;
+$transition-time_2: .35s;
+$transition-function: cubic-bezier(0.630, 0.005, 0.365, 1.000);//cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+$transition: $transition-time_1 $transition-function;
+
+@mixin transition($properties...){
+  transition-property: $properties;
+  transition-duration: $transition-time_2;
+  transition-timing-function: $transition-function;
+}
+
+@mixin transition-delayed($delay, $properties...){
+  transition-property: $properties;
+  transition-duration: $transition-time_2;
+  transition-timing-function: $transition-function;
+  transition-delay: $delay;
+}
+
+
+
+//BASE STYLES
 
 label{
 	color: inherit;

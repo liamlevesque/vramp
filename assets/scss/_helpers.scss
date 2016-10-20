@@ -1,0 +1,10 @@
+.h-t-ellipsize{
+	@include ellipsize;
+}
+
+.h-valign{
+	@include vert-align;
+	position: absolute;
+}
+
+.c-brand{color: $brand-color;}
