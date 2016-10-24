@@ -7,7 +7,7 @@
 	    <link type="text/css" rel="stylesheet" href="assets/css/vramp.css">
 	</head>
 
-	<body class="js--vramp-bidding" rv-auctionstatus="vrampObject.auctionStatus">
+	<body class="js--vramp-bidding s-auction-active s-other-rings_single s-other-rings_all">
 		
 		<img src="assets/img/vramp-bg.png" class="fullscreenbg" />
 
@@ -32,14 +32,14 @@
 				<img src="assets/img/vramp1.png"/>
 			</div>
 
-			<div class="choice-area" rv-show="vrampObject.choiceGroup">
+			<div class="choice-area">
 				<div class="choice--header font--180">Choice of 2 Remaining</div>
 				<div class="choice--body">
 					<ul class="choice--lots">
-						<li class="choice--lot">100</li>
-						<li class="choice--lot s-sold">101</li>
-						<li class="choice--lot s-out">102</li>
-						<li class="choice--lot">103</li>
+						<li class="choice--lot">100</li><!-- 
+						 --><li class="choice--lot s-sold">101</li><!-- 
+						 --><li class="choice--lot s-out">102</li><!-- 
+						 --><li class="choice--lot">103</li>
 					</ul>
 				</div>
 			</div>
@@ -212,37 +212,6 @@
 				</li>
 			</ul>
 		</footer>
-
-		<div class="prototype-controls js--prototype-controls">
-			
-			<div>
-				<label>Navigate</label><br/>
-				<button rv-on-click="vrampController.prevLot" class="g-half">Previous Lot/Group</button>
-				<button rv-on-click="vrampController.nextLot" class="g-half">Next Lot/Group</button><br/>
-				<button rv-on-click="vrampController.sellLot">SELL THIS LOT</button>
-			</div>
-
-			<div>
-				<label>Settings</label><br/>
-				<button rv-on-click="vrampController.toggleConversions">Toggle Conversions</button><br/>
-				<button rv-on-click="vrampController.showMessage">Toggle Auctioneer's Message</button><br/>
-			</div>
-			<div>
-				<label>Other Rings</label><br/>
-				<button rv-on-click="vrampController.toggleOtherRings">Toggle Other Rings</button>
-				<button rv-on-click="vrampController.incrementOtherRingLots">Change Other Rings</button>
-				<!-- <button rv-on-click="vrampController.toggleOpenOffer">Toggle Open Offer</button> -->
-			</div>
-
-			<div>
-				<label>Auction State</label><br/>
-				<button rv-on-click="vrampController.toggleActive">Active</button>
-				<button rv-on-click="vrampController.togglePause">Paused</button>
-				<button rv-on-click="vrampController.togglePre">Pre-Auction</button>
-				<button rv-on-click="vrampController.togglePost">Post-Auction</button>
-			</div>
-
-		</div>
 
 		<script type="text/javascript" src="assets/js/vramp-min.js"></script>
 
