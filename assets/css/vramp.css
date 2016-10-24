@@ -1517,15 +1517,27 @@ body {
   right: 0;
   left: 50px;
   font-weight: 700; }
+  .ring_TAL .ring--progress {
+    left: 85px; }
   @media (min-width: 1280px) {
     .ring--progress {
-      left: 65px; } }
+      left: 65px; }
+      .ring_TAL .ring--progress {
+        left: 90px; } }
   @media (min-width: 1600px) {
     .ring--progress {
       left: 75px; } }
   @media (min-width: 1920px) {
     .ring--progress {
       left: 90px; } }
+
+.ring_TAL .ring--number label {
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 8px; }
+  @media (max-width: 1280px) {
+    .ring_TAL .ring--number label {
+      line-height: 1rem; } }
 
 .paused-details, .pre-auction-details, .post-auction-details {
   position: absolute;
