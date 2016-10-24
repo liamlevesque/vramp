@@ -2,11 +2,16 @@ $details-width_small: 30%;
 $details-width: 30%;
 
 $footer-height_small: 40px;
-$footer-height: 50px;
+$footer-height: 60px;
+$footer-height_large: 60px;
+$footer-height_xlarge: 70px;
 
-$paused-spacing: 60px;
+$paused-spacing_small: 30px;
+$paused-spacing: 40px;
+$paused-spacing_large: 60px;
 
 $default-padding: 20px; 
+$default-padding_large: 25px;
 
 
 
@@ -109,12 +114,13 @@ body{
 
 .prototype-controls{
 	position: fixed;
-	top: 200px;
+	top: 120px;
 	left: 0;
 	background-color: white;
 	box-shadow: $ritchie-shadow;
 	padding: 20px;
 	z-index: 2;
+	display: none;
 
 	button{
 		margin-bottom: 10px;

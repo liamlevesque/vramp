@@ -1,9 +1,13 @@
 
-$width-lot--number: 160px;
-$width-lot--number_medium: 200px;
-$width-lot--number_xlarge: 225px; 
+$width-lot--number: 140px;
+$width-lot--number_medium: 190px;
+$width-lot--number_large: 240px;
+$width-lot--number_xlarge: 290px; 
+
 $height-header: 70px;
-$height-header_large: 100px;
+$height-header_medium: 90px;
+$height-header_large: 120px;
+$height-header_xlarge: 150px;
 
 .lot-preview{
 	position: absolute;
@@ -50,11 +54,15 @@ $height-header_large: 100px;
 		background-color: white;
 
 		@include vrampbreakpoint(medium){
+			height: $height-header_medium;
+		}
+
+		@include vrampbreakpoint(large){
 			height: $height-header_large;
 		}
 
 		@include vrampbreakpoint(xlarge){
-			max-width: 1200px;
+			height: $height-header_xlarge;
 		}
 	}
 
@@ -65,7 +73,7 @@ $height-header_large: 100px;
 			width: $width-lot--number;
 			height: 100%;
 
-			padding: $default-padding/1.5;
+			padding: 10px;
 
 			background-color: $brand-color;
 			color: white;
@@ -78,11 +86,16 @@ $height-header_large: 100px;
 			
 			@include vrampbreakpoint(medium){
 				width: $width-lot--number_medium;
-				padding: $default-padding;
+				padding: 10px 15px;
+			}
+			@include vrampbreakpoint(large){
+				width: $width-lot--number_large;
+				padding: 15px;
 			}
 
 			@include vrampbreakpoint(xlarge){
 				width: $width-lot--number_xlarge;
+				padding: $default-padding;
 			}
 
 
@@ -108,6 +121,11 @@ $height-header_large: 100px;
 				line-height: 2.5rem;
 			}
 
+			@include vrampbreakpoint(large){
+				left: $width-lot--number_large;
+				line-height: 3rem;
+			}
+
 			@include vrampbreakpoint(xlarge){
 				left: $width-lot--number_xlarge;
 			}
@@ -129,11 +147,15 @@ $height-header_large: 100px;
 		top: $height-header;
 
 		@include vrampbreakpoint(medium){
-			top: $height-header_large;;
+			top: $height-header_medium;;
+		}
+
+		@include vrampbreakpoint(large){
+			top: $height-header_large;
 		}
 
 		@include vrampbreakpoint(xlarge){
-			top: 0;
+			top: $height-header_xlarge;
 		}
 
 		.custom--media, iframe{

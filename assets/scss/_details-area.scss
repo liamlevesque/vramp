@@ -5,11 +5,17 @@ $bg-color-auctioneer-message: darken($brand-color,25%);
 
 $text-color-details: white;
 
+$height-ask_small: 42%;
 $height-ask: 40%;
-$height-ask_small: 35%;
+$height-ask_large: 40%;
+$height-ask_xlarge: 40%;
 
-$height-high-bid: 90px;
+
 $height-high-bid_small: 75px;
+$height-high-bid: 90px; 
+$height-high-bid_large: 110px;
+$height-high-bid_xlarge: 130px;
+
 
 $height-lot-details: 50%;
 
@@ -39,14 +45,34 @@ $height-lot-details: 50%;
 		@include vrampbreakpoint(medium){
 			bottom: $footer-height;
 		}
+
+		@include vrampbreakpoint(large){
+			bottom: $footer-height_large;
+		}
+
+		@include vrampbreakpoint(slarge){
+			bottom: $footer-height_xlarge;
+		}
 	}
 
 	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
-		top: 60px;
-		bottom: 60px;
+		top: $paused-spacing_small;
+		bottom: $footer-height_small;
 
 		@include vrampbreakpoint(medium){
-			right: 60px;
+			top: $paused-spacing;
+			bottom: $footer-height + 10px;
+			right: $paused-spacing;
+		}
+
+		@include vrampbreakpoint(large){
+			right: $paused-spacing_large;
+			top: $paused-spacing_large;
+			bottom: $footer-height_large + 10px;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			bottom: $footer-height_xlarge + 10px;
 		}
 	}
 }
@@ -147,47 +173,56 @@ $height-lot-details: 50%;
 
 			.auction-ccy{
 				&.#{nth($ccy,1)}:before {
-					content: " - #{nth($ccy,2)} #{nth($ccy,1)} #{nth($ccy,3)}"; 
+					content: "#{nth($ccy,2)} #{nth($ccy,1)} #{nth($ccy,3)}"; 
 				}
 			}
 
 		}
 
 		.auction-ccy{
-			@include vrampbreakpoint(medium){
-				display: none;
-			}
-
 			&:after{
 				content: '';
 				display: inline-block;
-				vertical-align: middle;
-				margin-left: 7px;
-				margin-right: 3px;
+				vertical-align: top;
+				margin-left: 5px;
+				margin-right: 8px;
+				margin-top: 2px;
 				width: 30px;
 				height: 15px;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
 				background-image: url(../img/ccy-flags.png);
-				box-shadow: $ritchie-shadow;
+				//box-shadow: $ritchie-shadow;
+				transform: scale(1.2);
+
+				@include vrampbreakpoint(medium){
+					transform: scale(1.4);
+					margin-left: 12px;
+					margin-right: 16px; 
+					margin-top: 2px;
+				}
+
+				@include vrampbreakpoint(medium){
+					transform: scale(1.8);
+				}
 			}
 
 			&:before{
-				 
+				 display: inline;
 			}
 		}
 
 		.ccy:after{
 			content: '';
 			display: block;
-			vertical-align: middle;
+			vertical-align: top;
 			margin-right: 7px;
 			width: 30px;
 			height: 15px;
 			background-repeat: no-repeat;
 			background-size: 100% auto;
 			background-image: url(../img/ccy-flags.png);
-			box-shadow: $ritchie-shadow;
+			//box-shadow: $ritchie-shadow;
 		}
 
 
@@ -200,7 +235,7 @@ $height-lot-details: 50%;
 			}
 
 			label{
-				opacity: 0.8;
+				
 				display: block;
 				margin-bottom: 0;
 				line-height: 1.5rem;
@@ -222,36 +257,32 @@ $height-lot-details: 50%;
 					vertical-align: top;
 				}
 
-				&:after{
-					position: absolute;
-					// left: 5px;
-					// top: 25px;
-					// transform: scale(1);
+				// &:after{
+				// 	position: absolute;
+				// 	// left: 5px;
+				// 	// top: 25px;
+				// 	// transform: scale(1);
 
-					@include vrampbreakpoint(medium){
-						left: 8px;
-						top: 30px;
-						transform: scale(1.2);
-					}
+				// 	@include vrampbreakpoint(medium){
+				// 		left: 8px;
+				// 		top: 30px;
+				// 		transform: scale(1.2);
+				// 	}
 					
-					@include vrampbreakpoint(large){
-						left: 10px;
-						top: 35px;
-					}
+				// 	@include vrampbreakpoint(large){
+				// 		left: 10px;
+				// 		top: 35px;
+				// 	}
 
-					@include vrampbreakpoint(xlarge){
-						left: 12px;
-						top: 40px;
-						transform: scale(1.4);
-					}
-				}
+				// 	@include vrampbreakpoint(xlarge){
+				// 		left: 12px;
+				// 		top: 40px;
+				// 		transform: scale(1.4);
+				// 	}
+				// }
 				
 				&:before, &:after{
 					display: none;
-
-					@include vrampbreakpoint(medium){
-						display: inline-block;
-					}	
 				}
 
 				.dollars{
@@ -266,8 +297,11 @@ $height-lot-details: 50%;
 			margin-bottom: 0;
 
 			@include vrampbreakpoint(medium){
-				margin: $default-padding;
-				margin-bottom: 0;
+				margin: 0 $default-padding;
+			}
+
+			@include vrampbreakpoint(xlarge){
+				margin: 0 $default-padding_large;
 			}
 		}
 
@@ -282,11 +316,32 @@ $height-lot-details: 50%;
 					margin-bottom: 10px;
 				}
 
-				&.ccy:after{
-					display: inline-block; 
+				@include vrampbreakpoint(large){
+					padding: 15px;
+					margin-bottom: 15px;
+				}
 
-					@include vrampbreakpoint(medium){
-						display: block;
+				&.ccy{
+					&:after{
+						display: inline-block; 
+						margin-left: 5px;
+						margin-top: 3px;
+
+						@include vrampbreakpoint(medium){
+							transform: scale(1.2);
+							margin-left: 10px;
+							margin-top: 4px;
+						}
+
+						@include vrampbreakpoint(large){
+							transform: scale(1.6);
+							margin-left: 15px;
+							margin-top: 8px;
+						}
+					}
+
+					&:before{
+						@extend .font--120;
 					}
 				}
 
@@ -297,9 +352,13 @@ $height-lot-details: 50%;
 					display: inline-block;
 
 					@include vrampbreakpoint(medium){
-						@include vert-align;
-						position: absolute;
 						right: 10px;
+						top: 7px
+					}
+
+					@include vrampbreakpoint(large){
+						right: 15px;
+						top: 10px
 					}
 				}
 			}
@@ -328,6 +387,18 @@ $height-lot-details: 50%;
 			padding: $default-padding;
 		}
 
+		@include vrampbreakpoint(large){
+			top: $height-ask_large;
+			height: $height-high-bid_large;
+			padding: 15px $default-padding_large;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			top: $height-ask_xlarge;
+			height: $height-high-bid_xlarge;
+			//padding: 15px $default-padding_large;
+		}
+
 	}
 
 	.lot-details{
@@ -346,12 +417,17 @@ $height-lot-details: 50%;
 			height: calc(100% - (#{$height-ask} + #{$height-high-bid}));
 			padding: $default-padding;
 		}
+
+		@include vrampbreakpoint(large){
+			height: calc(100% - (#{$height-ask_large} + #{$height-high-bid_large}));
+			padding: $default-padding_large;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			height: calc(100% - (#{$height-ask_xlarge} + #{$height-high-bid_xlarge}));
+		}
 		
 		@include details-label;
-
-		label{
-			line-height: 1.4rem;
-		}
 
 	}
 
@@ -359,7 +435,7 @@ $height-lot-details: 50%;
 			&:not(:last-of-type){
 				margin-bottom: 10px;	
 
-				@include vrampbreakpoint(medium){
+				@include vrampbreakpoint(large){
 					margin-bottom: 20px;
 				}
 			}

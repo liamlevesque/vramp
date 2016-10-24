@@ -1,5 +1,7 @@
 $width-ring-number_small: 50px;
-$width-ring-number: 75px;
+$width-ring-number: 65px;
+$width-ring-number_large: 75px;
+$width-ring-number_xlarge: 90px;
 
 
 
@@ -13,6 +15,14 @@ $width-ring-number: 75px;
 	@include vrampbreakpoint(medium){
 		height: $footer-height;
 	}
+
+	@include vrampbreakpoint(large){
+		height: $footer-height_large;
+	}
+
+	@include vrampbreakpoint(xlarge){
+		height: $footer-height_xlarge;
+	}
 }
 	
 	.rings{
@@ -24,6 +34,14 @@ $width-ring-number: 75px;
 		
 		@include vrampbreakpoint(medium){
 			height: $footer-height;
+		}
+
+		@include vrampbreakpoint(large){
+			height: $footer-height_large;
+		}
+
+		@include vrampbreakpoint(xlarge){
+			height: $footer-height_xlarge;
 		}
 
 		position: relative;
@@ -70,6 +88,14 @@ $width-ring-number: 75px;
 				width: $width-ring-number;				
 			}
 
+			@include vrampbreakpoint(large){
+				width: $width-ring-number_large;				
+			}
+
+			@include vrampbreakpoint(xlarge){
+				width: $width-ring-number_xlarge;				
+			}
+
 			text-align: center;
 
 			color: $brand-color;
@@ -78,6 +104,7 @@ $width-ring-number: 75px;
 				display: block;
 				@include font-size(1);
 				margin-top: 8px;
+				margin-bottom: -4px;
 			}
 		}
 
@@ -89,6 +116,14 @@ $width-ring-number: 75px;
 			
 			@include vrampbreakpoint(medium){
 				left: $width-ring-number;				
+			}
+
+			@include vrampbreakpoint(large){
+				left: $width-ring-number_large;				
+			}
+
+			@include vrampbreakpoint(xlarge){
+				left: $width-ring-number_xlarge;				
 			}
 			
 			

@@ -8,3 +8,11 @@
 }
 
 .c-brand{color: $brand-color;}
+
+.h-mb-100{
+	margin-bottom: $default-padding/2;
+
+	@include vrampbreakpoint(medium){
+		margin-bottom: $default-padding;		
+	}
+}

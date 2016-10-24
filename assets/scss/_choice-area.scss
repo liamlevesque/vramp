@@ -1,4 +1,5 @@
 $choice-spacing: 10px;
+$choice-spacing_small: 5px;
 
 .choice-area{
 	
@@ -16,8 +17,14 @@ $choice-spacing: 10px;
 }
 
 	.choice--header{
-		padding: $default-padding;
-		padding-bottom: 10px;
+		padding: $default-padding/2;
+		padding-bottom: 5px;
+
+		@include vrampbreakpoint(large){
+			padding: $default-padding;
+			padding-bottom: 10px;
+		}
+
 		background: linear-gradient(top, rgba($grey-900,0), rgba($grey-900,1));
 
 		text-transform: uppercase;
@@ -25,34 +32,38 @@ $choice-spacing: 10px;
 	}
 
 	.choice--body{
-		padding: 0 $default-padding $default-padding;
+		padding: 0 $default-padding/2 $default-padding/2;
+
+		@include vrampbreakpoint(large){
+			padding: 0 $default-padding $default-padding;
+		}
+
 		background-color: $grey-900;
 
 	}
 
-		$large-height: 130px;
-		$med-height: 60px;
-		$small-height: 40px;
+		$large-height: 100px;
+		$med-height: 80px;
+		$small-height: 50px;
+		$xsmall-height: 42px;
 
 		.choice--lot{
 			position: relative;
 			display: inline-block;
-			margin-right: $choice-spacing;
+			margin-right: $choice-spacing_small;
+
 			vertical-align: top;
 
-			height: $med-height;
-			line-height: $med-height;
-			
-			@include vrampbreakpoint(medium){
-				height: $large-height;
-				line-height: $large-height; 
-			}
-
-			width: calc(100% / 5);
+			height: $large-height - 10px;
+			line-height: $large-height - 10px;
+			max-width: 200px;
+			white-space: nowrap;
 			
 			background-color: white;
-			border: 5px solid transparent;
+			//border:  solid transparent;
 			box-shadow: $ritchie-shadow;
+
+			transition: $transition;
 			
 			color: $brand-color;
 			text-align: center;
@@ -61,6 +72,7 @@ $choice-spacing: 10px;
 
 			span{
 				vertical-align: middle;
+				display: inline-block;
 				transition: $transition;
 			}
 
@@ -71,33 +83,27 @@ $choice-spacing: 10px;
 				
 				transform: translateY(-100%);
 
-				line-height: 40px;
-				vertical-align: middle;
+				display: block;
 
 				opacity: 0;
 				
 				transition: $transition;
 				transition-delay: 0.3s;
 			}
-
-			@include vrampbreakpoint(smallmax){
-				@include font-size(2);
-
-				&:before{
-					font-size: 30px;
-				}
-			}
 			
 			&.s-sold, &.s-out{
 				background-color: $grey-700;
-				color: white;
+				color: rgba(white,0.8);
+				line-height: initial !important;
 				
 				span{
-					margin-left: 10px;
+					//margin-left: 5px;
 				}
 
 				&:before{
 					opacity: 1;
+					transform: translateY(0);
+					margin-top: 6px;
 				}
 
 				div{
@@ -129,112 +135,287 @@ $choice-spacing: 10px;
 			}
 
 			&.s-active{
-				border-color: $brand-color;
+				box-shadow: 0 0 0 3px $brand-color;
 			}
 
-				&:nth-last-child(n+2),
-				&:nth-last-child(n+2) ~ li {
-					width: calc((100% / 2) - #{$choice-spacing});
+			@include vrampbreakpoint(large){
+				margin-right: $choice-spacing;
+				max-width: 320px;
+
+				&.s-active{
+					box-shadow: 0 0 0 5px $brand-color;
 				}
+			}
 
-				&:nth-last-child(n+3),
-				&:nth-last-child(n+3) ~ li {
-					width: calc((100% / 3) - #{$choice-spacing});
-				}
+				
+		//DIFFERENT STYLING FOR DIFFERENT QUANTITIES OF LOTS
 
-				&:nth-last-child(n+4),
-				&:nth-last-child(n+4) ~ li {
-					width: calc((100% / 4) - #{$choice-spacing});
-					
-					@include vrampbreakpoint(smallmax){
-						@include font-size(1.7);
-						&:before{
-							font-size: 30px;
-						}
-					}
-				}
-
-			//DIFFERENT STYLING FOR DIFFERENT QUANTITIES OF LOTS
-			&:nth-last-child(n+5),
-			&:nth-last-child(n+5) ~ li {
-				height: $med-height;
-				line-height: $med-height;
-				@include font-size(2);
-
-				width: calc((100% / 5) - #{$choice-spacing});
+		&:nth-last-child(n+2),
+			&:nth-last-child(n+2) ~ li {
+				
+				height: $med-height - 10px;
+				line-height: $med-height - 10px;
 
 				&:before{
-					//margin: 0;
-					
-					font-size: 30px;
+					font-size: 22px;
 				}
 				
 				&.s-sold, &.s-out{
 					&:before{
-						//top: 50%;
+						margin-bottom: 5px;
+						margin-top: 5px;
 					}
 				}
 
-				@include vrampbreakpoint(smallmax){
-					@include font-size(1.3);
+				@include vrampbreakpoint(medium){
+					height: $large-height - 20px;
+					line-height: $large-height - 20px;
+
 					&:before{
-						font-size: 25px;
+						font-size: 30px;
+					}
+					
+					&.s-sold, &.s-out{
+						&:before{
+							margin-bottom: 5px;
+							margin-top: 5px;
+						}
+					}
+				}
+
+				@include vrampbreakpoint(large){
+					height: $large-height;
+					line-height: $large-height;
+					//@include font-size(1.5);
+
+					&:before{
+						font-size: 40px;
+					}
+					
+					&.s-sold, &.s-out{
+						&:before{
+							margin-bottom: 5px;
+							margin-top: 5px;
+						}
 					}
 				}
 			}
 
 
+		//BETWEEN FIVE AND TEN LOTS
+			&:nth-last-child(n+5),
+			&:nth-last-child(n+5) ~ li {
+				height: $med-height - 25px;
+				line-height: $med-height - 25px;
 
-				&:nth-last-child(n+6),
-				&:nth-last-child(n+6) ~ li {
-					width: calc((100% / 6) - #{$choice-spacing});
+				&:before{
+					font-size: 20px;
+				}
+				
+				&.s-sold, &.s-out{
+					&:before{
+						margin-bottom: 5px;
+						margin-top: 5px;
+					}
 				}
 
-				&:nth-last-child(n+7),
-				&:nth-last-child(n+7) ~ li {
-					width: calc((100% / 7) - #{$choice-spacing});
+				@include vrampbreakpoint(medium){
+					height: $med-height - 15px;
+					line-height: $med-height - 15px;
+
+					&:before{
+						font-size: 25px;
+					}
+					
+					&.s-sold, &.s-out{
+						&:before{
+							margin-bottom: 4px;
+							margin-top: 4px;
+						}
+					}
 				}
 
-				&:nth-last-child(n+8),
-				&:nth-last-child(n+8) ~ li {
-					width: calc((100% / 8) - #{$choice-spacing});
+				@include vrampbreakpoint(large){
+					height: $med-height;
+					line-height: $med-height;
+					//@include font-size(1.5);
+
+					&:before{
+						font-size: 30px;
+					}
+					
+					&.s-sold, &.s-out{
+						&:before{
+							margin-bottom: 5px;
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+			
+		//MORE THAN TEN LOTS
+			&:nth-last-child(n+11),
+			&:nth-last-child(n+11) ~ li {
+				height: $small-height;
+				line-height: $small-height;
+				margin-bottom: $choice-spacing;
+
+				&:before{
+					font-size: 18px;
+				}
+
+				&.s-sold, &.s-out{
+					&:before{
+						margin-bottom: 2px;
+						margin-top: 2px;
+					}
+				}
+
+				@include vrampbreakpoint(xlarge){
+					height: $med-height - 10px;
+					line-height: $med-height - 10px;
+
+					&:before{
+						font-size: 24px;
+					}
+
+					&.s-sold, &.s-out{
+						&:before{
+							margin-bottom: 5px;
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+
+		//MORE THAN 20 LOTS
+			&:nth-last-child(n+21),
+			&:nth-last-child(n+21) ~ li {
+				height: $xsmall-height;
+				line-height: $xsmall-height;
+				margin-bottom: $choice-spacing/2;
+
+				&:before{
+					font-size: 15px; 
+				}
+
+				&.s-sold, &.s-out{
+					&:before{
+						margin-bottom: 0; 
+						margin-top: 1px;
+					}
+				}
+
+				@include vrampbreakpoint(xlarge){
+					height: $small-height;
+					line-height: $small-height;
+				}
+			}
+
+
+				//ADJUSTING WIDTH OF ITEMS UP TO MAX OF 10 ITEMS
+				@for $i from 2 through 10{
+				  	&:nth-last-child(n+#{$i}),
+				  	&:nth-last-child(n+#{$i}) ~ li{
+				    	
+				    	width: calc((100% / #{$i}) - #{$choice-spacing_small}); 
+
+				    	@include vrampbreakpoint(large){
+				    		width: calc((100% / #{$i}) - #{$choice-spacing});
+				    	}
+					}
+				}
+
+
+
+				&:nth-last-child(n+2),
+				&:nth-last-child(n+2) ~ li {
+					@include font-size(2);
+
+					@include vrampbreakpoint(medium){
+						@include font-size(2.2);
+					}
+
+					@include vrampbreakpoint(large){
+						@include font-size(3);
+					}
+					
+					@include vrampbreakpoint(xlarge){
+						@include font-size(3.5);
+					}
+
+				}
+
+				&:nth-last-child(n+5),
+				&:nth-last-child(n+5) ~ li {
+					@include font-size(1.4);
+
+					@include vrampbreakpoint(medium){
+						@include font-size(1.8);
+					}
+
+					@include vrampbreakpoint(large){
+						@include font-size(2);
+					}
+
+					@include vrampbreakpoint(xlarge){
+						@include font-size(2.7);
+					}
 				}
 
 				&:nth-last-child(n+9),
 				&:nth-last-child(n+9) ~ li {
-					width: calc((100% / 9) - #{$choice-spacing});
+					@include font-size(1.2);
+
+					@include vrampbreakpoint(medium){
+						@include font-size(1.6);
+					}
+
+					@include vrampbreakpoint(large){
+						@include font-size(2);
+					}
+
+					@include vrampbreakpoint(xlarge){
+						@include font-size(2.2);
+					}
 				}
 
 				&:nth-last-child(n+10),
 				&:nth-last-child(n+10) ~ li {
-					width: calc((100% / 10) - #{$choice-spacing});
+					
+					@include font-size(1.1);
+
+					@include vrampbreakpoint(medium){
+						@include font-size(1.5);
+					}
+
+					@include vrampbreakpoint(large){
+						@include font-size(1.8);
+					}
+
+					@include vrampbreakpoint(xlarge){
+						@include font-size(2.2);
+					}
 				}
 
-				&:nth-last-child(n+11),
-				&:nth-last-child(n+11) ~ li {
-					width: calc((100% / 11) - #{$choice-spacing});
-				}
 
-				&:nth-last-child(n+12),
-				&:nth-last-child(n+12) ~ li {
-					width: calc((100% / 12) - #{$choice-spacing});
-				}
 
-			&:nth-last-child(n+12),
-			&:nth-last-child(n+12) ~ li {
-				height: $small-height;
-				width: calc((100% / 12) - #{$choice-spacing});
-				margin-bottom: $choice-spacing;
-				padding-top: 0;
+				// &:nth-last-child(n+10),
+				// &:nth-last-child(n+10) ~ li {
+				// 	width: calc((100% / 10) - #{$choice-spacing});
+				// }
 
-				&.s-sold, &.s-out{
-					padding-left: 28px;
-					padding-top: 0;
+				// &:nth-last-child(n+11),
+				// &:nth-last-child(n+11) ~ li {
+				// 	width: calc((100% / 11) - #{$choice-spacing});
+				// }
 
-					@include font-size(1.2); 
-					line-height: 1.2rem;
-				}
-			}
+				// &:nth-last-child(n+12),
+				// &:nth-last-child(n+12) ~ li {
+				// 	width: calc((100% / 12) - #{$choice-spacing});
+				// }
+
+			
 		}
 
 
