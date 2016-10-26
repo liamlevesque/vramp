@@ -57,7 +57,8 @@ var vrampObject = {
 		"activeChoiceLot": 0,
 		"otherRings": [],
 		"openOffers" : false,
-		"auctionStatus" : "active"
+		"auctionStatus" : "active",
+		"controlsVisible": true
 	},
 
 	vrampController = {
@@ -139,6 +140,11 @@ var vrampObject = {
 
 		incrementOtherRingLots: function(e,model){
 			for(var i = 0; i < vrampObject.otherRings.length; i++) vrampObject.otherRings[i].lot++;
+		},
+
+		toggleControls: function(e,model){
+			vrampObject.controlsVisible = !vrampObject.controlsVisible;
+			console.log(vrampObject.controlsVisible);
 		}
 
 	};

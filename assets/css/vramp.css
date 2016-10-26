@@ -20,9 +20,28 @@ body {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
   z-index: 2;
-  display: none; }
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .prototype-controls.s-hidecontrols {
+    -webkit-transform: translateX(-90%);
+            transform: translateX(-90%); }
   .prototype-controls button {
     margin-bottom: 10px; }
+
+.prototype--hide {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  cursor: pointer;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .prototype--hide:hover i {
+    color: #E87722; }
+  .s-hidecontrols .prototype--hide {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 body {
   font-family: 'Trebuchet MS', Verdana, sans-serif;
