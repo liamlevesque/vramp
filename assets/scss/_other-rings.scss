@@ -117,6 +117,10 @@ $width-ring-number_xlarge: 90px;
 			right: 0;
 			left: $width-ring-number_small;
 
+			div{
+				@include ellipsize;
+			}
+
 			.ring_TAL &{
 				left: $width-ring-number_small + 35px;
 			}

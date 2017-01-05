@@ -130,6 +130,7 @@ hr {
   src: url("../fonts/ritchie-icons.eot?o9cbw0#iefix") format("embedded-opentype"), url("../fonts/ritchie-icons.ttf?o9cbw0") format("truetype"), url("../fonts/ritchie-icons.woff?o9cbw0") format("woff"), url("../fonts/ritchie-icons.svg?o9cbw0#ritchie-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'ritchie-icons' !important;
@@ -264,12 +265,42 @@ hr {
   src: url("../fonts/FrutigerLTStd-BlackCn.eot?#iefix") format("embedded-opentype"), url("../fonts/FrutigerLTStd-BlackCn.woff") format("woff"), url("../fonts/FrutigerLTStd-BlackCn.ttf") format("truetype"), url("../fonts/FrutigerLTStd-BlackCn.svg#FrutigerLTStd-BlackCn") format("svg");
   font-weight: 700;
   font-style: normal; }
+
 @font-face {
   font-family: 'Frutiger LT Std';
   src: url("../fonts/FrutigerLTStd-BoldCn.eot");
   src: url("../fonts/FrutigerLTStd-BoldCn.eot?#iefix") format("embedded-opentype"), url("../fonts/FrutigerLTStd-BoldCn.woff") format("woff"), url("../fonts/FrutigerLTStd-BoldCn.ttf") format("truetype"), url("../fonts/FrutigerLTStd-BoldCn.svg#FrutigerLTStd-BoldCn") format("svg");
   font-weight: 400;
   font-style: normal; }
+
+@font-face {
+  font-family: 'oswald';
+  src: url("../fonts/oswald-heavy-webfont.eot");
+  src: url("../fonts/oswald-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-heavy-webfont.woff2") format("woff2"), url("../fonts/oswald-heavy-webfont.woff") format("woff"), url("../fonts/oswald-heavy-webfont.ttf") format("truetype"), url("../fonts/oswald-heavy-webfont.svg#oswaldheavy") format("svg");
+  font-weight: normal;
+  font-style: 400; }
+
+@font-face {
+  font-family: 'oswald';
+  src: url("../fonts/oswald-bold-webfont.eot");
+  src: url("../fonts/oswald-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-bold-webfont.woff2") format("woff2"), url("../fonts/oswald-bold-webfont.woff") format("woff"), url("../fonts/oswald-bold-webfont.ttf") format("truetype"), url("../fonts/oswald-bold-webfont.svg#oswaldbold") format("svg");
+  font-weight: normal;
+  font-style: 700; }
+
+@font-face {
+  font-family: 'open_sans_condensedbold';
+  src: url("../fonts/OpenSans-CondBold-webfont.eot");
+  src: url("../fonts/OpenSans-CondBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondBold-webfont.woff") format("woff"), url("../fonts/OpenSans-CondBold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fjallaoneregular';
+  src: url("../fonts/fjallaone-regular-webfont.eot");
+  src: url("../fonts/fjallaone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fjallaone-regular-webfont.woff2") format("woff2"), url("../fonts/fjallaone-regular-webfont.woff") format("woff"), url("../fonts/fjallaone-regular-webfont.ttf") format("truetype"), url("../fonts/fjallaone-regular-webfont.svg#fjallaoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-family: 'Frutiger LT Std', 'Trebuchet MS', Verdana, sans-serif; }
 
@@ -309,98 +340,80 @@ body {
   .font--120, .lot--number label, .conversion.ccy:before, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
     font-size: 14px;
     font-size: 1.4rem; }
-
   .font--150 {
     font-size: 15px;
     font-size: 1.5rem; }
-
   .font--180, .ask--price:before {
     font-size: 16px;
     font-size: 1.6rem; }
-
   .font--200 {
     font-size: 18px;
     font-size: 1.8rem; }
-
   .font--250 {
     font-size: 22px;
     font-size: 2.2rem; }
-
   .font--300 {
     font-size: 30px;
     font-size: 3rem; }
-
   .font--400 {
     font-size: 40px;
     font-size: 4rem; }
-
   .font--600 {
     font-size: 40px;
     font-size: 4rem; } }
+
 @media (min-width: 1600px) {
   .font--120, .lot--number label, .conversion.ccy:before, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
     font-size: 18px;
     font-size: 1.8rem; }
-
   .font--150 {
     font-size: 15px;
     font-size: 1.5rem; }
-
   .font--180, .ask--price:before {
     font-size: 20px;
     font-size: 2rem; }
-
   .font--200 {
     font-size: 23px;
     font-size: 2.3rem; }
-
   .font--250 {
     font-size: 28px;
     font-size: 2.8rem; }
-
   .font--300 {
     font-size: 40px;
     font-size: 4rem; }
-
   .font--400 {
     font-size: 48px;
     font-size: 4.8rem; }
-
   .font--600 {
     font-size: 60px;
     font-size: 6rem; } }
+
 @media (min-width: 1920px) {
   .font--120, .lot--number label, .conversion.ccy:before, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
     font-size: 20px;
     font-size: 2rem; }
-
   .font--150 {
     font-size: 20px;
     font-size: 2rem; }
-
   .font--180, .ask--price:before {
     font-size: 22px;
     font-size: 2.2rem; }
-
   .font--200 {
     font-size: 28px;
     font-size: 2.8rem; }
-
   .font--250 {
     font-size: 30px;
     font-size: 3rem; }
-
   .font--300 {
     font-size: 45px;
     font-size: 4.5rem; }
-
   .font--400 {
     font-size: 55px;
     font-size: 5.5rem; }
-
   .font--600 {
     font-size: 70px;
     font-size: 7rem; } }
+
 .lot-preview {
   position: absolute;
   left: 0;
@@ -452,6 +465,7 @@ body {
   width: 140px;
   height: 100%;
   padding: 10px;
+  text-align: right;
   background-color: #E87722;
   color: white; }
   .lot--number label {
@@ -970,27 +984,28 @@ body {
   content: '';
   display: inline-block;
   vertical-align: top;
-  margin-left: 5px;
-  margin-right: 8px;
-  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 4px;
+  margin-top: 4px;
   width: 30px;
   height: 15px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-image: url(../img/ccy-flags.png);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2); }
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8); }
   @media (min-width: 1280px) {
+    .auction-ccy:after {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      margin-left: 10px;
+      margin-right: 12px;
+      margin-top: 4px; } }
+  @media (min-width: 1600px) {
     .auction-ccy:after {
       -webkit-transform: scale(1.4);
-              transform: scale(1.4);
-      margin-left: 12px;
-      margin-right: 16px;
-      margin-top: 2px; } }
-  @media (min-width: 1280px) {
-    .auction-ccy:after {
-      -webkit-transform: scale(1.8);
-              transform: scale(1.8); } }
+              transform: scale(1.4); } }
+
 .auction-ccy:before {
   display: inline; }
 
@@ -1143,6 +1158,13 @@ body {
     .lot-detail:not(:last-of-type) {
       margin-bottom: 20px; } }
 
+.lot-detail div {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; }
+
 .auctioneers-message, .open-offers {
   background-color: #7d3d0d;
   padding: 20px;
@@ -1263,192 +1285,263 @@ body {
       max-width: 320px; }
       .choice--lot.s-active {
         box-shadow: 0 0 0 5px #E87722; } }
-  .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+  .choice--lot:nth-last-child(n+2),
+  .choice--lot:nth-last-child(n+2) ~ li {
     height: 70px;
     line-height: 70px; }
-    .choice--lot:nth-last-child(n+2):before, .choice--lot:nth-last-child(n+2) ~ li:before {
+    .choice--lot:nth-last-child(n+2):before,
+    .choice--lot:nth-last-child(n+2) ~ li:before {
       font-size: 22px; }
-    .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before, .choice--lot:nth-last-child(n+2) ~ li.s-sold:before, .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
+    .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before,
+    .choice--lot:nth-last-child(n+2) ~ li.s-sold:before,
+    .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
       margin-bottom: 5px;
       margin-top: 5px; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         height: 80px;
         line-height: 80px; }
-        .choice--lot:nth-last-child(n+2):before, .choice--lot:nth-last-child(n+2) ~ li:before {
+        .choice--lot:nth-last-child(n+2):before,
+        .choice--lot:nth-last-child(n+2) ~ li:before {
           font-size: 30px; }
-        .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before, .choice--lot:nth-last-child(n+2) ~ li.s-sold:before, .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
+        .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before,
+        .choice--lot:nth-last-child(n+2) ~ li.s-sold:before,
+        .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
           margin-bottom: 5px;
           margin-top: 5px; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         height: 100px;
         line-height: 100px; }
-        .choice--lot:nth-last-child(n+2):before, .choice--lot:nth-last-child(n+2) ~ li:before {
+        .choice--lot:nth-last-child(n+2):before,
+        .choice--lot:nth-last-child(n+2) ~ li:before {
           font-size: 40px; }
-        .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before, .choice--lot:nth-last-child(n+2) ~ li.s-sold:before, .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
+        .choice--lot:nth-last-child(n+2).s-sold:before, .choice--lot:nth-last-child(n+2).s-out:before,
+        .choice--lot:nth-last-child(n+2) ~ li.s-sold:before,
+        .choice--lot:nth-last-child(n+2) ~ li.s-out:before {
           margin-bottom: 5px;
           margin-top: 5px; } }
-  .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+  .choice--lot:nth-last-child(n+5),
+  .choice--lot:nth-last-child(n+5) ~ li {
     height: 55px;
     line-height: 55px; }
-    .choice--lot:nth-last-child(n+5):before, .choice--lot:nth-last-child(n+5) ~ li:before {
+    .choice--lot:nth-last-child(n+5):before,
+    .choice--lot:nth-last-child(n+5) ~ li:before {
       font-size: 20px; }
-    .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before, .choice--lot:nth-last-child(n+5) ~ li.s-sold:before, .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
+    .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before,
+    .choice--lot:nth-last-child(n+5) ~ li.s-sold:before,
+    .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
       margin-bottom: 5px;
       margin-top: 5px; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         height: 65px;
         line-height: 65px; }
-        .choice--lot:nth-last-child(n+5):before, .choice--lot:nth-last-child(n+5) ~ li:before {
+        .choice--lot:nth-last-child(n+5):before,
+        .choice--lot:nth-last-child(n+5) ~ li:before {
           font-size: 25px; }
-        .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before, .choice--lot:nth-last-child(n+5) ~ li.s-sold:before, .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
+        .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before,
+        .choice--lot:nth-last-child(n+5) ~ li.s-sold:before,
+        .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
           margin-bottom: 4px;
           margin-top: 4px; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         height: 80px;
         line-height: 80px; }
-        .choice--lot:nth-last-child(n+5):before, .choice--lot:nth-last-child(n+5) ~ li:before {
+        .choice--lot:nth-last-child(n+5):before,
+        .choice--lot:nth-last-child(n+5) ~ li:before {
           font-size: 30px; }
-        .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before, .choice--lot:nth-last-child(n+5) ~ li.s-sold:before, .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
+        .choice--lot:nth-last-child(n+5).s-sold:before, .choice--lot:nth-last-child(n+5).s-out:before,
+        .choice--lot:nth-last-child(n+5) ~ li.s-sold:before,
+        .choice--lot:nth-last-child(n+5) ~ li.s-out:before {
           margin-bottom: 5px;
           margin-top: 5px; } }
-  .choice--lot:nth-last-child(n+11), .choice--lot:nth-last-child(n+11) ~ li {
+  .choice--lot:nth-last-child(n+11),
+  .choice--lot:nth-last-child(n+11) ~ li {
     height: 50px;
     line-height: 50px;
     margin-bottom: 10px; }
-    .choice--lot:nth-last-child(n+11):before, .choice--lot:nth-last-child(n+11) ~ li:before {
+    .choice--lot:nth-last-child(n+11):before,
+    .choice--lot:nth-last-child(n+11) ~ li:before {
       font-size: 18px; }
-    .choice--lot:nth-last-child(n+11).s-sold:before, .choice--lot:nth-last-child(n+11).s-out:before, .choice--lot:nth-last-child(n+11) ~ li.s-sold:before, .choice--lot:nth-last-child(n+11) ~ li.s-out:before {
+    .choice--lot:nth-last-child(n+11).s-sold:before, .choice--lot:nth-last-child(n+11).s-out:before,
+    .choice--lot:nth-last-child(n+11) ~ li.s-sold:before,
+    .choice--lot:nth-last-child(n+11) ~ li.s-out:before {
       margin-bottom: 2px;
       margin-top: 2px; }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+11), .choice--lot:nth-last-child(n+11) ~ li {
+      .choice--lot:nth-last-child(n+11),
+      .choice--lot:nth-last-child(n+11) ~ li {
         height: 70px;
         line-height: 70px; }
-        .choice--lot:nth-last-child(n+11):before, .choice--lot:nth-last-child(n+11) ~ li:before {
+        .choice--lot:nth-last-child(n+11):before,
+        .choice--lot:nth-last-child(n+11) ~ li:before {
           font-size: 24px; }
-        .choice--lot:nth-last-child(n+11).s-sold:before, .choice--lot:nth-last-child(n+11).s-out:before, .choice--lot:nth-last-child(n+11) ~ li.s-sold:before, .choice--lot:nth-last-child(n+11) ~ li.s-out:before {
+        .choice--lot:nth-last-child(n+11).s-sold:before, .choice--lot:nth-last-child(n+11).s-out:before,
+        .choice--lot:nth-last-child(n+11) ~ li.s-sold:before,
+        .choice--lot:nth-last-child(n+11) ~ li.s-out:before {
           margin-bottom: 5px;
           margin-top: 5px; } }
-  .choice--lot:nth-last-child(n+21), .choice--lot:nth-last-child(n+21) ~ li {
+  .choice--lot:nth-last-child(n+21),
+  .choice--lot:nth-last-child(n+21) ~ li {
     height: 42px;
     line-height: 42px;
     margin-bottom: 5px; }
-    .choice--lot:nth-last-child(n+21):before, .choice--lot:nth-last-child(n+21) ~ li:before {
+    .choice--lot:nth-last-child(n+21):before,
+    .choice--lot:nth-last-child(n+21) ~ li:before {
       font-size: 15px; }
-    .choice--lot:nth-last-child(n+21).s-sold:before, .choice--lot:nth-last-child(n+21).s-out:before, .choice--lot:nth-last-child(n+21) ~ li.s-sold:before, .choice--lot:nth-last-child(n+21) ~ li.s-out:before {
+    .choice--lot:nth-last-child(n+21).s-sold:before, .choice--lot:nth-last-child(n+21).s-out:before,
+    .choice--lot:nth-last-child(n+21) ~ li.s-sold:before,
+    .choice--lot:nth-last-child(n+21) ~ li.s-out:before {
       margin-bottom: 0;
       margin-top: 1px; }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+21), .choice--lot:nth-last-child(n+21) ~ li {
+      .choice--lot:nth-last-child(n+21),
+      .choice--lot:nth-last-child(n+21) ~ li {
         height: 50px;
         line-height: 50px; } }
-  .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+  .choice--lot:nth-last-child(n+2),
+  .choice--lot:nth-last-child(n+2) ~ li {
     width: calc((100% / 2) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         width: calc((100% / 2) - 10px); } }
-  .choice--lot:nth-last-child(n+3), .choice--lot:nth-last-child(n+3) ~ li {
+  .choice--lot:nth-last-child(n+3),
+  .choice--lot:nth-last-child(n+3) ~ li {
     width: calc((100% / 3) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+3), .choice--lot:nth-last-child(n+3) ~ li {
+      .choice--lot:nth-last-child(n+3),
+      .choice--lot:nth-last-child(n+3) ~ li {
         width: calc((100% / 3) - 10px); } }
-  .choice--lot:nth-last-child(n+4), .choice--lot:nth-last-child(n+4) ~ li {
+  .choice--lot:nth-last-child(n+4),
+  .choice--lot:nth-last-child(n+4) ~ li {
     width: calc((100% / 4) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+4), .choice--lot:nth-last-child(n+4) ~ li {
+      .choice--lot:nth-last-child(n+4),
+      .choice--lot:nth-last-child(n+4) ~ li {
         width: calc((100% / 4) - 10px); } }
-  .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+  .choice--lot:nth-last-child(n+5),
+  .choice--lot:nth-last-child(n+5) ~ li {
     width: calc((100% / 5) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         width: calc((100% / 5) - 10px); } }
-  .choice--lot:nth-last-child(n+6), .choice--lot:nth-last-child(n+6) ~ li {
+  .choice--lot:nth-last-child(n+6),
+  .choice--lot:nth-last-child(n+6) ~ li {
     width: calc((100% / 6) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+6), .choice--lot:nth-last-child(n+6) ~ li {
+      .choice--lot:nth-last-child(n+6),
+      .choice--lot:nth-last-child(n+6) ~ li {
         width: calc((100% / 6) - 10px); } }
-  .choice--lot:nth-last-child(n+7), .choice--lot:nth-last-child(n+7) ~ li {
+  .choice--lot:nth-last-child(n+7),
+  .choice--lot:nth-last-child(n+7) ~ li {
     width: calc((100% / 7) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+7), .choice--lot:nth-last-child(n+7) ~ li {
+      .choice--lot:nth-last-child(n+7),
+      .choice--lot:nth-last-child(n+7) ~ li {
         width: calc((100% / 7) - 10px); } }
-  .choice--lot:nth-last-child(n+8), .choice--lot:nth-last-child(n+8) ~ li {
+  .choice--lot:nth-last-child(n+8),
+  .choice--lot:nth-last-child(n+8) ~ li {
     width: calc((100% / 8) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+8), .choice--lot:nth-last-child(n+8) ~ li {
+      .choice--lot:nth-last-child(n+8),
+      .choice--lot:nth-last-child(n+8) ~ li {
         width: calc((100% / 8) - 10px); } }
-  .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+  .choice--lot:nth-last-child(n+9),
+  .choice--lot:nth-last-child(n+9) ~ li {
     width: calc((100% / 9) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+      .choice--lot:nth-last-child(n+9),
+      .choice--lot:nth-last-child(n+9) ~ li {
         width: calc((100% / 9) - 10px); } }
-  .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+  .choice--lot:nth-last-child(n+10),
+  .choice--lot:nth-last-child(n+10) ~ li {
     width: calc((100% / 10) - 5px); }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+      .choice--lot:nth-last-child(n+10),
+      .choice--lot:nth-last-child(n+10) ~ li {
         width: calc((100% / 10) - 10px); } }
-  .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+  .choice--lot:nth-last-child(n+2),
+  .choice--lot:nth-last-child(n+2) ~ li {
     font-size: 20px;
     font-size: 2rem; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         font-size: 22px;
         font-size: 2.2rem; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         font-size: 30px;
         font-size: 3rem; } }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+2), .choice--lot:nth-last-child(n+2) ~ li {
+      .choice--lot:nth-last-child(n+2),
+      .choice--lot:nth-last-child(n+2) ~ li {
         font-size: 35px;
         font-size: 3.5rem; } }
-  .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+  .choice--lot:nth-last-child(n+5),
+  .choice--lot:nth-last-child(n+5) ~ li {
     font-size: 14px;
     font-size: 1.4rem; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         font-size: 18px;
         font-size: 1.8rem; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         font-size: 20px;
         font-size: 2rem; } }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+5), .choice--lot:nth-last-child(n+5) ~ li {
+      .choice--lot:nth-last-child(n+5),
+      .choice--lot:nth-last-child(n+5) ~ li {
         font-size: 27px;
         font-size: 2.7rem; } }
-  .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+  .choice--lot:nth-last-child(n+9),
+  .choice--lot:nth-last-child(n+9) ~ li {
     font-size: 12px;
     font-size: 1.2rem; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+      .choice--lot:nth-last-child(n+9),
+      .choice--lot:nth-last-child(n+9) ~ li {
         font-size: 16px;
         font-size: 1.6rem; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+      .choice--lot:nth-last-child(n+9),
+      .choice--lot:nth-last-child(n+9) ~ li {
         font-size: 20px;
         font-size: 2rem; } }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+9), .choice--lot:nth-last-child(n+9) ~ li {
+      .choice--lot:nth-last-child(n+9),
+      .choice--lot:nth-last-child(n+9) ~ li {
         font-size: 22px;
         font-size: 2.2rem; } }
-  .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+  .choice--lot:nth-last-child(n+10),
+  .choice--lot:nth-last-child(n+10) ~ li {
     font-size: 11px;
     font-size: 1.1rem; }
     @media (min-width: 1280px) {
-      .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+      .choice--lot:nth-last-child(n+10),
+      .choice--lot:nth-last-child(n+10) ~ li {
         font-size: 15px;
         font-size: 1.5rem; } }
     @media (min-width: 1600px) {
-      .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+      .choice--lot:nth-last-child(n+10),
+      .choice--lot:nth-last-child(n+10) ~ li {
         font-size: 18px;
         font-size: 1.8rem; } }
     @media (min-width: 1920px) {
-      .choice--lot:nth-last-child(n+10), .choice--lot:nth-last-child(n+10) ~ li {
+      .choice--lot:nth-last-child(n+10),
+      .choice--lot:nth-last-child(n+10) ~ li {
         font-size: 22px;
         font-size: 2.2rem; } }
 
@@ -1496,9 +1589,11 @@ body {
   .ring:only-child {
     width: 30%;
     float: right; }
-  .ring:nth-last-child(n+2), .ring:nth-last-child(n+2) ~ li {
+  .ring:nth-last-child(n+2),
+  .ring:nth-last-child(n+2) ~ li {
     width: 50%; }
-  .ring:nth-last-child(n+3), .ring:nth-last-child(n+3) ~ li {
+  .ring:nth-last-child(n+3),
+  .ring:nth-last-child(n+3) ~ li {
     width: 33.33333%; }
 
 .ring--number {
@@ -1536,6 +1631,10 @@ body {
   right: 0;
   left: 50px;
   font-weight: 700; }
+  .ring--progress div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .ring_TAL .ring--progress {
     left: 85px; }
   @media (min-width: 1280px) {
@@ -1652,6 +1751,7 @@ body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
+
 .paused-message, .pre-post-message {
   position: absolute;
   top: 30px;
@@ -1699,6 +1799,7 @@ body {
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
   background-color: white; }
+
 .s-auction-paused .paused-message {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -1729,3 +1830,6 @@ body {
   @media (min-width: 1280px) {
     .h-mb-100 {
       margin-bottom: 20px; } }
+
+.h-font-50 {
+  font-size: 65%; }

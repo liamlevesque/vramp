@@ -70,6 +70,14 @@ $ritchie-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
   transform: translateY(-50%);
 }
 
+@mixin lineclamp($length){
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $length;
+}
+
 //TRANSITIONS
 $transition-time_1: .2s;
 $transition-time_2: .35s;

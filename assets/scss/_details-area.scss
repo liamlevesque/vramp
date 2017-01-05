@@ -180,30 +180,31 @@ $height-lot-details: 50%;
 		}
 
 		.auction-ccy{
+			
 			&:after{
 				content: '';
 				display: inline-block;
 				vertical-align: top;
-				margin-left: 5px;
-				margin-right: 8px;
-				margin-top: 2px;
+				margin-left: 2px;
+				margin-right: 4px;
+				margin-top: 4px;
 				width: 30px;
 				height: 15px;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
 				background-image: url(../img/ccy-flags.png);
 				//box-shadow: $ritchie-shadow;
-				transform: scale(1.2);
+				transform: scale(0.8);
 
 				@include vrampbreakpoint(medium){
-					transform: scale(1.4);
-					margin-left: 12px;
-					margin-right: 16px; 
-					margin-top: 2px;
+					transform: scale(1.2);
+					margin-left: 10px;
+					margin-right: 12px; 
+					margin-top: 4px;
 				}
 
-				@include vrampbreakpoint(medium){
-					transform: scale(1.8);
+				@include vrampbreakpoint(large){
+					transform: scale(1.4);
 				}
 			}
 
@@ -432,12 +433,17 @@ $height-lot-details: 50%;
 	}
 
 		.lot-detail{
+
 			&:not(:last-of-type){
 				margin-bottom: 10px;	
 
 				@include vrampbreakpoint(large){
 					margin-bottom: 20px;
 				}
+			}
+
+			div{
+				@include lineclamp(3);
 			}
 		}
 
