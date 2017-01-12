@@ -1805,10 +1805,62 @@ body {
           transform: translateX(0);
   opacity: 1; }
 
-.s-auction-pre .pre-post-message, .s-auction-post .pre-post-message {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1; }
+.pre-post-message {
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+  .s-auction-pre .pre-post-message, .s-auction-post .pre-post-message {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; }
+  .pre-post-message .default-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: transparent url("../img/logo-rb-only.png") center center/200px 200px no-repeat;
+    -webkit-animation-name: logorotate;
+            animation-name: logorotate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in; }
+
+@-webkit-keyframes logorotate {
+  0% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(5deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(5deg); }
+  40% {
+    -webkit-transform: rotateY(360deg) scale(1) rotateX(5deg);
+            transform: rotateY(360deg) scale(1) rotateX(5deg); }
+  50% {
+    -webkit-transform: rotateY(360deg) scale(1) rotateX(5deg);
+            transform: rotateY(360deg) scale(1) rotateX(5deg); }
+  90% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(-5deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(-5deg); }
+  100% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(0deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(0deg); } }
+
+@keyframes logorotate {
+  0% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(5deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(5deg); }
+  40% {
+    -webkit-transform: rotateY(360deg) scale(1) rotateX(5deg);
+            transform: rotateY(360deg) scale(1) rotateX(5deg); }
+  50% {
+    -webkit-transform: rotateY(360deg) scale(1) rotateX(5deg);
+            transform: rotateY(360deg) scale(1) rotateX(5deg); }
+  90% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(-5deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(-5deg); }
+  100% {
+    -webkit-transform: rotateY(0deg) scale(0.7) rotateX(0deg);
+            transform: rotateY(0deg) scale(0.7) rotateX(0deg); } }
 
 .h-t-ellipsize {
   overflow: hidden;
