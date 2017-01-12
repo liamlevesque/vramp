@@ -1815,7 +1815,11 @@ body {
   .pre-post-message .default-image {
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
     background: transparent url("../img/logo-rb-only.png") center center/200px 200px no-repeat;
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
