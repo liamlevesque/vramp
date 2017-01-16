@@ -1,8 +1,8 @@
 
-$width-lot--number: 140px;
-$width-lot--number_medium: 190px;
-$width-lot--number_large: 240px;
-$width-lot--number_xlarge: 290px; 
+$width-lot--number: 190px;
+$width-lot--number_medium: 270px;
+$width-lot--number_large: 340px;
+$width-lot--number_xlarge: 390px; 
 
 $height-header: 70px;
 $height-header_medium: 90px;
@@ -79,10 +79,15 @@ $height-header_xlarge: 150px;
 			background-color: $brand-color;
 			color: white;
 
+			&>div{
+				//@include vert-align;
+			}
+
 			@include details-label;
 			label{
 				margin-bottom: 0;
 				opacity: 1;
+				//display: none;
 			}
 			
 			@include vrampbreakpoint(medium){
@@ -102,7 +107,6 @@ $height-header_xlarge: 150px;
 
 			.sale-ring{
 				opacity: 0.8;
-				margin-right: 10px;
 			}
 		}
 
@@ -116,6 +120,8 @@ $height-header_xlarge: 150px;
 			padding: $default-padding;
 
 			line-height: 1.8rem;
+
+			
 			
 			@include vrampbreakpoint(medium){
 				left: $width-lot--number_medium;

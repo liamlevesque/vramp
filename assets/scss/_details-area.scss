@@ -5,10 +5,10 @@ $bg-color-auctioneer-message: darken($brand-color,25%);
 
 $text-color-details: white;
 
-$height-ask_small: 42%;
-$height-ask: 40%;
-$height-ask_large: 40%;
-$height-ask_xlarge: 40%;
+$height-ask_small: 48%;
+$height-ask: 46%;
+$height-ask_large: 46%;
+$height-ask_xlarge: 46%;
 
 
 $height-high-bid_small: 75px;
@@ -173,28 +173,49 @@ $height-lot-details: 50%;
 
 			.auction-ccy{
 				&.#{nth($ccy,1)}:before {
-					content: "#{nth($ccy,2)} #{nth($ccy,1)} #{nth($ccy,3)}"; 
+					content: "#{nth($ccy,1)} #{nth($ccy,3)}"; 
 				}
 			}
 
 		}
 
 		.auction-ccy{
+			display: inline-block;
+			float: left;
+			vertical-align: top;
+
+			margin-left: 6px;
+			margin-top: 4px;
+
+			@include vrampbreakpoint(medium){
+				margin-left: 1px;
+				margin-top: 4px;
+			}
+
+			@include vrampbreakpoint(large){
+				margin-left: 7px;
+				margin-top: 3px;
+			}
+
+			@include vrampbreakpoint(xlarge){
+				margin-left: 13px;
+				margin-top: 13px;
+			}
 			
 			&:after{
 				content: '';
-				display: inline-block;
-				vertical-align: top;
-				margin-left: 2px;
-				margin-right: 4px;
-				margin-top: 4px;
+				display: block;
+				//vertical-align: top;
+				// margin-left: 2px;
+				// margin-right: 0;
+				// margin-top: 0;
 				width: 30px;
 				height: 15px;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
 				background-image: url(../img/ccy-flags.png);
 				//box-shadow: $ritchie-shadow;
-				transform: scale(0.8);
+				transform: scale(1);
 
 				@include vrampbreakpoint(medium){
 					transform: scale(1.2);
@@ -209,7 +230,16 @@ $height-lot-details: 50%;
 			}
 
 			&:before{
-				 display: inline;
+				 display: block;
+				 font-size: 15px; 
+
+				 @include vrampbreakpoint(medium){
+				 	font-size: 20px;
+				 }
+
+				 @include vrampbreakpoint(large){
+				 	font-size: 30px;
+				 }
 			}
 		}
 
@@ -230,6 +260,7 @@ $height-lot-details: 50%;
 		.ask{
 			
 			padding: 0 10px;
+			overflow: hidden;
 
 			@include vrampbreakpoint(medium){
 				padding: 0 $default-padding;
@@ -238,19 +269,23 @@ $height-lot-details: 50%;
 			label{
 				
 				display: block;
-				margin-bottom: 0;
-				line-height: 1.5rem;
+				margin-bottom: 5px;
 
 				@include vrampbreakpoint(medium){
-					margin-bottom: 5px;
+					margin-bottom: 10px;
 				}
+			}
+
+			i{
+				margin-right: 1rem;
+				font-size: 0.8em;
 			}
 			
 
 		}
 
 			.ask--price{
-				display: inline-block;
+				//display: inline-block;
 				position: relative;
 			
 				&:before{
@@ -288,6 +323,7 @@ $height-lot-details: 50%;
 
 				.dollars{
 					display: inline-block;
+					float: right;
 				}
 			}
 
@@ -311,6 +347,7 @@ $height-lot-details: 50%;
 				background-color: rgba(0,0,0,0.1);
 				position: relative;
 				margin-bottom: 5px;
+				overflow: hidden;
 
 				@include vrampbreakpoint(medium){
 					padding: 10px;
@@ -324,43 +361,48 @@ $height-lot-details: 50%;
 
 				&.ccy{
 					&:after{
-						display: inline-block; 
-						margin-left: 5px;
-						margin-top: 3px;
+						position: absolute;
+						left: 6px;
+						bottom: 4px;
 
 						@include vrampbreakpoint(medium){
 							transform: scale(1.2);
-							margin-left: 10px;
-							margin-top: 4px;
+							left: 10px;
+							bottom: 10px;
 						}
 
 						@include vrampbreakpoint(large){
 							transform: scale(1.6);
-							margin-left: 15px;
-							margin-top: 8px;
+							left: 20px;
+							bottom: 20px;
 						}
 					}
 
 					&:before{
+						position: absolute;
+						left: 6px;
+						top: 4px;
 						@extend .font--120;
+						width: 30px;
+						text-align: center;
+						
+						@include vrampbreakpoint(medium){
+							left: 8px;
+							top: 10px;
+							width: 40px;
+						}
+
+						@include vrampbreakpoint(large){
+							left: 12px;
+							top: 12px;
+							width: 45px;
+						}
 					}
 				}
 
 				.dollars{
-					position: absolute;
-					right: 5px;
-					top: 3px;
+					float: right;
 					display: inline-block;
-
-					@include vrampbreakpoint(medium){
-						right: 10px;
-						top: 7px
-					}
-
-					@include vrampbreakpoint(large){
-						right: 15px;
-						top: 10px
-					}
 				}
 			}
 

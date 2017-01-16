@@ -429,6 +429,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/img\/no-photo.jpg": {
+		"ft": 16384,
+		"iS": 90435,
+		"oA": 0,
+		"oAP": "\/assets\/img\/no-photo.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/img\/photo.png": {
 		"ft": 32768,
 		"iS": 762,

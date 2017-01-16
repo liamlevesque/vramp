@@ -49,13 +49,13 @@ $width-ring-number_xlarge: 90px;
 		background-color: $grey-50;
 
 		&.s-post{
-			background-color: $grey-700;
-			color: rgba(white, 0.7);
+			background-color: $grey-800;
+			color: rgba(white, 0.9);
 		}
 
 		&.s-pre{
-			background-color: $grey-700;
-			color: rgba(white, 0.7);
+			background-color: $grey-800;
+			color: rgba(white, 0.9);
 		}
 
 		&:not(:first-child){

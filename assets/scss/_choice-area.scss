@@ -19,6 +19,7 @@ $choice-spacing_small: 5px;
 	.choice--header{
 		padding: $default-padding/2;
 		padding-bottom: 5px;
+		width: 100%;
 
 		@include vrampbreakpoint(large){
 			padding: $default-padding;
@@ -60,6 +61,7 @@ $choice-spacing_small: 5px;
 			white-space: nowrap;
 			
 			background-color: white;
+			border-radius: 8px;
 			//border:  solid transparent;
 			box-shadow: $ritchie-shadow;
 
@@ -93,7 +95,7 @@ $choice-spacing_small: 5px;
 			
 			&.s-sold, &.s-out{
 				background-color: $grey-700;
-				color: rgba(white,0.8);
+				color: rgba(white,1);
 				line-height: initial !important;
 				
 				span{
@@ -118,14 +120,8 @@ $choice-spacing_small: 5px;
 
 			&.s-out{
 				background-color: $error-colour;
-				color: rgba(white,0.8);
-				
 				span{
-					text-decoration: line-through;
-				}
-
-				.out-text{
-					color: rgba(white, 0.5);
+					//text-decoration: line-through;
 				}
 
 				&:before{
@@ -135,16 +131,17 @@ $choice-spacing_small: 5px;
 			}
 
 			&.s-active{
-				box-shadow: 0 0 0 3px $brand-color;
+				background-color: $brand-color;
+				color: white;
 			}
 
 			@include vrampbreakpoint(large){
 				margin-right: $choice-spacing;
 				max-width: 320px;
 
-				&.s-active{
-					box-shadow: 0 0 0 5px $brand-color;
-				}
+				// &.s-active{
+				// 	box-shadow: 0 0 0 8px $brand-color;
+				// }
 			}
 
 				
@@ -154,7 +151,7 @@ $choice-spacing_small: 5px;
 			&:nth-last-child(n+2) ~ li {
 				
 				height: $med-height - 10px;
-				line-height: $med-height - 10px;
+				line-height: $med-height - 5px;
 
 				&:before{
 					font-size: 22px;
@@ -162,14 +159,14 @@ $choice-spacing_small: 5px;
 				
 				&.s-sold, &.s-out{
 					&:before{
-						margin-bottom: 5px;
+						//margin-bottom: 5px;
 						margin-top: 5px;
 					}
 				}
 
 				@include vrampbreakpoint(medium){
 					height: $large-height - 20px;
-					line-height: $large-height - 20px;
+					line-height: $large-height - 12px;
 
 					&:before{
 						font-size: 30px;
@@ -177,7 +174,7 @@ $choice-spacing_small: 5px;
 					
 					&.s-sold, &.s-out{
 						&:before{
-							margin-bottom: 5px;
+							//margin-bottom: 5px;
 							margin-top: 5px;
 						}
 					}
@@ -185,7 +182,7 @@ $choice-spacing_small: 5px;
 
 				@include vrampbreakpoint(large){
 					height: $large-height;
-					line-height: $large-height;
+					line-height: $large-height + 10px;
 					//@include font-size(1.5);
 
 					&:before{
@@ -194,7 +191,7 @@ $choice-spacing_small: 5px;
 					
 					&.s-sold, &.s-out{
 						&:before{
-							margin-bottom: 5px;
+							//margin-bottom: 5px;
 							margin-top: 5px;
 						}
 					}
@@ -206,7 +203,7 @@ $choice-spacing_small: 5px;
 			&:nth-last-child(n+5),
 			&:nth-last-child(n+5) ~ li {
 				height: $med-height - 25px;
-				line-height: $med-height - 25px;
+				line-height: $med-height - 20px;
 
 				&:before{
 					font-size: 20px;
@@ -214,14 +211,14 @@ $choice-spacing_small: 5px;
 				
 				&.s-sold, &.s-out{
 					&:before{
-						margin-bottom: 5px;
+						//margin-bottom: 5px;
 						margin-top: 5px;
 					}
 				}
 
 				@include vrampbreakpoint(medium){
 					height: $med-height - 15px;
-					line-height: $med-height - 15px;
+					line-height: $med-height - 10px;
 
 					&:before{
 						font-size: 25px;
@@ -229,7 +226,7 @@ $choice-spacing_small: 5px;
 					
 					&.s-sold, &.s-out{
 						&:before{
-							margin-bottom: 4px;
+							//margin-bottom: 4px;
 							margin-top: 4px;
 						}
 					}
@@ -237,7 +234,7 @@ $choice-spacing_small: 5px;
 
 				@include vrampbreakpoint(large){
 					height: $med-height;
-					line-height: $med-height;
+					line-height: $med-height + 10px;
 					//@include font-size(1.5);
 
 					&:before{
@@ -246,7 +243,7 @@ $choice-spacing_small: 5px;
 					
 					&.s-sold, &.s-out{
 						&:before{
-							margin-bottom: 5px;
+							//margin-bottom: 5px;
 							margin-top: 5px;
 						}
 					}
@@ -257,7 +254,7 @@ $choice-spacing_small: 5px;
 			&:nth-last-child(n+11),
 			&:nth-last-child(n+11) ~ li {
 				height: $small-height;
-				line-height: $small-height;
+				line-height: $small-height + 2px;
 				margin-bottom: $choice-spacing;
 
 				&:before{
@@ -266,14 +263,22 @@ $choice-spacing_small: 5px;
 
 				&.s-sold, &.s-out{
 					&:before{
-						margin-bottom: 2px;
+						//margin-bottom: 2px;
 						margin-top: 2px;
 					}
 				}
 
+				@include vrampbreakpoint(medium){
+					line-height: $small-height + 2px;
+				}
+
+				@include vrampbreakpoint(large){
+					line-height: $small-height + 3px;
+				}
+
 				@include vrampbreakpoint(xlarge){
 					height: $med-height - 10px;
-					line-height: $med-height - 10px;
+					line-height: $med-height - 5px;
 
 					&:before{
 						font-size: 24px;
@@ -281,7 +286,7 @@ $choice-spacing_small: 5px;
 
 					&.s-sold, &.s-out{
 						&:before{
-							margin-bottom: 5px;
+							//margin-bottom: 5px;
 							margin-top: 5px;
 						}
 					}
@@ -306,9 +311,17 @@ $choice-spacing_small: 5px;
 					}
 				}
 
+				@include vrampbreakpoint(medium){
+					line-height: $xsmall-height + 2px;
+				}
+
+				@include vrampbreakpoint(large){
+					line-height: $xsmall-height + 3px;
+				}
+
 				@include vrampbreakpoint(xlarge){
 					height: $small-height;
-					line-height: $small-height;
+					line-height: $small-height + 6px;
 				}
 			}
 
