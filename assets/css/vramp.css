@@ -572,11 +572,9 @@ body {
     @media (min-width: 1280px) {
       .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
         top: 40px;
-        bottom: 70px;
-        right: 40px; } }
+        bottom: 70px; } }
     @media (min-width: 1600px) {
       .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
-        right: 60px;
         top: 60px;
         bottom: 70px; } }
     @media (min-width: 1920px) {
@@ -1805,14 +1803,12 @@ body {
     .paused-message, .pre-post-message {
       top: 40px;
       bottom: 70px;
-      left: 40px;
-      right: calc(30% + (2 * 40px)); } }
+      right: 30%; } }
   @media (min-width: 1600px) {
     .paused-message, .pre-post-message {
       top: 60px;
       bottom: 70px;
-      left: 60px;
-      right: calc(30% + (2 * 60px)); } }
+      right: 30%; } }
   @media (min-width: 1920px) {
     .paused-message, .pre-post-message {
       bottom: 80px; } }
