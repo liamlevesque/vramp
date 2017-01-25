@@ -567,19 +567,14 @@ body {
       .s-other-rings_single .details-area {
         bottom: 60px; } }
   .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
-    top: 30px;
-    bottom: 40px; }
-    @media (min-width: 1280px) {
-      .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
-        top: 40px;
-        bottom: 70px; } }
-    @media (min-width: 1600px) {
-      .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
-        top: 60px;
-        bottom: 70px; } }
-    @media (min-width: 1920px) {
-      .s-auction-paused .details-area, .s-auction-pre .details-area, .s-auction-post .details-area {
-        bottom: 80px; } }
+    top: 50%;
+    height: 39.375vw;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
+  .s-auction-paused.s-other-rings_single .details-area, .s-auction-pre.s-other-rings_single .details-area, .s-auction-post.s-other-rings_single .details-area {
+    top: 47%; }
 
 .active-details {
   position: absolute;
@@ -1715,14 +1710,14 @@ body {
 .ring-detail {
   position: absolute;
   top: 0;
-  bottom: 50%;
+  bottom: 40%;
   left: 0;
   right: 0;
   padding: 15px; }
   @media (min-width: 1280px) {
     .ring-detail {
       padding: 30px;
-      bottom: 40%; } }
+      bottom: 50%; } }
   .ring-detail label {
     display: block;
     line-height: 2rem;
@@ -1734,7 +1729,7 @@ body {
 
 .ring-status {
   position: absolute;
-  top: 40%;
+  top: 50%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1785,10 +1780,14 @@ body {
 
 .paused-message, .pre-post-message {
   position: absolute;
-  top: 30px;
-  bottom: 40px;
+  top: 50%;
   left: 0;
   right: 30%;
+  height: calc(100vw/2.54);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  bottom: auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   padding: 80px;
   color: #E87722;
@@ -1799,19 +1798,8 @@ body {
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
-  @media (min-width: 1280px) {
-    .paused-message, .pre-post-message {
-      top: 40px;
-      bottom: 70px;
-      right: 30%; } }
-  @media (min-width: 1600px) {
-    .paused-message, .pre-post-message {
-      top: 60px;
-      bottom: 70px;
-      right: 30%; } }
-  @media (min-width: 1920px) {
-    .paused-message, .pre-post-message {
-      bottom: 80px; } }
+  .s-other-rings_single .paused-message, .s-other-rings_all .paused-message, .s-other-rings_single .pre-post-message, .s-other-rings_all .pre-post-message {
+    top: 47%; }
   .paused-message .h-valign, .pre-post-message .h-valign {
     padding: 40px;
     text-align: center;
@@ -1830,16 +1818,16 @@ body {
   background-color: white; }
 
 .s-auction-paused .paused-message {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
   opacity: 1; }
 
 .pre-post-message {
   -webkit-perspective: 1000px;
           perspective: 1000px; }
   .s-auction-pre .pre-post-message, .s-auction-post .pre-post-message {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
     opacity: 1; }
   .pre-post-message .default-image {
     width: 200px;
