@@ -56,24 +56,16 @@ $height-lot-details: 50%;
 	}
 
 	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
-		top: $paused-spacing_small;
-		bottom: $footer-height_small;
+		top: 50%;
+		height: 39.375vw;
+		bottom: auto;
+		transform: translateY(-50%);
 
-		@include vrampbreakpoint(medium){
-			top: $paused-spacing;
-			bottom: $footer-height + 10px;
-			//right: $paused-spacing;
-		}
+		box-shadow: $ritchie-shadow;
+	}
 
-		@include vrampbreakpoint(large){
-			//right: $paused-spacing_large;
-			top: $paused-spacing_large;
-			bottom: $footer-height_large + 10px;
-		}
-
-		@include vrampbreakpoint(xlarge){
-			bottom: $footer-height_xlarge + 10px;
-		}
+	.s-auction-paused.s-other-rings_single &, .s-auction-pre.s-other-rings_single &, .s-auction-post.s-other-rings_single &{
+		top: 47%;
 	}
 }
 

@@ -1,7 +1,7 @@
 //RIGHT HAND SIDE STYLES
 
-	$paused-upper-height: 40%;
-	$paused-upper-height_small: 50%;
+	$paused-upper-height: 50%;
+	$paused-upper-height_small: 40%;
 
 	.paused-details, .pre-auction-details, .post-auction-details{
 		position: absolute;
@@ -111,30 +111,18 @@
 
 .paused-message, .pre-post-message{
 	position: absolute;
-	top: $paused-spacing_small;
-	bottom: $footer-height_small;
+	top: 50%;
 	left: 0;
-	right: $details-width_small;
+	right: $details-width;
+	height: calc(100vw/2.54);
+	transform: translateY(-50%);
+	bottom: auto;
 
-	@include vrampbreakpoint(medium){
-		top: $paused-spacing;
-		bottom: $footer-height + 10px;
-		//left: $paused-spacing;
-		right: $details-width;
+	.s-other-rings_single &, .s-other-rings_all &{
+		top: 47%;
 	}
 
-	@include vrampbreakpoint(large){
-		top: $paused-spacing_large;
-		bottom: $footer-height_large + 10px;
-		//left: $paused-spacing_large;
-		right: $details-width;
-	}
-	
-	@include vrampbreakpoint(xlarge){
-		bottom: $footer-height_xlarge + 10px;
-	}
-
-
+	box-shadow: $ritchie-shadow;
 	background-color: white;
 	padding: 2 * $paused-spacing;
 
@@ -169,7 +157,7 @@
 		}
 
 		.s-auction-paused &{
-			transform: translateX(0);
+			transform: translateX(0) translateY(-50%);
 			opacity: 1;
 		}
 	}
@@ -181,7 +169,7 @@
 		perspective: 1000px;
 
 		.s-auction-pre &, .s-auction-post &{
-			transform: translateX(0);
+			transform: translateX(0)  translateY(-50%);
 			opacity: 1;
 		}
 
