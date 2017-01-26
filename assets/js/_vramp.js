@@ -48,7 +48,7 @@ var vrampObject = {
 		"currentLot": 0,
 		"lotDetail":{},
 		"conversions": [],
-		"price" : 10000000,
+		"price" : null,
 		"highBid" : 'Internet, SK, CAN',
 		"bidder" : '10005',
 		"auctioneerMessage": null,

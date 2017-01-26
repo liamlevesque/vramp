@@ -574,7 +574,7 @@ body {
             transform: translateY(-50%);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
   .s-auction-paused.s-other-rings_single .details-area, .s-auction-pre.s-other-rings_single .details-area, .s-auction-post.s-other-rings_single .details-area {
-    top: 47%; }
+    top: 46.6%; }
 
 .active-details {
   position: absolute;
@@ -1056,7 +1056,8 @@ body {
     display: none; }
   .ask--price .dollars {
     display: inline-block;
-    float: right; }
+    float: right;
+    min-height: 1.3em; }
 
 .conversions {
   text-align: left;
@@ -1799,7 +1800,7 @@ body {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
   .s-other-rings_single .paused-message, .s-other-rings_all .paused-message, .s-other-rings_single .pre-message, .s-other-rings_all .pre-message, .s-other-rings_single .post-message, .s-other-rings_all .post-message {
-    top: 47%; }
+    top: 46.6%; }
   .paused-message .h-valign, .pre-message .h-valign, .post-message .h-valign {
     padding: 40px;
     text-align: center;
