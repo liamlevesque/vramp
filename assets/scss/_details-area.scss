@@ -57,7 +57,8 @@ $height-lot-details: 50%;
 
 	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
 		top: 50%;
-		height: 39.375vw;
+		height: 52.5vw;
+		//height: 39.375vw; //16:9
 		bottom: auto;
 		transform: translateY(-50%);
 
