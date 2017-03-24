@@ -1,0 +1,27 @@
+//COLOURS
+$brand-color: #E87722;
+$error-colour: #c4483a;
+$error-colour-light: #F3BFBF;
+$contrast-colour: #36AE4F;
+
+$black: #000000;
+$white: #ffffff;
+
+$grey-50: #e8e6e2;
+$grey-100: #E9E9E9;
+$grey-300: #bfc0be;
+$grey-500: #959595;
+$grey-700: #585858;
+$grey-800: #444444;
+$grey-900: #333333;
+
+$bg-color-ask: $brand-color;
+$bg-color-high-bid: darken($brand-color, 10%);
+$bg-color-details: darken($brand-color,15%);
+$bg-color-auctioneer-message: darken($brand-color,25%);
+
+$text-color-details: white;
+
+$ritchie-border: 1px dotted $brand-color;
+
+$ritchie-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);

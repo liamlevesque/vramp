@@ -40,7 +40,9 @@ var allConversions = [
 
 	],
 	allLots,
-	sampleAuctioneerMessage = "Title In transit. Item must remain in yard until received.";
+	sampleAuctioneerMessage = "Title In transit. Item must remain in yard until received.",
+	samplePersistentMessage = "This Ring is selling outside today";
+
 
 
 var vrampObject = {
@@ -48,7 +50,7 @@ var vrampObject = {
 		"currentLot": 0,
 		"lotDetail":{},
 		"conversions": [],
-		"price" : null,
+		"price" : 10000,
 		"highBid" : 'Internet, SK, CAN',
 		"bidder" : '10005',
 		"auctioneerMessage": null,
@@ -58,7 +60,8 @@ var vrampObject = {
 		"otherRings": [],
 		"openOffers" : false,
 		"auctionStatus" : "active",
-		"controlsVisible": true
+		"controlsVisible": true,
+		"persistentMessage": null,
 	},
 
 	vrampController = {
@@ -74,8 +77,17 @@ var vrampObject = {
 			
 		},
 
+		toggleOpenOffers: function(){
+			vrampObject.openOffers = !vrampObject.openOffers;
+			$(".js--vramp-bidding").toggleClass('s-openOffers');
+		},
+
 		showMessage: function(e,model){
 			vrampObject.auctioneerMessage = vrampObject.auctioneerMessage ? null : sampleAuctioneerMessage;
+		},
+
+		showPersistentMessage: function(){
+			vrampObject.persistentMessage = vrampObject.persistentMessage ? null : samplePersistentMessage;
 		},
 
 		toggleOpenOffer: function(e,model){
@@ -249,6 +261,23 @@ rivets.bind($('.js--vramp-bidding'),{
 		else{
 			vrampObject.choiceGroup = null;
 			vrampObject.lotDetail = allLots[vrampObject.currentLot];
+			if(typeof vrampObject.lotDetail.photos != undefined){
+				var mySwiper = new Swiper ('.swiper-container', {
+					direction: 'horizontal',
+					loop: true,
+					autoplay: 8000,
+					speed: 300,
+					effect: "coverflow",
+					// pagination: '.swiper-pagination',
+					// paginationClickable: 'true',
+					// nextButton: '.swiper-button-next',
+					// prevButton: '.swiper-button-prev',
+					//autoHeight: true,
+					// onSlideChangeEnd: function(mySwiper){
+					// 	$('.js--swiper-active').text($('.swiper-slide-active').data('swiper-slide-index')+1);
+					// }
+				})
+			}
 		}
 
 	}

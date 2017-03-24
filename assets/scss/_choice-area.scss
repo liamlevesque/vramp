@@ -1,63 +1,61 @@
-$choice-spacing: 10px;
-$choice-spacing_small: 5px;
+
+
+$lot-height_xsmall: 3vw;
+$lot-height_small: 4vw;
+$lot-height_med: 4.5vw;
+$lot-height_large: 6vw;
 
 .choice-area{
 	
 	position: absolute;
 	bottom: 0;
+	//top: 0;
 	left: 0;
 	right: 0;
 
 	z-index: 1;
 
-	.s-other-rings_all &{
-		//bottom: $footer-height;
+	.s-openOffers &{
+		
 	}
 
 }
 
 	.choice--header{
-		padding: $default-padding/2;
-		padding-bottom: 5px;
+		padding: $default-padding;
+		padding-bottom: 0.4vw;
 		width: 100%;
-
-		@include vrampbreakpoint(large){
-			padding: $default-padding;
-			padding-bottom: 10px;
-		}
 
 		background: linear-gradient(top, rgba($grey-900,0), rgba($grey-900,1));
 
 		text-transform: uppercase;
 		color: white;
+
+		transition: $transition;
+		
+		.s-openOffers &{
+			background: linear-gradient(top, rgba($grey-900,1), rgba($grey-900,1));			
+		}
+
 	}
 
 	.choice--body{
-		padding: 0 $default-padding/2 $default-padding/2;
-
-		@include vrampbreakpoint(large){
-			padding: 0 $default-padding $default-padding;
-		}
+		padding: 0 $default-padding $default-padding;
 
 		background-color: $grey-900;
-
 	}
-
-		$large-height: 100px;
-		$med-height: 80px;
-		$small-height: 50px;
-		$xsmall-height: 42px;
+		
 
 		.choice--lot{
 			position: relative;
 			display: inline-block;
-			margin-right: $choice-spacing_small;
+			margin-right: $choice-spacing;
 
 			vertical-align: top;
 
-			height: $large-height - 10px;
-			line-height: $large-height - 10px;
-			max-width: 200px;
+			max-height: $lot-height_large;
+			line-height: $lot-height_large;
+			max-width: 20vw;
 			white-space: nowrap;
 			
 			background-color: white;
@@ -72,128 +70,123 @@ $choice-spacing_small: 5px;
 			
 			overflow: hidden;
 
-			span{
-				vertical-align: middle;
-				display: inline-block;
-				transition: $transition;
+			@include vrampbreakpoint(large){
+				max-width: 320px;
 			}
 
-			&:before{
-				@include icon-font;
-				font-size: 40px;
-				content: '';
-				
-				transform: translateY(-100%);
-
-				display: block;
-
-				opacity: 0;
-				
-				transition: $transition;
-				transition-delay: 0.3s;
+			.s-openOffers &{
+				max-height: 24vh !important;
+				min-width: 16vw;
+				line-height: $lot-height_large / 2;
 			}
 			
+			&.s-active {
+				// background-color: $brand-color;
+				// color: white;
+				&:before{
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					border: 8px solid $brand-color;
+					border-radius: 8px;
+				}
+			}
+
 			&.s-sold, &.s-out{
 				background-color: $grey-700;
 				color: rgba(white,1);
-				line-height: initial !important;
-				
-				span{
-					//margin-left: 5px;
-				}
-
-				&:before{
-					opacity: 1;
-					transform: translateY(0);
-					margin-top: 6px;
-				}
-
-				div{
-					display: inline-block;
-				}
+				line-height: $lot-height_large / 2;
 			}
 
-			&.s-sold:before{
-				content: "\e920";
-				color: $brand-color;
-			}
+				.choice-lot--status{
+					display: block;
+					color: white;
+					position: relative;
+					height: $lot-height_large;
 
-			&.s-out{
-				background-color: $error-colour;
-				span{
-					//text-decoration: line-through;
+					i{
+						font-size: 0.8em;
+						margin-right: 10px;
+					}
+
+					span{
+						display: inline-block;
+    					padding-top: 0.1em;
+					}
 				}
 
-				&:before{
-					content: "\e906";
-					color: rgba(white, 0.5);
+					&.s-sold .choice-lot--status{
+						color: white;
+						background-color: $grey-900;
+					}
+
+					&.s-out .choice-lot--status{
+						background-color: $error-colour;
+					}
+
+				.choice-lot--number{
+					display: block;
+					padding-top: 0.1em;
+    				margin-bottom: -0.1em;
+					transition: $transition;
 				}
-			}
 
-			&.s-active{
-				background-color: $brand-color;
-				color: white;
-			}
+				.choice-lot--indicator{
+					position: absolute;
+					bottom: 0;
+					height: $lot-height_large;
+					left: 0;
+					right: 0;
+					background-color: rgba($grey-900, 0.8);
+				}
 
-			@include vrampbreakpoint(large){
-				margin-right: $choice-spacing;
-				max-width: 320px;
+					&.s-out .choice-lot--indicator{
+						background-color: $error-colour;
+					}
 
-				// &.s-active{
-				// 	box-shadow: 0 0 0 8px $brand-color;
-				// }
-			}
+					&.s-sold .choice-lot--indicator{
+						background-color: $brand-color;
+					}
+
+				.choice-lot--photo{
+					width: 100%;
+					max-height: 0;
+					overflow: hidden;
+					position: relative;
+
+					img{
+						width: 100%;
+						max-width: 100%;
+						display: block;
+					}
+					
+					.s-openOffers &{
+						max-height: 400px;
+					}
+				}
+
 
 				
 		//DIFFERENT STYLING FOR DIFFERENT QUANTITIES OF LOTS
 
-		&:nth-last-child(n+2),
+			&:nth-last-child(n+2),
 			&:nth-last-child(n+2) ~ li {
-				
-				height: $med-height - 10px;
-				line-height: $med-height - 5px;
+				max-height: $lot-height_large;
+				line-height: $lot-height_large;
 
-				&:before{
-					font-size: 22px;
+				&.choice-lot--status{
+					@include font-size(1.4);
 				}
 				
-				&.s-sold, &.s-out{
-					&:before{
+				&.s-sold, &.s-out, .s-openOffers &{
+					line-height: $lot-height_large / 2;
+
+					&.choice-lot--status{
 						//margin-bottom: 5px;
-						margin-top: 5px;
-					}
-				}
-
-				@include vrampbreakpoint(medium){
-					height: $large-height - 20px;
-					line-height: $large-height - 12px;
-
-					&:before{
-						font-size: 30px;
-					}
-					
-					&.s-sold, &.s-out{
-						&:before{
-							//margin-bottom: 5px;
-							margin-top: 5px;
-						}
-					}
-				}
-
-				@include vrampbreakpoint(large){
-					height: $large-height;
-					line-height: $large-height + 10px;
-					//@include font-size(1.5);
-
-					&:before{
-						font-size: 40px;
-					}
-					
-					&.s-sold, &.s-out{
-						&:before{
-							//margin-bottom: 5px;
-							margin-top: 5px;
-						}
+						margin-top: 0.4vw;
 					}
 				}
 			}
@@ -202,50 +195,19 @@ $choice-spacing_small: 5px;
 		//BETWEEN FIVE AND TEN LOTS
 			&:nth-last-child(n+5),
 			&:nth-last-child(n+5) ~ li {
-				height: $med-height - 25px;
-				line-height: $med-height - 20px;
+				max-height: $lot-height_med;
+				line-height: $lot-height_med;
 
-				&:before{
-					font-size: 20px;
+				&.choice-lot--status{
+					@include font-size(1.2);
 				}
 				
 				&.s-sold, &.s-out{
-					&:before{
+					line-height: $lot-height_med / 2;
+
+					&.choice-lot--status{
 						//margin-bottom: 5px;
 						margin-top: 5px;
-					}
-				}
-
-				@include vrampbreakpoint(medium){
-					height: $med-height - 15px;
-					line-height: $med-height - 10px;
-
-					&:before{
-						font-size: 25px;
-					}
-					
-					&.s-sold, &.s-out{
-						&:before{
-							//margin-bottom: 4px;
-							margin-top: 4px;
-						}
-					}
-				}
-
-				@include vrampbreakpoint(large){
-					height: $med-height;
-					line-height: $med-height + 10px;
-					//@include font-size(1.5);
-
-					&:before{
-						font-size: 30px;
-					}
-					
-					&.s-sold, &.s-out{
-						&:before{
-							//margin-bottom: 5px;
-							margin-top: 5px;
-						}
 					}
 				}
 			}
@@ -253,42 +215,20 @@ $choice-spacing_small: 5px;
 		//MORE THAN TEN LOTS
 			&:nth-last-child(n+11),
 			&:nth-last-child(n+11) ~ li {
-				height: $small-height;
-				line-height: $small-height + 2px;
+				max-height: $lot-height_small;
+				line-height: $lot-height_small;
 				margin-bottom: $choice-spacing;
 
-				&:before{
-					font-size: 18px;
+				&.choice-lot--status{
+					@include font-size(1);
 				}
 
 				&.s-sold, &.s-out{
-					&:before{
+					line-height: $lot-height_small / 2;
+
+					&.choice-lot--status{
 						//margin-bottom: 2px;
 						margin-top: 2px;
-					}
-				}
-
-				@include vrampbreakpoint(medium){
-					line-height: $small-height + 2px;
-				}
-
-				@include vrampbreakpoint(large){
-					line-height: $small-height + 3px;
-				}
-
-				@include vrampbreakpoint(xlarge){
-					height: $med-height - 10px;
-					line-height: $med-height - 5px;
-
-					&:before{
-						font-size: 24px;
-					}
-
-					&.s-sold, &.s-out{
-						&:before{
-							//margin-bottom: 5px;
-							margin-top: 5px;
-						}
 					}
 				}
 			}
@@ -296,144 +236,52 @@ $choice-spacing_small: 5px;
 		//MORE THAN 20 LOTS
 			&:nth-last-child(n+21),
 			&:nth-last-child(n+21) ~ li {
-				height: $xsmall-height;
-				line-height: $xsmall-height;
+				max-height: $lot-height_xsmall;
+				line-height: $lot-height_xsmall;
 				margin-bottom: $choice-spacing/2;
 
-				&:before{
-					font-size: 15px; 
+				&.choice-lot--status{
+					@include font-size(0.8);
 				}
 
 				&.s-sold, &.s-out{
-					&:before{
+					line-height: $lot-height_xsmall / 2;
+
+					&.choice-lot--status{
 						margin-bottom: 0; 
 						margin-top: 1px;
 					}
 				}
-
-				@include vrampbreakpoint(medium){
-					line-height: $xsmall-height + 2px;
-				}
-
-				@include vrampbreakpoint(large){
-					line-height: $xsmall-height + 3px;
-				}
-
-				@include vrampbreakpoint(xlarge){
-					height: $small-height;
-					line-height: $small-height + 6px;
-				}
 			}
 
 
-				//ADJUSTING WIDTH OF ITEMS UP TO MAX OF 10 ITEMS
-				@for $i from 2 through 10{
-				  	&:nth-last-child(n+#{$i}),
-				  	&:nth-last-child(n+#{$i}) ~ li{
-				    	
-				    	width: calc((100% / #{$i}) - #{$choice-spacing_small}); 
-
-				    	@include vrampbreakpoint(large){
-				    		width: calc((100% / #{$i}) - #{$choice-spacing});
-				    	}
-					}
+		//ADJUSTING WIDTH OF ITEMS UP TO MAX OF 10 ITEMS
+			@for $i from 2 through 10{
+			  	&:nth-last-child(n+#{$i}),
+			  	&:nth-last-child(n+#{$i}) ~ li{
+			    	
+			    	width: calc((100% / #{$i}) - #{$choice-spacing}); 
 				}
+			}
 
+			&:nth-last-child(n+2),
+			&:nth-last-child(n+2) ~ li {
+				@include font-size(2);
+			}
 
+			&:nth-last-child(n+5),
+			&:nth-last-child(n+5) ~ li {
+				@include font-size(1.4);
+			}
 
-				&:nth-last-child(n+2),
-				&:nth-last-child(n+2) ~ li {
-					@include font-size(2);
+			&:nth-last-child(n+9),
+			&:nth-last-child(n+9) ~ li {
+				@include font-size(1.2);
+			}
 
-					@include vrampbreakpoint(medium){
-						@include font-size(2.2);
-					}
-
-					@include vrampbreakpoint(large){
-						@include font-size(3);
-					}
-					
-					@include vrampbreakpoint(xlarge){
-						@include font-size(3.5);
-					}
-
-				}
-
-				&:nth-last-child(n+5),
-				&:nth-last-child(n+5) ~ li {
-					@include font-size(1.4);
-
-					@include vrampbreakpoint(medium){
-						@include font-size(1.8);
-					}
-
-					@include vrampbreakpoint(large){
-						@include font-size(2);
-					}
-
-					@include vrampbreakpoint(xlarge){
-						@include font-size(2.7);
-					}
-				}
-
-				&:nth-last-child(n+9),
-				&:nth-last-child(n+9) ~ li {
-					@include font-size(1.2);
-
-					@include vrampbreakpoint(medium){
-						@include font-size(1.6);
-					}
-
-					@include vrampbreakpoint(large){
-						@include font-size(2);
-					}
-
-					@include vrampbreakpoint(xlarge){
-						@include font-size(2.2);
-					}
-				}
-
-				&:nth-last-child(n+10),
-				&:nth-last-child(n+10) ~ li {
-					
-					@include font-size(1.1);
-
-					@include vrampbreakpoint(medium){
-						@include font-size(1.5);
-					}
-
-					@include vrampbreakpoint(large){
-						@include font-size(1.8);
-					}
-
-					@include vrampbreakpoint(xlarge){
-						@include font-size(2.2);
-					}
-				}
-
-
-
-				// &:nth-last-child(n+10),
-				// &:nth-last-child(n+10) ~ li {
-				// 	width: calc((100% / 10) - #{$choice-spacing});
-				// }
-
-				// &:nth-last-child(n+11),
-				// &:nth-last-child(n+11) ~ li {
-				// 	width: calc((100% / 11) - #{$choice-spacing});
-				// }
-
-				// &:nth-last-child(n+12),
-				// &:nth-last-child(n+12) ~ li {
-				// 	width: calc((100% / 12) - #{$choice-spacing});
-				// }
-
-			
+			&:nth-last-child(n+10),
+			&:nth-last-child(n+10) ~ li {
+				@include font-size(1.1);
+			}
+	
 		}
-
-
-
-
-
-
-

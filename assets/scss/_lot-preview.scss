@@ -1,24 +1,10 @@
 
-$width-lot--number: 190px;
-$width-lot--number_medium: 270px;
-$width-lot--number_large: 340px;
-$width-lot--number_xlarge: 390px; 
-
-$height-header: 70px;
-$height-header_medium: 90px;
-$height-header_large: 120px;
-$height-header_xlarge: 150px;
-
 .lot-preview{
 	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
-	right: $details-width_small;
-
-	@include vrampbreakpoint(medium){
-		right: $details-width;
-	}
+	right: $details-width;
 
 	background-color: $grey-900;
 
@@ -27,11 +13,7 @@ $height-header_xlarge: 150px;
 	transition: $transition;
 
 	.s-other-rings_all &{
-		bottom: $footer-height_small;
-
-		@include vrampbreakpoint(medium){
-			bottom: $footer-height;
-		}
+		bottom: $footer-height;
 	}
 
 	.s-auction-paused &, .s-auction-pre &, .s-auction-post &{
@@ -52,18 +34,6 @@ $height-header_xlarge: 150px;
 		box-shadow: $ritchie-shadow;
 
 		background-color: white;
-
-		@include vrampbreakpoint(medium){
-			height: $height-header_medium;
-		}
-
-		@include vrampbreakpoint(large){
-			height: $height-header_large;
-		}
-
-		@include vrampbreakpoint(xlarge){
-			height: $height-header_xlarge;
-		}
 	}
 
 		.lot--number{
@@ -73,37 +43,17 @@ $height-header_xlarge: 150px;
 			width: $width-lot--number;
 			height: 100%;
 
-			padding: 10px;
+			padding: 1vw;
 
 			text-align: right;
 			background-color: $brand-color;
 			color: white;
 
-			&>div{
-				//@include vert-align;
-			}
-
 			@include details-label;
 			label{
 				margin-bottom: 0;
 				opacity: 1;
-				//display: none;
 			}
-			
-			@include vrampbreakpoint(medium){
-				width: $width-lot--number_medium;
-				padding: 10px 15px;
-			}
-			@include vrampbreakpoint(large){
-				width: $width-lot--number_large;
-				padding: 15px;
-			}
-
-			@include vrampbreakpoint(xlarge){
-				width: $width-lot--number_xlarge;
-				padding: $default-padding;
-			}
-
 
 			.sale-ring{
 				opacity: 0.8;
@@ -119,26 +69,34 @@ $height-header_xlarge: 150px;
 
 			padding: $default-padding;
 
-			line-height: 1.8rem;
-
-			
-			
-			@include vrampbreakpoint(medium){
-				left: $width-lot--number_medium;
-				line-height: 2.5rem;
-			}
-
-			@include vrampbreakpoint(large){
-				left: $width-lot--number_large;
-				line-height: 3rem;
-			}
-
-			@include vrampbreakpoint(xlarge){
-				left: $width-lot--number_xlarge;
-			}
+			line-height: 2.8vw;
 
 			span{
 				padding-right: $default-padding;
+			}
+		}
+
+		.lot--unused{
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+			background-color: $contrast-colour;
+			padding: 5px 20px 0;
+			color: white;
+			transform: translateY(50%);
+			text-transform: uppercase;
+
+			&:after{
+				content: "";
+				width: 11px;
+				display: block;
+				position: absolute;
+				right: -10px;
+				top: 0;
+				bottom: 0;
+				background-color: darken($contrast-colour, 10%);
+				transform: skewY(-20deg);
+				transform-origin: 0 0;
 			}
 		}
 
@@ -153,24 +111,13 @@ $height-header_xlarge: 150px;
 
 		top: $height-header;
 
-		@include vrampbreakpoint(medium){
-			top: $height-header_medium;;
-		}
-
-		@include vrampbreakpoint(large){
-			top: $height-header_large;
-		}
-
-		@include vrampbreakpoint(xlarge){
-			top: $height-header_xlarge;
-		}
 
 		.custom--media, iframe{
 			width: 100%;
 			height: 100%;
 		}
 
-		img{
+		.media--photo img{
 			width: 100%;
 			max-width: 100%;
 
@@ -178,3 +125,18 @@ $height-header_xlarge: 150px;
 			position: absolute;
 		}
 	}
+
+		.media--photos{
+		    position: relative;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+
+		.swiper-container{
+
+			img{
+				width: 100%;
+	    		min-width: 100%;
+	    		display: block;
+	    	}
+	    }

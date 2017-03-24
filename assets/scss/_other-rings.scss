@@ -1,27 +1,14 @@
-$width-ring-number_small: 50px;
-$width-ring-number: 65px;
-$width-ring-number_large: 75px;
-$width-ring-number_xlarge: 90px;
-
-
-
 .other-rings{
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: $footer-height_small;
+	height: $footer-height;
+	transform: translateY(100%);
+	transition: $transition;
 
-	@include vrampbreakpoint(medium){
-		height: $footer-height;
-	}
-
-	@include vrampbreakpoint(large){
-		height: $footer-height_large;
-	}
-
-	@include vrampbreakpoint(xlarge){
-		height: $footer-height_xlarge;
+	.s-other-rings_single &, .s-other-rings_all &{
+		transform: translateY(0);
 	}
 }
 	
@@ -30,20 +17,7 @@ $width-ring-number_xlarge: 90px;
 	}
 
 	.ring{
-		height: $footer-height_small;
-		
-		@include vrampbreakpoint(medium){
-			height: $footer-height;
-		}
-
-		@include vrampbreakpoint(large){
-			height: $footer-height_large;
-		}
-
-		@include vrampbreakpoint(xlarge){
-			height: $footer-height_xlarge;
-		}
-
+		height: $footer-height;
 		position: relative;
 		display: inline-block;
 		background-color: $grey-50;
@@ -82,19 +56,7 @@ $width-ring-number_xlarge: 90px;
 			@include vert-align;
 			position: absolute;
 			left: 0;
-			width: $width-ring-number_small;
-
-			@include vrampbreakpoint(medium){
-				width: $width-ring-number;				
-			}
-
-			@include vrampbreakpoint(large){
-				width: $width-ring-number_large;				
-			}
-
-			@include vrampbreakpoint(xlarge){
-				width: $width-ring-number_xlarge;				
-			}
+			width: 5vw;
 
 			text-align: center;
 
@@ -115,32 +77,15 @@ $width-ring-number_xlarge: 90px;
 			@include vert-align;
 			position: absolute;
 			right: 0;
-			left: $width-ring-number_small;
+			left: $width-ring-number;
 
 			div{
 				@include ellipsize;
 			}
 
 			.ring_TAL &{
-				left: $width-ring-number_small + 35px;
+				left: $width-ring-number + 2vw;
 			}
-			
-			@include vrampbreakpoint(medium){
-				left: $width-ring-number;		
-
-				.ring_TAL &{
-					left: $width-ring-number + 25px;
-				}	
-			}
-
-			@include vrampbreakpoint(large){
-				left: $width-ring-number_large;				
-			}
-
-			@include vrampbreakpoint(xlarge){
-				left: $width-ring-number_xlarge;				
-			}
-			
 			
 			font-weight: 700;
 		}
@@ -149,13 +94,9 @@ $width-ring-number_xlarge: 90px;
 			.ring_TAL{
 				
 				.ring--number label{
-					@include vrampbreakpoint(smallmax){
-						line-height: 1rem;
-					}
-
 					text-align: left;
-					padding-left: 10px;
-					margin-bottom: 8px;
+					padding-left: 0.8vw;
+					margin-bottom: 0.7vw;
 				}
 			}
 

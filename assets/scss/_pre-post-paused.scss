@@ -1,8 +1,5 @@
 //RIGHT HAND SIDE STYLES
-
-	$paused-upper-height: 40%;
-	$paused-upper-height_small: 30%;
-
+	
 	.paused-details, .pre-auction-details, .post-auction-details{
 		position: absolute;
 		top: 0;
@@ -32,16 +29,11 @@
 		.ring-detail{
 			position: absolute;
 			top: 0;
-			bottom: $paused-upper-height_small;
+			height: $paused-upper-height;
 			left: 0;
 			right: 0;
 			
-			padding: 15px;
-
-			@include vrampbreakpoint(medium){
-				padding: 30px;	
-				bottom: $paused-upper-height;
-			}
+			padding: 3vw;
 
 			label{
 				display: block;

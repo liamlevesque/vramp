@@ -21,20 +21,57 @@
 				<div class="lot--description">
 					<span class="h-valign font--250" rv-text="vrampObject.lotDetail.description"></span>
 				</div>
+				<div class="lot--unused font--200" rv-if="vrampObject.lotDetail.unused">
+					Unused
+				</div>
 			</div>
 
 			<div class="lot--media"> 
 				<div class="custom--media" rv-if="vrampObject.lotDetail.video">
 		            <iframe src="https://www.youtube.com/embed/hWE7LRojEbQ" frameborder="0" allowfullscreen></iframe>
 		        </div>
-				<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
+		        <div class="media--photo" rv-unless="vrampObject.lotDetail.photos">
+					<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
+				</div>
+				<div class="media--photos" rv-if="vrampObject.lotDetail.photos">
+					<div class="swiper-container">
+		                <div class="swiper-wrapper">
+		                    <!-- Slides -->
+		                    <div class="swiper-slide" rv-each-photo="vrampObject.lotDetail.photos">
+		                        <img rv-src="photo.src" />
+		                    </div>
+		                </div>
+		                <!-- 
+		                <div class="swiper-pagination"></div>
+		                
+		                <div class="swiper-button-prev"></div>
+		                <div class="swiper-button-next"></div> -->
+		            </div>
+				</div>
+
 			</div>
 
 			<div class="choice-area" rv-show="vrampObject.choiceGroup">
-				<div class="choice--header font--180">Choice of <span rv-text="vrampObject.choiceGroup | length"></span> Remaining</div>
+				<div class="choice--header font--180">
+					Choice of <span rv-text="vrampObject.choiceGroup | length"></span> Remaining
+					<span class="h-float-right" rv-if="vrampObject.openOffers">Open Offers</span>
+				</div>
 				<div class="choice--body">
 					<ul class="choice--lots">
-						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active"><span rv-text="choicelot.lotNumber"></span><!-- <div rv-if="choicelot.status | issold" class="c-brand">SOLD</div><div rv-if="choicelot.status | isout" class="out-text">OUT</div> --></li>
+						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active">
+							<div class="choice-lot--number">{ choicelot.lotNumber }</div>
+							<div class="choice-lot--status">
+								<div class="choice-lot--photo">
+									<img rv-src="choicelot.photo"/>									
+								</div>
+								<div class="choice-lot--indicator" rv-if="choicelot.status | comparison 'out'">
+									<i class="icon-close"></i><span>OUT</span>
+								</div>
+								<div class="choice-lot--indicator" rv-if="choicelot.status | comparison 'sold'">
+									<i class="icon-sold"></i><span>SOLD</span>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -122,6 +159,10 @@
 				<div class="auctioneers-message" rv-class-s-shown="vrampObject.auctioneerMessage">
 					<label for="">Note</label>
 					<div class="font--200" rv-text="vrampObject.auctioneerMessage"></div>
+				</div>
+
+				<div class="persistent-message" rv-class-s-shown="vrampObject.persistentMessage">
+					<div class="h-valign font--300" rv-text="vrampObject.persistentMessage"></div>
 				</div>
 
 				<div class="open-offers" rv-class-s-shown="vrampObject.openOffers">
@@ -236,12 +277,14 @@
 				<button rv-on-click="vrampController.prevLot" class="g-half">Previous Lot/Group</button>
 				<button rv-on-click="vrampController.nextLot" class="g-half">Next Lot/Group</button><br/>
 				<button rv-on-click="vrampController.sellLot">SELL THIS LOT</button>
+				<button rv-on-click="vrampController.toggleOpenOffers">Open Offers</button>
 			</div>
 
 			<div>
 				<label>Settings</label><br/>
 				<button rv-on-click="vrampController.toggleConversions">Toggle Conversions</button><br/>
 				<button rv-on-click="vrampController.showMessage">Toggle Auctioneer's Message</button><br/>
+				<button rv-on-click="vrampController.showPersistentMessage">Toggle Persistent Message</button><br/>
 			</div>
 			<div>
 				<label>Other Rings</label><br/>

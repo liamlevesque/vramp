@@ -1,0 +1,29 @@
+//OVERALL
+	$default-padding: 1.2vw; 
+
+//LOT DISPLAY
+	$width-lot--number: 18vw;
+	$height-header: 6.5vw;
+
+//DETAILS AREA
+	$details-width: 30vw;
+
+	$height-ask: 40vh;
+	$height-high-bid: 11vh; 
+	$top-lot-details: $height-ask + $height-high-bid;
+
+	$flag-width: 3vw;
+	$flag-height: 1.5vw;
+
+	$detail-padding: 0.8vw 1.5vw;
+
+//CHOICE GROUPS
+	$choice-spacing: 0.8vw;
+
+//OTHER RINGS
+	$footer-height: 4.1vw;
+	$width-ring-number: 5vw;
+
+//PRE,POST,PAUSED
+	$paused-upper-height: 40vh;
+	$paused-spacing: 40px;

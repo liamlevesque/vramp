@@ -1,41 +1,3 @@
-$details-width_small: 30%;
-$details-width: 30%;
-
-$footer-height_small: 40px;
-$footer-height: 60px;
-$footer-height_large: 60px;
-$footer-height_xlarge: 70px;
-
-$paused-spacing_small: 30px;
-$paused-spacing: 40px;
-$paused-spacing_large: 60px;
-
-$default-padding: 20px; 
-$default-padding_large: 25px;
-
-
-
-//COLOURS
-$brand-color: #E87722;
-$error-colour: #c4483a;
-$error-colour-light: #F3BFBF;
-
-$black: #000000;
-$white: #ffffff;
-
-$grey-50: #e8e6e2;
-$grey-100: #E9E9E9;
-$grey-300: #bfc0be;
-$grey-500: #959595;
-$grey-700: #585858;
-$grey-800: #444444;
-$grey-900: #333333;
-
-
-$ritchie-border: 1px dotted $brand-color;
-
-$ritchie-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
-
 
 @mixin vrampbreakpoint($point) {
   @if $point == xlarge {
@@ -107,8 +69,13 @@ label{
 	color: inherit;
 }
 
+html{
+  height: 100%;
+}
+
 body{
 	overflow: hidden;
+  height: 100%;
 }
 
 .fullscreenbg{
