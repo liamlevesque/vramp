@@ -102,7 +102,7 @@
 			}
 			.dollars:before{
 				.conversion.#{nth($ccy,1)} &{
-					content: "~#{nth($ccy,2)}";
+					content: "≈ #{nth($ccy,2)}";
 				}
 			}
 			.dollars:after{
@@ -132,7 +132,7 @@
 
 			.auction-ccy{
 				&.#{nth($ccy,1)}:before {
-					content: "#{nth($ccy,1)} #{nth($ccy,3)}"; 
+					content: "#{nth($ccy,1)}"; 
 				}
 			}
 
@@ -220,6 +220,17 @@
 					min-height: 1.3em;
 				}
 			}
+
+				.ask--price_sold{
+					.auction-ccy{
+						float: none;
+					}
+
+					.dollars{
+						float: none;
+						margin-left: 20px;
+					}
+				}
 
 
 		.conversions{

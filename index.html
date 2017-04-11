@@ -7,7 +7,7 @@
 	    <link type="text/css" rel="stylesheet" href="assets/css/vramp.css">
 	</head>
 
-	<body class="js--vramp-bidding" rv-auctionstatus="vrampObject.auctionStatus">
+	<body class="js--vramp-bidding" rv-auctionstatus="vrampObject.auctionStatus" rv-class-s-sold="vrampObject.lotDetail.status">
 		
 		<img src="assets/img/vramp-bg.png" class="fullscreenbg" />
 
@@ -114,7 +114,7 @@
 		
 		<div class="details-area">
 			<div class="active-details">
-				<div class="prices" rv-class-s-sold="vrampObject.lotDetail.status">
+				<div class="prices">
 					<div class="h-valign">
 
 						<div class="ask">
@@ -220,6 +220,20 @@
 					</div>
 				</div>
 
+			</div>
+
+		</div>
+
+		<div class="sold">
+
+			<div class="sold--content">
+				<div class="font--300">Lot { vrampObject.lotDetail.lotNumber }</div>
+				<div class="font--300">{ vrampObject.lotDetail.description }</div>
+				<div class="font--600"> SOLD </div>
+				<div class="ask--price ask--price_sold h-ta-center ccy CAD">
+					<span class="auction-ccy CAD"></span>
+					<div class="dollars font--600" rv-html="vrampObject.price | price"></div>
+				</div>
 			</div>
 
 		</div>

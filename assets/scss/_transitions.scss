@@ -1,0 +1,48 @@
+.sold{
+
+	position: absolute;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+
+	background-color: $brand-color;
+	color: white;
+
+	transition: $transition;
+	transition-duration: 0.3s;
+}
+
+	.sold--content{
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;	
+
+		&>div{
+			opacity: 0;
+			transform: translateY(-100px);
+			transition: $transition;
+			transition-duration: 0.4s;
+		}
+	}
+
+	@for $i from 1 through 10{
+	  	.sold--content>div:nth-child(#{$i}){
+	    	transition-delay: 0.1s * $i;
+		}
+	}
+
+/***********************
+	SOLD STATE
+***********************/
+.s-sold{
+	.sold{
+		bottom: 0;
+	}
+
+	.sold--content> div{
+		opacity: 1;
+		transform: translateY(0);
+	}	
+}

@@ -332,7 +332,9 @@ body {
           transform: translateX(-50%);
   z-index: 1;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
-  background-color: white; }
+  background-color: white;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
 
 .lot--number {
   position: absolute;
@@ -357,7 +359,7 @@ body {
 .lot--description {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 6.5vw;
   left: 18vw;
   right: 0;
   padding: 1.2vw;
@@ -475,7 +477,7 @@ body {
   content: "$"; }
 
 .conversion.CAD .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .CAD .dollars:after {
   content: "";
@@ -492,7 +494,7 @@ body {
   background-position: 0 -3vw; }
 
 .auction-ccy.CAD:before {
-  content: "CAD "; }
+  content: "CAD"; }
 
 .USD .divider:before {
   content: ","; }
@@ -501,7 +503,7 @@ body {
   content: "$"; }
 
 .conversion.USD .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .USD .dollars:after {
   content: "";
@@ -518,7 +520,7 @@ body {
   background-position: 0 -21vw; }
 
 .auction-ccy.USD:before {
-  content: "USD "; }
+  content: "USD"; }
 
 .SGD .divider:before {
   content: ","; }
@@ -527,7 +529,7 @@ body {
   content: "$"; }
 
 .conversion.SGD .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .SGD .dollars:after {
   content: "";
@@ -544,7 +546,7 @@ body {
   background-position: 0 -18vw; }
 
 .auction-ccy.SGD:before {
-  content: "SGD "; }
+  content: "SGD"; }
 
 .NZD .divider:before {
   content: ","; }
@@ -553,7 +555,7 @@ body {
   content: "$"; }
 
 .conversion.NZD .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .NZD .dollars:after {
   content: "";
@@ -570,7 +572,7 @@ body {
   background-position: 0 -15vw; }
 
 .auction-ccy.NZD:before {
-  content: "NZD "; }
+  content: "NZD"; }
 
 .AUD .divider:before {
   content: ","; }
@@ -579,7 +581,7 @@ body {
   content: "$"; }
 
 .conversion.AUD .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .AUD .dollars:after {
   content: "";
@@ -596,7 +598,7 @@ body {
   background-position: 0 -0vw; }
 
 .auction-ccy.AUD:before {
-  content: "AUD "; }
+  content: "AUD"; }
 
 .MXN .divider:before {
   content: ","; }
@@ -605,7 +607,7 @@ body {
   content: "$"; }
 
 .conversion.MXN .dollars:before {
-  content: "~$"; }
+  content: "≈ $"; }
 
 .MXN .dollars:after {
   content: "";
@@ -622,7 +624,7 @@ body {
   background-position: 0 -12vw; }
 
 .auction-ccy.MXN:before {
-  content: "MXN "; }
+  content: "MXN"; }
 
 .ZAR .divider:before {
   content: ","; }
@@ -631,7 +633,7 @@ body {
   content: "R"; }
 
 .conversion.ZAR .dollars:before {
-  content: "~R"; }
+  content: "≈ R"; }
 
 .ZAR .dollars:after {
   content: "";
@@ -648,7 +650,7 @@ body {
   background-position: 0 -22.5vw; }
 
 .auction-ccy.ZAR:before {
-  content: "ZAR "; }
+  content: "ZAR"; }
 
 .PLN .divider:before {
   content: " "; }
@@ -657,7 +659,7 @@ body {
   content: ""; }
 
 .conversion.PLN .dollars:before {
-  content: "~"; }
+  content: "≈ "; }
 
 .PLN .dollars:after {
   content: "zł";
@@ -674,7 +676,7 @@ body {
   background-position: 0 -16.5vw; }
 
 .auction-ccy.PLN:before {
-  content: "PLN zł"; }
+  content: "PLN"; }
 
 .GBP .divider:before {
   content: ","; }
@@ -683,7 +685,7 @@ body {
   content: "£"; }
 
 .conversion.GBP .dollars:before {
-  content: "~£"; }
+  content: "≈ £"; }
 
 .GBP .dollars:after {
   content: "";
@@ -700,7 +702,7 @@ body {
   background-position: 0 -7.5vw; }
 
 .auction-ccy.GBP:before {
-  content: "GBP "; }
+  content: "GBP"; }
 
 .EUR .divider:before {
   content: " "; }
@@ -709,7 +711,7 @@ body {
   content: "€"; }
 
 .conversion.EUR .dollars:before {
-  content: "~€"; }
+  content: "≈ €"; }
 
 .EUR .dollars:after {
   content: "";
@@ -726,7 +728,7 @@ body {
   background-position: 0 -6vw; }
 
 .auction-ccy.EUR:before {
-  content: "EUR "; }
+  content: "EUR"; }
 
 .CNY .divider:before {
   content: ","; }
@@ -735,7 +737,7 @@ body {
   content: "¥"; }
 
 .conversion.CNY .dollars:before {
-  content: "~¥"; }
+  content: "≈ ¥"; }
 
 .CNY .dollars:after {
   content: "";
@@ -752,7 +754,7 @@ body {
   background-position: 0 -4.5vw; }
 
 .auction-ccy.CNY:before {
-  content: "CNY "; }
+  content: "CNY"; }
 
 .JPY .divider:before {
   content: ","; }
@@ -761,7 +763,7 @@ body {
   content: "¥"; }
 
 .conversion.JPY .dollars:before {
-  content: "~¥"; }
+  content: "≈ ¥"; }
 
 .JPY .dollars:after {
   content: "";
@@ -778,7 +780,7 @@ body {
   background-position: 0 -10.5vw; }
 
 .auction-ccy.JPY:before {
-  content: "JPY "; }
+  content: "JPY"; }
 
 .INR .divider:before {
   content: ","; }
@@ -787,7 +789,7 @@ body {
   content: " ₹"; }
 
 .conversion.INR .dollars:before {
-  content: "~ ₹"; }
+  content: "≈  ₹"; }
 
 .INR .dollars:after {
   content: "";
@@ -804,7 +806,7 @@ body {
   background-position: 0 -9vw; }
 
 .auction-ccy.INR:before {
-  content: "INR "; }
+  content: "INR"; }
 
 .AED .divider:before {
   content: ","; }
@@ -813,7 +815,7 @@ body {
   content: ""; }
 
 .conversion.AED .dollars:before {
-  content: "~"; }
+  content: "≈ "; }
 
 .AED .dollars:after {
   content: "د.إ";
@@ -830,7 +832,7 @@ body {
   background-position: 0 -1.5vw; }
 
 .auction-ccy.AED:before {
-  content: "AED د.إ"; }
+  content: "AED"; }
 
 .NOK .divider:before {
   content: ","; }
@@ -839,7 +841,7 @@ body {
   content: "kr"; }
 
 .conversion.NOK .dollars:before {
-  content: "~kr"; }
+  content: "≈ kr"; }
 
 .NOK .dollars:after {
   content: "";
@@ -856,7 +858,7 @@ body {
   background-position: 0 -13.5vw; }
 
 .auction-ccy.NOK:before {
-  content: "NOK "; }
+  content: "NOK"; }
 
 .TRY .divider:before {
   content: ","; }
@@ -865,7 +867,7 @@ body {
   content: "₺"; }
 
 .conversion.TRY .dollars:before {
-  content: "~₺"; }
+  content: "≈ ₺"; }
 
 .TRY .dollars:after {
   content: "";
@@ -882,7 +884,7 @@ body {
   background-position: 0 -19.5vw; }
 
 .auction-ccy.TRY:before {
-  content: "TRY "; }
+  content: "TRY"; }
 
 .auction-ccy {
   display: inline-block;
@@ -936,6 +938,13 @@ body {
     display: inline-block;
     float: right;
     min-height: 1.3em; }
+
+.ask--price_sold .auction-ccy {
+  float: none; }
+
+.ask--price_sold .dollars {
+  float: none;
+  margin-left: 20px; }
 
 .conversions {
   text-align: left;
@@ -1543,6 +1552,84 @@ body {
   100% {
     -webkit-transform: rotateY(0deg) scale(0.7) rotateX(0deg);
             transform: rotateY(0deg) scale(0.7) rotateX(0deg); } }
+
+.sold {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #E87722;
+  color: white;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.sold--content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+  .sold--content > div {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+    transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s; }
+
+.sold--content > div:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+
+.sold--content > div:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
+
+.sold--content > div:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; }
+
+.sold--content > div:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s; }
+
+.sold--content > div:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
+
+.sold--content > div:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s; }
+
+.sold--content > div:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s; }
+
+.sold--content > div:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s; }
+
+.sold--content > div:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s; }
+
+.sold--content > div:nth-child(10) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s; }
+
+/***********************
+	SOLD STATE
+***********************/
+.s-sold .sold {
+  bottom: 0; }
+
+.s-sold .sold--content > div {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
 
 .h-t-ellipsize {
   overflow: hidden;
