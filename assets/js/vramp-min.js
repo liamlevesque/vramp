@@ -96,7 +96,16 @@ rivets.formatters.convertPrice = function(value, rate){
 
 
 rivets.formatters.greaterThanToFalse = function(value,comparison){
-	if(parseInt(value) > comparison){
+	
+	if(value > comparison){
+		return true;	
+	} 
+	else return false;
+}
+
+rivets.formatters.lt = function(value,comparison){
+	if(typeof value == "undefined" || !value) return false;
+	if(value.length < comparison){
 		return true;	
 	} 
 	else return false;
@@ -217,7 +226,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 10,
+		"currentLot": 5,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,
@@ -326,7 +335,7 @@ var vrampObject = {
 
 		toggleControls: function(e,model){
 			vrampObject.controlsVisible = !vrampObject.controlsVisible;
-			console.log(vrampObject.controlsVisible);
+			//console.log(vrampObject.controlsVisible);
 		}
 
 	};
@@ -411,7 +420,6 @@ rivets.bind($('.js--vramp-bidding'),{
 
 
 	function buildVrampTable(data){
-		console.log('test'); 
 		allLots = data[0].allOtherLots;
 		
 		navigateLot(0);

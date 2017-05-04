@@ -61,7 +61,16 @@ rivets.formatters.convertPrice = function(value, rate){
 
 
 rivets.formatters.greaterThanToFalse = function(value,comparison){
-	if(parseInt(value) > comparison){
+	
+	if(value > comparison){
+		return true;	
+	} 
+	else return false;
+}
+
+rivets.formatters.lt = function(value,comparison){
+	if(typeof value == "undefined" || !value) return false;
+	if(value.length < comparison){
 		return true;	
 	} 
 	else return false;

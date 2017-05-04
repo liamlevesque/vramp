@@ -6,7 +6,6 @@
 	
 	position: absolute;
 	bottom: 0;
-	//top: 0;
 	left: 0;
 	right: 0;
 
@@ -14,7 +13,6 @@
 
 	.s-openOffers &{
 		top: 0;
-		bottom: 0;
 	}
 
 }
@@ -208,15 +206,19 @@
 					display: block;
 				}
 			}
-
+		
+		$choice--height--oo-xxxlarge: 28vw;
+		$choice--height--oo-xxlarge: 23.5vw;
+		$choice--height--oo-xlarge: 19.5vw;
+		$choice--height--oo-large: 15.5vw;
+		$choice--height--oo-medium: 11.5vw;
+		$choice--height--oo-small: 11vh;
 		
 		//OPEN OFFERS MODE - EVERYTHING CHANGES!!		
 		.s-openOffers{
 
 			.choice--lot-flex{
-				height: 500px;
-				line-height: $lot-height_large / 2 !important;
-
+				
 				&.s-active:before{
 					border: none;
 				}
@@ -225,24 +227,26 @@
 				&:nth-last-child(n+2) ~ li {
 					min-width: 33vw;
 					max-width: 33vw;
+					height: $choice--height--oo-xxxlarge;
 					margin-bottom: $choice-item-spacing;
 					@include font-size(2);
 				}
 
-				&:nth-last-child(n+2),
-				&:nth-last-child(n+2) ~ li {
-					height: 320px;
+				&:nth-last-child(n+3),
+				&:nth-last-child(n+3) ~ li {
+					height: $choice--height--oo-xxlarge;
 				}
 
 				&:nth-last-child(n+5),
 				&:nth-last-child(n+5) ~ li {
 					min-width: 22vw;
 					max-width: 22vw;
+					height: $choice--height--oo-xlarge;
 				}
 
 				&:nth-last-child(n+7),
 				&:nth-last-child(n+7) ~ li {
-					height: 215px;
+					height: $choice--height--oo-large;
 				}
 
 				&:nth-last-child(n+10),
@@ -260,19 +264,53 @@
 
 				&:nth-last-child(n+13),
 				&:nth-last-child(n+13) ~ li {
-					height: 160px;
+					height: $choice--height--oo-medium;
 				}
 
 				&:nth-last-child(n+21),
 				&:nth-last-child(n+21) ~ li {
 					min-width: 10.7vw;
 					max-width: 10.7vw;
-					height: 88px;
+					height: $choice--height--oo-small;
+					line-height: $choice--height--oo-small !important;
 
 					.choice-lot--photo{
 						display: none;
 					}
+
+					&.s-sold, &.s-out{
+						line-height: $choice--height--oo-small/2 !important;
+					}
+
+					.choice-lot--status{
+						top: $choice--height--oo-small/2 !important;
+					}
 				}
+			}
+		}
+		
+
+		//FOR SELLING MODE WITH FEWER THAN SIX LOTS
+		.s-show-photos{
+			.choice--lot-flex{
+				height: 11vw;
+				max-width: 12vw;
+
+				&.s-active{
+					&:before{
+						z-index: 1000;
+					}
+
+					.choice-lot--number{
+						padding-top: 8px;
+					}
+				}
+			}
+		}
+
+		.s-show-photos, .s-openOffers{
+			.choice--lot-flex{
+				line-height: $lot-height_large / 2 !important;
 			}
 
 			.s-out .choice-lot--indicator{
@@ -289,10 +327,11 @@
 			}
 
 			.choice-lot--photo{
-				max-height: 400px;
+				max-height: 600px;
 			}
-
 		}
+
+		
 			
 
 

@@ -1605,7 +1605,7 @@
 			{
 				"lotNumber" : "2789",
 				"video":false,
-				"status" : null,
+				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
 				"photo" : "assets/img/vramp2.png",
 				"usage" : "100000 hrs",

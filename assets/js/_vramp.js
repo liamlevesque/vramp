@@ -47,7 +47,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 10,
+		"currentLot": 5,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,
@@ -156,7 +156,7 @@ var vrampObject = {
 
 		toggleControls: function(e,model){
 			vrampObject.controlsVisible = !vrampObject.controlsVisible;
-			console.log(vrampObject.controlsVisible);
+			//console.log(vrampObject.controlsVisible);
 		}
 
 	};
@@ -241,7 +241,6 @@ rivets.bind($('.js--vramp-bidding'),{
 
 
 	function buildVrampTable(data){
-		console.log('test'); 
 		allLots = data[0].allOtherLots;
 		
 		navigateLot(0);

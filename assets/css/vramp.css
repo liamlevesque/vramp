@@ -1067,8 +1067,7 @@ body {
   right: 0;
   z-index: 1; }
   .s-openOffers .choice-area {
-    top: 0;
-    bottom: 0; }
+    top: 0; }
 
 .choice--header {
   padding: 1.2vw;
@@ -1225,60 +1224,86 @@ body {
     max-width: 100%;
     display: block; }
 
-.s-openOffers .choice--lot-flex {
-  height: 500px;
-  line-height: 3vw !important; }
-  .s-openOffers .choice--lot-flex.s-active:before {
-    border: none; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+2),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+2) ~ li {
-    min-width: 33vw;
-    max-width: 33vw;
-    margin-bottom: 0.5vw;
-    font-size: 2.8vw; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+2),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+2) ~ li {
-    height: 320px; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+5),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+5) ~ li {
-    min-width: 22vw;
-    max-width: 22vw; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+7),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+7) ~ li {
-    height: 215px; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+10),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+10) ~ li {
-    min-width: 16.4vw;
-    max-width: 16.4vw; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+13),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
-    min-width: 13vw;
-    max-width: 13vw;
-    margin-bottom: 0.5vw; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+13),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
-    height: 160px; }
-  .s-openOffers .choice--lot-flex:nth-last-child(n+21),
-  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li {
-    min-width: 10.7vw;
-    max-width: 10.7vw;
-    height: 88px; }
-    .s-openOffers .choice--lot-flex:nth-last-child(n+21) .choice-lot--photo,
-    .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li .choice-lot--photo {
-      display: none; }
+.s-openOffers .choice--lot-flex.s-active:before {
+  border: none; }
 
-.s-openOffers .s-out .choice-lot--indicator {
+.s-openOffers .choice--lot-flex:nth-last-child(n+2),
+.s-openOffers .choice--lot-flex:nth-last-child(n+2) ~ li {
+  min-width: 33vw;
+  max-width: 33vw;
+  height: 28vw;
+  margin-bottom: 0.5vw;
+  font-size: 2.8vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+3),
+.s-openOffers .choice--lot-flex:nth-last-child(n+3) ~ li {
+  height: 23.5vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+5),
+.s-openOffers .choice--lot-flex:nth-last-child(n+5) ~ li {
+  min-width: 22vw;
+  max-width: 22vw;
+  height: 19.5vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+7),
+.s-openOffers .choice--lot-flex:nth-last-child(n+7) ~ li {
+  height: 15.5vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+10),
+.s-openOffers .choice--lot-flex:nth-last-child(n+10) ~ li {
+  min-width: 16.4vw;
+  max-width: 16.4vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+13),
+.s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+  min-width: 13vw;
+  max-width: 13vw;
+  margin-bottom: 0.5vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+13),
+.s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+  height: 11.5vw; }
+
+.s-openOffers .choice--lot-flex:nth-last-child(n+21),
+.s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li {
+  min-width: 10.7vw;
+  max-width: 10.7vw;
+  height: 11vh;
+  line-height: 11vh !important; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) .choice-lot--photo,
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li .choice-lot--photo {
+    display: none; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21).s-sold, .s-openOffers .choice--lot-flex:nth-last-child(n+21).s-out,
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li.s-sold,
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li.s-out {
+    line-height: 5.5vh !important; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) .choice-lot--status,
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li .choice-lot--status {
+    top: 5.5vh !important; }
+
+.s-show-photos .choice--lot-flex {
+  height: 11vw;
+  max-width: 12vw; }
+  .s-show-photos .choice--lot-flex.s-active:before {
+    z-index: 1000; }
+  .s-show-photos .choice--lot-flex.s-active .choice-lot--number {
+    padding-top: 8px; }
+
+.s-show-photos .choice--lot-flex, .s-openOffers .choice--lot-flex {
+  line-height: 3vw !important; }
+
+.s-show-photos .s-out .choice-lot--indicator, .s-openOffers .s-out .choice-lot--indicator {
   background-color: rgba(196, 72, 58, 0.8); }
 
-.s-openOffers .s-sold .choice-lot--indicator {
+.s-show-photos .s-sold .choice-lot--indicator, .s-openOffers .s-sold .choice-lot--indicator {
   background-color: rgba(232, 119, 34, 0.8); }
 
-.s-openOffers .choice-lot--status {
+.s-show-photos .choice-lot--status, .s-openOffers .choice-lot--status {
   height: auto;
   top: 3vw !important; }
 
-.s-openOffers .choice-lot--photo {
-  max-height: 400px; }
+.s-show-photos .choice-lot--photo, .s-openOffers .choice-lot--photo {
+  max-height: 600px; }
 
 .other-rings {
   position: fixed;
