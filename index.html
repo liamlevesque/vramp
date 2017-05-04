@@ -16,10 +16,10 @@
 			<div class="lot--title">
 				<div class="lot--number">
 					<label><span class="sale-ring">Ring 1</span></label>
-					<div class="font--300">Lot <span rv-text="vrampObject.lotDetail.lotNumber"></div>
+					<div><span class="font--200">Lot</span> <span class="font--400" rv-text="vrampObject.lotDetail.lotNumber"></span></div>
 				</div>
 				<div class="lot--description">
-					<span class="h-valign font--250" rv-text="vrampObject.lotDetail.description"></span>
+					<span class="h-valign font--250">{ vrampObject.lotDetail.description }</span>
 				</div>
 				<div class="lot--unused font--200" rv-if="vrampObject.lotDetail.unused">
 					Unused
@@ -53,22 +53,21 @@
 
 			<div class="choice-area" rv-show="vrampObject.choiceGroup">
 				<div class="choice--header font--180">
-					Choice of <span rv-text="vrampObject.choiceGroup | length"></span> Remaining
-					<span class="h-float-right" rv-if="vrampObject.openOffers">Open Offers</span>
+					Choice of { vrampObject.choiceGroup | length } Remaining
 				</div>
 				<div class="choice--body">
 					<ul class="choice--lots">
-						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active">
+						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot-flex" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active">
 							<div class="choice-lot--number">{ choicelot.lotNumber }</div>
 							<div class="choice-lot--status">
 								<div class="choice-lot--photo">
 									<img rv-src="choicelot.photo"/>									
 								</div>
 								<div class="choice-lot--indicator" rv-if="choicelot.status | comparison 'out'">
-									<i class="icon-close"></i><span>OUT</span>
+									<div class="choice-lot--status-text"><i class="icon-close"></i><span>OUT</span></div>
 								</div>
 								<div class="choice-lot--indicator" rv-if="choicelot.status | comparison 'sold'">
-									<i class="icon-sold"></i><span>SOLD</span>
+									<div class="choice-lot--status-text"><i class="icon-sold"></i><span>SOLD</span></div>
 								</div>
 							</div>
 						</li>
@@ -166,7 +165,7 @@
 				</div>
 
 				<div class="open-offers" rv-class-s-shown="vrampObject.openOffers">
-					<label for="">Open Offers</label>
+					<label for="">Remaining Lots</label>
 					<div class="font--200"> Choose lots to buy at the current ask price. </div>
 				</div>
 			</div>

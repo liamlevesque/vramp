@@ -365,7 +365,12 @@ body {
   padding: 1.2vw;
   line-height: 2.8vw; }
   .lot--description span {
-    padding-right: 1.2vw; }
+    padding-right: 1.2vw;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; }
 
 .lot--unused {
   position: absolute;
@@ -1061,13 +1066,16 @@ body {
   left: 0;
   right: 0;
   z-index: 1; }
+  .s-openOffers .choice-area {
+    top: 0;
+    bottom: 0; }
 
 .choice--header {
   padding: 1.2vw;
   padding-bottom: 0.4vw;
   width: 100%;
-  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0), #333333);
-  background: linear-gradient(top, rgba(51, 51, 51, 0), #333333);
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0), #333333 50%);
+  background: linear-gradient(top, rgba(51, 51, 51, 0), #333333 50%);
   text-transform: uppercase;
   color: white;
   -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
@@ -1079,32 +1087,74 @@ body {
 .choice--body {
   padding: 0 1.2vw 1.2vw;
   background-color: #333333; }
+  .s-openOffers .choice--body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3.9vw;
+    bottom: 0; }
 
-.choice--lot {
-  position: relative;
-  display: inline-block;
-  margin-right: 0.8vw;
-  vertical-align: top;
-  max-height: 6vw;
+.choice--lots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative; }
+
+.choice--lot-flex {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  height: 6vw;
   line-height: 6vw;
-  max-width: 20vw;
-  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 0.5vw;
+  min-width: 6.2vw;
   -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   color: #E87722;
-  text-align: center;
-  overflow: hidden; }
-  @media (min-width: 1600px) {
-    .choice--lot {
-      max-width: 320px; } }
-  .s-openOffers .choice--lot {
-    max-height: 24vh !important;
-    min-width: 16vw;
-    line-height: 3vw; }
-  .choice--lot.s-active:before {
+  text-align: center; }
+  .choice--lot-flex:nth-last-child(n+2),
+  .choice--lot-flex:nth-last-child(n+2) ~ li {
+    font-size: 2.8vw; }
+  .choice--lot-flex:nth-last-child(n+5),
+  .choice--lot-flex:nth-last-child(n+5) ~ li {
+    font-size: 1.96vw; }
+  .choice--lot-flex:nth-last-child(n+9),
+  .choice--lot-flex:nth-last-child(n+9) ~ li {
+    font-size: 1.68vw; }
+  .choice--lot-flex:nth-last-child(n+11),
+  .choice--lot-flex:nth-last-child(n+11) ~ li {
+    max-width: 6.2vw;
+    font-size: 1.54vw;
+    margin-bottom: 0.5vw;
+    height: 4vw;
+    line-height: 4vw; }
+    .choice--lot-flex:nth-last-child(n+11) .choice-lot--status,
+    .choice--lot-flex:nth-last-child(n+11) ~ li .choice-lot--status {
+      top: 2vw; }
+    .choice--lot-flex:nth-last-child(n+11).s-sold, .choice--lot-flex:nth-last-child(n+11).s-out,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-sold,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-out {
+      line-height: 2vw; }
+  .choice--lot-flex.s-active:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1113,158 +1163,122 @@ body {
     right: 0;
     border: 8px solid #E87722;
     border-radius: 8px; }
-  .choice--lot.s-sold, .choice--lot.s-out {
+  .choice--lot-flex.s-sold, .choice--lot-flex.s-out {
     background-color: #585858;
+    opacity: 0.7;
     color: white;
     line-height: 3vw; }
-  .choice--lot .choice-lot--status {
-    display: block;
-    color: white;
-    position: relative;
-    height: 6vw; }
-    .choice--lot .choice-lot--status i {
-      font-size: 0.8em;
-      margin-right: 10px; }
-    .choice--lot .choice-lot--status span {
-      display: inline-block;
-      padding-top: 0.1em; }
-  .choice--lot.s-sold .choice-lot--status {
-    color: white;
-    background-color: #333333; }
-  .choice--lot.s-out .choice-lot--status {
+
+.choice-lot--number {
+  padding-top: 0.1em; }
+
+.choice-lot--status {
+  display: block;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .s-sold .choice-lot--status, .s-out .choice-lot--status, .s-openOffers .choice-lot--status {
+    top: 3vw; }
+  .choice-lot--status i {
+    font-size: 0.8em;
+    margin-right: 0.4vw; }
+  .choice-lot--status span {
+    display: inline-block; }
+
+.choice-lot--status-text {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  padding-top: 0.1em; }
+
+.choice-lot--indicator {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.8); }
+  .s-out .choice-lot--indicator {
     background-color: #c4483a; }
-  .choice--lot .choice-lot--number {
-    display: block;
-    padding-top: 0.1em;
-    margin-bottom: -0.1em;
-    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-    transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
-  .choice--lot .choice-lot--indicator {
-    position: absolute;
-    bottom: 0;
-    height: 6vw;
-    left: 0;
-    right: 0;
-    background-color: rgba(51, 51, 51, 0.8); }
-  .choice--lot.s-out .choice-lot--indicator {
-    background-color: #c4483a; }
-  .choice--lot.s-sold .choice-lot--indicator {
+  .s-sold .choice-lot--indicator {
     background-color: #E87722; }
-  .choice--lot .choice-lot--photo {
+
+.choice-lot--photo {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .choice-lot--photo img {
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    position: relative; }
-    .choice--lot .choice-lot--photo img {
-      width: 100%;
-      max-width: 100%;
-      display: block; }
-    .s-openOffers .choice--lot .choice-lot--photo {
-      max-height: 400px; }
-  .choice--lot:nth-last-child(n+2),
-  .choice--lot:nth-last-child(n+2) ~ li {
-    max-height: 6vw;
-    line-height: 6vw; }
-    .choice--lot:nth-last-child(n+2).choice-lot--status,
-    .choice--lot:nth-last-child(n+2) ~ li.choice-lot--status {
-      font-size: 1.96vw; }
-    .choice--lot:nth-last-child(n+2).s-sold, .choice--lot:nth-last-child(n+2).s-out, .s-openOffers .choice--lot:nth-last-child(n+2),
-    .choice--lot:nth-last-child(n+2) ~ li.s-sold,
-    .choice--lot:nth-last-child(n+2) ~ li.s-out, .s-openOffers
-    .choice--lot:nth-last-child(n+2) ~ li {
-      line-height: 3vw; }
-      .choice--lot:nth-last-child(n+2).s-sold.choice-lot--status, .choice--lot:nth-last-child(n+2).s-out.choice-lot--status, .s-openOffers .choice--lot:nth-last-child(n+2).choice-lot--status,
-      .choice--lot:nth-last-child(n+2) ~ li.s-sold.choice-lot--status,
-      .choice--lot:nth-last-child(n+2) ~ li.s-out.choice-lot--status, .s-openOffers
-      .choice--lot:nth-last-child(n+2) ~ li.choice-lot--status {
-        margin-top: 0.4vw; }
-  .choice--lot:nth-last-child(n+5),
-  .choice--lot:nth-last-child(n+5) ~ li {
-    max-height: 4.5vw;
-    line-height: 4.5vw; }
-    .choice--lot:nth-last-child(n+5).choice-lot--status,
-    .choice--lot:nth-last-child(n+5) ~ li.choice-lot--status {
-      font-size: 1.68vw; }
-    .choice--lot:nth-last-child(n+5).s-sold, .choice--lot:nth-last-child(n+5).s-out,
-    .choice--lot:nth-last-child(n+5) ~ li.s-sold,
-    .choice--lot:nth-last-child(n+5) ~ li.s-out {
-      line-height: 2.25vw; }
-      .choice--lot:nth-last-child(n+5).s-sold.choice-lot--status, .choice--lot:nth-last-child(n+5).s-out.choice-lot--status,
-      .choice--lot:nth-last-child(n+5) ~ li.s-sold.choice-lot--status,
-      .choice--lot:nth-last-child(n+5) ~ li.s-out.choice-lot--status {
-        margin-top: 5px; }
-  .choice--lot:nth-last-child(n+11),
-  .choice--lot:nth-last-child(n+11) ~ li {
-    max-height: 4vw;
-    line-height: 4vw;
-    margin-bottom: 0.8vw; }
-    .choice--lot:nth-last-child(n+11).choice-lot--status,
-    .choice--lot:nth-last-child(n+11) ~ li.choice-lot--status {
-      font-size: 1.4vw; }
-    .choice--lot:nth-last-child(n+11).s-sold, .choice--lot:nth-last-child(n+11).s-out,
-    .choice--lot:nth-last-child(n+11) ~ li.s-sold,
-    .choice--lot:nth-last-child(n+11) ~ li.s-out {
-      line-height: 2vw; }
-      .choice--lot:nth-last-child(n+11).s-sold.choice-lot--status, .choice--lot:nth-last-child(n+11).s-out.choice-lot--status,
-      .choice--lot:nth-last-child(n+11) ~ li.s-sold.choice-lot--status,
-      .choice--lot:nth-last-child(n+11) ~ li.s-out.choice-lot--status {
-        margin-top: 2px; }
-  .choice--lot:nth-last-child(n+21),
-  .choice--lot:nth-last-child(n+21) ~ li {
-    max-height: 3vw;
-    line-height: 3vw;
-    margin-bottom: 0.4vw; }
-    .choice--lot:nth-last-child(n+21).choice-lot--status,
-    .choice--lot:nth-last-child(n+21) ~ li.choice-lot--status {
-      font-size: 1.12vw; }
-    .choice--lot:nth-last-child(n+21).s-sold, .choice--lot:nth-last-child(n+21).s-out,
-    .choice--lot:nth-last-child(n+21) ~ li.s-sold,
-    .choice--lot:nth-last-child(n+21) ~ li.s-out {
-      line-height: 1.5vw; }
-      .choice--lot:nth-last-child(n+21).s-sold.choice-lot--status, .choice--lot:nth-last-child(n+21).s-out.choice-lot--status,
-      .choice--lot:nth-last-child(n+21) ~ li.s-sold.choice-lot--status,
-      .choice--lot:nth-last-child(n+21) ~ li.s-out.choice-lot--status {
-        margin-bottom: 0;
-        margin-top: 1px; }
-  .choice--lot:nth-last-child(n+2),
-  .choice--lot:nth-last-child(n+2) ~ li {
-    width: calc((100% / 2) - 0.8vw); }
-  .choice--lot:nth-last-child(n+3),
-  .choice--lot:nth-last-child(n+3) ~ li {
-    width: calc((100% / 3) - 0.8vw); }
-  .choice--lot:nth-last-child(n+4),
-  .choice--lot:nth-last-child(n+4) ~ li {
-    width: calc((100% / 4) - 0.8vw); }
-  .choice--lot:nth-last-child(n+5),
-  .choice--lot:nth-last-child(n+5) ~ li {
-    width: calc((100% / 5) - 0.8vw); }
-  .choice--lot:nth-last-child(n+6),
-  .choice--lot:nth-last-child(n+6) ~ li {
-    width: calc((100% / 6) - 0.8vw); }
-  .choice--lot:nth-last-child(n+7),
-  .choice--lot:nth-last-child(n+7) ~ li {
-    width: calc((100% / 7) - 0.8vw); }
-  .choice--lot:nth-last-child(n+8),
-  .choice--lot:nth-last-child(n+8) ~ li {
-    width: calc((100% / 8) - 0.8vw); }
-  .choice--lot:nth-last-child(n+9),
-  .choice--lot:nth-last-child(n+9) ~ li {
-    width: calc((100% / 9) - 0.8vw); }
-  .choice--lot:nth-last-child(n+10),
-  .choice--lot:nth-last-child(n+10) ~ li {
-    width: calc((100% / 10) - 0.8vw); }
-  .choice--lot:nth-last-child(n+2),
-  .choice--lot:nth-last-child(n+2) ~ li {
+    max-width: 100%;
+    display: block; }
+
+.s-openOffers .choice--lot-flex {
+  height: 500px;
+  line-height: 3vw !important; }
+  .s-openOffers .choice--lot-flex.s-active:before {
+    border: none; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+2),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+2) ~ li {
+    min-width: 33vw;
+    max-width: 33vw;
+    margin-bottom: 0.5vw;
     font-size: 2.8vw; }
-  .choice--lot:nth-last-child(n+5),
-  .choice--lot:nth-last-child(n+5) ~ li {
-    font-size: 1.96vw; }
-  .choice--lot:nth-last-child(n+9),
-  .choice--lot:nth-last-child(n+9) ~ li {
-    font-size: 1.68vw; }
-  .choice--lot:nth-last-child(n+10),
-  .choice--lot:nth-last-child(n+10) ~ li {
-    font-size: 1.54vw; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+2),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+2) ~ li {
+    height: 320px; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+5),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+5) ~ li {
+    min-width: 22vw;
+    max-width: 22vw; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+7),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+7) ~ li {
+    height: 215px; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+10),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+10) ~ li {
+    min-width: 16.4vw;
+    max-width: 16.4vw; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+13),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+    min-width: 13vw;
+    max-width: 13vw;
+    margin-bottom: 0.5vw; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+13),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+    height: 160px; }
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21),
+  .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li {
+    min-width: 10.7vw;
+    max-width: 10.7vw;
+    height: 88px; }
+    .s-openOffers .choice--lot-flex:nth-last-child(n+21) .choice-lot--photo,
+    .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li .choice-lot--photo {
+      display: none; }
+
+.s-openOffers .s-out .choice-lot--indicator {
+  background-color: rgba(196, 72, 58, 0.8); }
+
+.s-openOffers .s-sold .choice-lot--indicator {
+  background-color: rgba(232, 119, 34, 0.8); }
+
+.s-openOffers .choice-lot--status {
+  height: auto;
+  top: 3vw !important; }
+
+.s-openOffers .choice-lot--photo {
+  max-height: 400px; }
 
 .other-rings {
   position: fixed;

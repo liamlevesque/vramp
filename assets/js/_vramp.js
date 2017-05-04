@@ -47,7 +47,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 0,
+		"currentLot": 10,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,

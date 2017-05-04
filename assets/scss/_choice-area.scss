@@ -1,9 +1,6 @@
 
 
-$lot-height_xsmall: 3vw;
-$lot-height_small: 4vw;
-$lot-height_med: 4.5vw;
-$lot-height_large: 6vw;
+
 
 .choice-area{
 	
@@ -16,7 +13,8 @@ $lot-height_large: 6vw;
 	z-index: 1;
 
 	.s-openOffers &{
-		
+		top: 0;
+		bottom: 0;
 	}
 
 }
@@ -26,7 +24,7 @@ $lot-height_large: 6vw;
 		padding-bottom: 0.4vw;
 		width: 100%;
 
-		background: linear-gradient(top, rgba($grey-900,0), rgba($grey-900,1));
+		background: linear-gradient(top, rgba($grey-900,0), rgba($grey-900,1) 50%);
 
 		text-transform: uppercase;
 		color: white;
@@ -41,45 +39,84 @@ $lot-height_large: 6vw;
 
 	.choice--body{
 		padding: 0 $default-padding $default-padding;
-
 		background-color: $grey-900;
-	}
 		
+		.s-openOffers &{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 3.9vw;
+			bottom: 0;
+		}
+	}
 
-		.choice--lot{
-			position: relative;
-			display: inline-block;
-			margin-right: $choice-spacing;
+	.choice--lots{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		position: relative;
+	}
+		$choice-item-spacing: 0.5vw;
+		$lot-height_xsmall: 3vw;
+		$lot-height_small: 4vw;
+		$lot-height_med: 4.5vw;
+		$lot-height_large: 6vw;
 
-			vertical-align: top;
-
-			max-height: $lot-height_large;
+		.choice--lot-flex{
+			flex-grow: 1;
+			flex-basis: 0;
+			height: $lot-height_large;
 			line-height: $lot-height_large;
-			max-width: 20vw;
-			white-space: nowrap;
-			
-			background-color: white;
-			border-radius: 8px;
-			//border:  solid transparent;
-			box-shadow: $ritchie-shadow;
 
-			transition: $transition;
-			
-			color: $brand-color;
-			text-align: center;
-			
+			position: relative;
 			overflow: hidden;
 
-			@include vrampbreakpoint(large){
-				max-width: 320px;
+			background-color: white;
+			border-radius: 8px;
+			box-shadow: $ritchie-shadow;
+			margin-right: $choice-item-spacing;
+			min-width: 6.2vw;
+
+			transition: $transition;
+
+			color: $brand-color;
+			text-align: center;
+
+		//FONT SIZE DEPENDS ON NUMBER OF ITEMS
+			&:nth-last-child(n+2),
+			&:nth-last-child(n+2) ~ li {
+				@include font-size(2);
 			}
 
-			.s-openOffers &{
-				max-height: 24vh !important;
-				min-width: 16vw;
-				line-height: $lot-height_large / 2;
+			&:nth-last-child(n+5),
+			&:nth-last-child(n+5) ~ li {
+				@include font-size(1.4);
 			}
-			
+
+			&:nth-last-child(n+9),
+			&:nth-last-child(n+9) ~ li {
+				@include font-size(1.2);
+			}
+
+			&:nth-last-child(n+11),
+			&:nth-last-child(n+11) ~ li {
+				max-width: 6.2vw;
+				@include font-size(1.1);
+				margin-bottom: $choice-item-spacing;
+				height: $lot-height_small;
+				line-height: $lot-height_small;
+
+				.choice-lot--status{
+					top: $lot-height_small/2;
+				}
+
+				&.s-sold, &.s-out{
+					line-height: $lot-height_small/2;
+				}
+			}
+
 			&.s-active {
 				// background-color: $brand-color;
 				// color: white;
@@ -97,191 +134,166 @@ $lot-height_large: 6vw;
 
 			&.s-sold, &.s-out{
 				background-color: $grey-700;
+				opacity: 0.7;
 				color: rgba(white,1);
 				line-height: $lot-height_large / 2;
 			}
 
-				.choice-lot--status{
-					display: block;
-					color: white;
-					position: relative;
-					height: $lot-height_large;
-
-					i{
-						font-size: 0.8em;
-						margin-right: 10px;
-					}
-
-					span{
-						display: inline-block;
-    					padding-top: 0.1em;
-					}
-				}
-
-					&.s-sold .choice-lot--status{
-						color: white;
-						background-color: $grey-900;
-					}
-
-					&.s-out .choice-lot--status{
-						background-color: $error-colour;
-					}
-
-				.choice-lot--number{
-					display: block;
-					padding-top: 0.1em;
-    				margin-bottom: -0.1em;
-					transition: $transition;
-				}
-
-				.choice-lot--indicator{
-					position: absolute;
-					bottom: 0;
-					height: $lot-height_large;
-					left: 0;
-					right: 0;
-					background-color: rgba($grey-900, 0.8);
-				}
-
-					&.s-out .choice-lot--indicator{
-						background-color: $error-colour;
-					}
-
-					&.s-sold .choice-lot--indicator{
-						background-color: $brand-color;
-					}
-
-				.choice-lot--photo{
-					width: 100%;
-					max-height: 0;
-					overflow: hidden;
-					position: relative;
-
-					img{
-						width: 100%;
-						max-width: 100%;
-						display: block;
-					}
-					
-					.s-openOffers &{
-						max-height: 400px;
-					}
-				}
-
-
-				
-		//DIFFERENT STYLING FOR DIFFERENT QUANTITIES OF LOTS
-
-			&:nth-last-child(n+2),
-			&:nth-last-child(n+2) ~ li {
-				max-height: $lot-height_large;
-				line-height: $lot-height_large;
-
-				&.choice-lot--status{
-					@include font-size(1.4);
-				}
-				
-				&.s-sold, &.s-out, .s-openOffers &{
-					line-height: $lot-height_large / 2;
-
-					&.choice-lot--status{
-						//margin-bottom: 5px;
-						margin-top: 0.4vw;
-					}
-				}
-			}
-
-
-		//BETWEEN FIVE AND TEN LOTS
-			&:nth-last-child(n+5),
-			&:nth-last-child(n+5) ~ li {
-				max-height: $lot-height_med;
-				line-height: $lot-height_med;
-
-				&.choice-lot--status{
-					@include font-size(1.2);
-				}
-				
-				&.s-sold, &.s-out{
-					line-height: $lot-height_med / 2;
-
-					&.choice-lot--status{
-						//margin-bottom: 5px;
-						margin-top: 5px;
-					}
-				}
-			}
-			
-		//MORE THAN TEN LOTS
-			&:nth-last-child(n+11),
-			&:nth-last-child(n+11) ~ li {
-				max-height: $lot-height_small;
-				line-height: $lot-height_small;
-				margin-bottom: $choice-spacing;
-
-				&.choice-lot--status{
-					@include font-size(1);
-				}
-
-				&.s-sold, &.s-out{
-					line-height: $lot-height_small / 2;
-
-					&.choice-lot--status{
-						//margin-bottom: 2px;
-						margin-top: 2px;
-					}
-				}
-			}
-
-		//MORE THAN 20 LOTS
-			&:nth-last-child(n+21),
-			&:nth-last-child(n+21) ~ li {
-				max-height: $lot-height_xsmall;
-				line-height: $lot-height_xsmall;
-				margin-bottom: $choice-spacing/2;
-
-				&.choice-lot--status{
-					@include font-size(0.8);
-				}
-
-				&.s-sold, &.s-out{
-					line-height: $lot-height_xsmall / 2;
-
-					&.choice-lot--status{
-						margin-bottom: 0; 
-						margin-top: 1px;
-					}
-				}
-			}
-
-
-		//ADJUSTING WIDTH OF ITEMS UP TO MAX OF 10 ITEMS
-			@for $i from 2 through 10{
-			  	&:nth-last-child(n+#{$i}),
-			  	&:nth-last-child(n+#{$i}) ~ li{
-			    	
-			    	width: calc((100% / #{$i}) - #{$choice-spacing}); 
-				}
-			}
-
-			&:nth-last-child(n+2),
-			&:nth-last-child(n+2) ~ li {
-				@include font-size(2);
-			}
-
-			&:nth-last-child(n+5),
-			&:nth-last-child(n+5) ~ li {
-				@include font-size(1.4);
-			}
-
-			&:nth-last-child(n+9),
-			&:nth-last-child(n+9) ~ li {
-				@include font-size(1.2);
-			}
-
-			&:nth-last-child(n+10),
-			&:nth-last-child(n+10) ~ li {
-				@include font-size(1.1);
-			}
-	
 		}
+
+			.choice-lot--number{
+				padding-top: 0.1em;
+			}
+
+			.choice-lot--status{
+				display: block;
+				position: absolute;
+				top: 100%;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				overflow: hidden;
+				transition: $transition;
+
+				.s-sold &, .s-out &, .s-openOffers &{
+					top: $lot-height_large/2;
+				}
+
+				i{
+					font-size: 0.8em;
+					margin-right: 0.4vw;
+				}
+
+				span{
+					display: inline-block;
+				}
+			}
+
+				.choice-lot--status-text{
+					@include vert-align;
+					width: 100%;
+					padding-top: 0.1em;
+				}
+
+
+			.choice-lot--indicator{
+				position: absolute;
+				bottom: 0;
+				top: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba($grey-900, 0.8);
+
+				.s-out &{
+					background-color: $error-colour;
+				}
+
+				.s-sold &{
+					background-color: $brand-color;
+				}
+			}
+
+			.choice-lot--photo{
+				width: 100%;
+				max-height: 0;
+				overflow: hidden;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				transition: $transition;
+
+				img{
+					width: 100%;
+					max-width: 100%;
+					display: block;
+				}
+			}
+
+		
+		//OPEN OFFERS MODE - EVERYTHING CHANGES!!		
+		.s-openOffers{
+
+			.choice--lot-flex{
+				height: 500px;
+				line-height: $lot-height_large / 2 !important;
+
+				&.s-active:before{
+					border: none;
+				}
+
+				&:nth-last-child(n+2),
+				&:nth-last-child(n+2) ~ li {
+					min-width: 33vw;
+					max-width: 33vw;
+					margin-bottom: $choice-item-spacing;
+					@include font-size(2);
+				}
+
+				&:nth-last-child(n+2),
+				&:nth-last-child(n+2) ~ li {
+					height: 320px;
+				}
+
+				&:nth-last-child(n+5),
+				&:nth-last-child(n+5) ~ li {
+					min-width: 22vw;
+					max-width: 22vw;
+				}
+
+				&:nth-last-child(n+7),
+				&:nth-last-child(n+7) ~ li {
+					height: 215px;
+				}
+
+				&:nth-last-child(n+10),
+				&:nth-last-child(n+10) ~ li {
+					min-width: 16.4vw;
+					max-width: 16.4vw;
+				}
+
+				&:nth-last-child(n+13),
+				&:nth-last-child(n+13) ~ li {
+					min-width: 13vw;
+					max-width: 13vw;
+					margin-bottom: $choice-item-spacing;
+				}
+
+				&:nth-last-child(n+13),
+				&:nth-last-child(n+13) ~ li {
+					height: 160px;
+				}
+
+				&:nth-last-child(n+21),
+				&:nth-last-child(n+21) ~ li {
+					min-width: 10.7vw;
+					max-width: 10.7vw;
+					height: 88px;
+
+					.choice-lot--photo{
+						display: none;
+					}
+				}
+			}
+
+			.s-out .choice-lot--indicator{
+				background-color: rgba($error-colour,0.8);
+			}
+
+			.s-sold .choice-lot--indicator{
+				background-color: rgba($brand-color,0.8);
+			}
+
+			.choice-lot--status{
+				height: auto;
+				top: $lot-height_large/2 !important;
+			}
+
+			.choice-lot--photo{
+				max-height: 400px;
+			}
+
+		}
+			
+
+
+

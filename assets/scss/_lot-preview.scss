@@ -75,7 +75,18 @@
 
 			span{
 				padding-right: $default-padding;
+				@include lineclamp(2);
 			}
+
+			// &:after{
+			// 	content: "";
+			// 	position: absolute;
+			// 	right: 0;
+			// 	width: 200px;
+			// 	top: 50%;
+			// 	bottom: 0;
+			// 	background: linear-gradient(to right, rgba(white,0), rgba(white,1) 80%, rgba(white,1));
+			// }
 		}
 
 		.lot--unused{

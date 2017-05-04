@@ -448,7 +448,7 @@
 				"active":false
 			},
 			{
-				"lotNumber" : "2747",
+				"lotNumber" : "27477A",
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1627,7 +1627,7 @@
 			{
 				"lotNumber" : "2791",
 				"video":false,
-				"status" : null,
+				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
 				"photo" : "assets/img/vramp3.png",
 				"usage" : "4756 hrs",
