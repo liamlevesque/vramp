@@ -27,12 +27,6 @@
   text-overflow: ellipsis;
 }
 
-@mixin vert-align{
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
-}
-
 @mixin lineclamp($length){
   display: -webkit-box;
   text-overflow: ellipsis;
@@ -40,6 +34,49 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $length;
 }
+
+@mixin multiLineFadeEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  display: block;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount - 0.1vw; 
+
+  &:before {
+    content: '';
+    height: 1.2em;
+    width: 200px;
+    background: linear-gradient(to right, rgba(white,0), white 50%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 1.2em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+@mixin absfill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin vert-align{
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+
 
 //TRANSITIONS
 $transition-time_1: .2s;

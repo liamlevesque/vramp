@@ -3,18 +3,9 @@
 
 
 .choice-area{
-	
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
+	flex: 0 0 auto;
+	transition: $transition;
 	z-index: 1;
-
-	.s-openOffers &{
-		top: 0;
-	}
-
 }
 
 	.choice--header{
@@ -39,13 +30,13 @@
 		padding: 0 $default-padding $default-padding;
 		background-color: $grey-900;
 		
-		.s-openOffers &{
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 3.9vw;
-			bottom: 0;
-		}
+		// .s-openOffers &{
+		// 	position: absolute;
+		// 	left: 0;
+		// 	right: 0;
+		// 	top: 3.9vw;
+		// 	bottom: 0;
+		// }
 	}
 
 	.choice--lots{
@@ -72,7 +63,7 @@
 			overflow: hidden;
 
 			background-color: white;
-			border-radius: 8px;
+			border-radius: 12px;
 			box-shadow: $ritchie-shadow;
 			margin-right: $choice-item-spacing;
 			min-width: 6.2vw;
@@ -121,12 +112,12 @@
 				&:before{
 					content: "";
 					position: absolute;
-					left: 0;
-					top: 0;
-					bottom: 0;
-					right: 0;
-					border: 8px solid $brand-color;
-					border-radius: 8px;
+				    left: -8px;
+				    top: -8px;
+				    bottom: -8px;
+				    right: -8px;
+				    border: 14px solid $brand-color;
+				    border-radius: 18px;
 				}
 			}
 
@@ -208,19 +199,26 @@
 			}
 		
 		$choice--height--oo-xxxlarge: 28vw;
-		$choice--height--oo-xxlarge: 23.5vw;
+		$choice--height--oo-xxlarge: 26vw;
 		$choice--height--oo-xlarge: 19.5vw;
-		$choice--height--oo-large: 15.5vw;
-		$choice--height--oo-medium: 11.5vw;
+		$choice--height--oo-large: 17.2vw; 
+		$choice--height--oo-mlarge: 15.5vw;
+		$choice--height--oo-medium: 12.5vw;
 		$choice--height--oo-small: 11vh;
 		
 		//OPEN OFFERS MODE - EVERYTHING CHANGES!!		
 		.s-openOffers{
 
 			.choice--lot-flex{
-				
-				&.s-active:before{
-					border: none;
+
+				&.s-active{
+					.choice-lot--number{
+						padding-top: 0.1em !important;
+					}				
+	
+					&:before{
+						border: none;
+					}
 				}
 
 				&:nth-last-child(n+2),
@@ -253,6 +251,7 @@
 				&:nth-last-child(n+10) ~ li {
 					min-width: 16.4vw;
 					max-width: 16.4vw;
+					height: $choice--height--oo-mlarge;
 				}
 
 				&:nth-last-child(n+13),

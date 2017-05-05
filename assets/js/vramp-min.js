@@ -177,6 +177,32 @@ rivets.binders.adderrorclass = function(el, value) {
 	else $(el).removeClass('s-error');
 }
 
+
+$(function(){
+
+	$(document).on('keyup',function(e){
+		console.log(e.which);
+		switch(e.which){
+			case 39:
+				navigateLot(1);
+				break;
+
+			case 37:
+				navigateLot(-1);
+				break;
+
+			case 79:
+				vrampController.toggleOpenOffers();
+				break;
+
+			case 82:
+				vrampController.toggleOtherRings();
+				break;
+		}
+	});
+
+});
+
 var allConversions = [
 		{
 			"currency": "USD",
@@ -226,7 +252,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 5,
+		"currentLot": 9,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,
@@ -429,6 +455,7 @@ rivets.bind($('.js--vramp-bidding'),{
 	function navigateLot(increment){
 
 		vrampObject.currentLot += increment;
+		if(mySwiper != null) mySwiper.destroy(false,true);
 
 		//CHECK IF THIS IS A CHOICE GROUP AND BUILD IF SO
 		if(isChoiceGroup()){
@@ -446,14 +473,6 @@ rivets.bind($('.js--vramp-bidding'),{
 					autoplay: 8000,
 					speed: 300,
 					effect: "coverflow",
-					// pagination: '.swiper-pagination',
-					// paginationClickable: 'true',
-					// nextButton: '.swiper-button-next',
-					// prevButton: '.swiper-button-prev',
-					//autoHeight: true,
-					// onSlideChangeEnd: function(mySwiper){
-					// 	$('.js--swiper-active').text($('.swiper-slide-active').data('swiper-slide-index')+1);
-					// }
 				})
 			}
 		}
@@ -480,6 +499,15 @@ rivets.bind($('.js--vramp-bidding'),{
 	function updateChoiceGroup(){
 		vrampObject.activeChoiceLot = activateFirstAvailableChoiceLot();
 		vrampObject.lotDetail = vrampObject.choiceGroup[vrampObject.activeChoiceLot];
+		if(typeof vrampObject.lotDetail.photos != undefined){
+			var mySwiper = new Swiper ('.swiper-container', {
+				direction: 'horizontal',
+				loop: true,
+				autoplay: 8000,
+				speed: 300,
+				effect: "coverflow",
+			})
+		}
 	}
 
 

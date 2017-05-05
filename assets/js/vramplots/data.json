@@ -35,6 +35,15 @@
 			"usage" : "4756 hrs",
 			"unused" : true
 		},
+		{
+			"lotNumber" : "2745A",
+			"video":false,
+			"status" : null,
+			"description" : "2008 Manitou 4x4 Bucket Lift",
+			"photo" : "assets/img/vramp2.png",
+			"usage" : "4756 hrs",
+			"unused" : true
+		},
 		[
 			{
 				"lotNumber" : "2743",
@@ -282,8 +291,14 @@
 				"lotNumber" : "2747",
 				"video":false,
 				"status" : null,
-				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
+				"description" : "2012 Manitou 4x4 Bucket Lift with a long short description that will need to be truncated",
 				"photo" : "assets/img/vramp2.png",
+				"photos": [
+					{"src": "assets/img/vramp1.jpg"},
+					{"src": "assets/img/vramp2.jpg"},
+					{"src": "assets/img/vramp3.jpg"},
+					{"src": "assets/img/vramp4.jpg"}
+				],
 				"usage" : "100000 hrs",
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,

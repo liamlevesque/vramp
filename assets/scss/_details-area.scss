@@ -1,10 +1,8 @@
 
 
 .details-area{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
+	@include absfill;
+	left: auto;
 
 	width: $details-width;
 
@@ -36,11 +34,7 @@
 }
 
 	.active-details{
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		@include absfill;
 
 		transform: translateX(0);
 		transition: $transition;

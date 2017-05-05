@@ -1,11 +1,7 @@
 //RIGHT HAND SIDE STYLES
 	
 	.paused-details, .pre-auction-details, .post-auction-details{
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		@include absfill;
 		
 		transform: translateX(-100%);
 
@@ -27,11 +23,9 @@
 		}
 
 		.ring-detail{
-			position: absolute;
-			top: 0;
+			@include absfill;
+			bottom: auto;
 			height: $paused-upper-height;
-			left: 0;
-			right: 0;
 			
 			padding: 3vw;
 
@@ -49,12 +43,9 @@
 			}
 
 		.ring-status{
-			position: absolute;
+			@include absfill;
 			top: $paused-upper-height;
-			bottom: 0;
-			left: 0;
-			right: 0;
-
+			
 			background-color: $bg-color-auctioneer-message;
 
 			text-align: center;
