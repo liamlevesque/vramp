@@ -2,12 +2,17 @@
 	@include ellipsize;
 }
 
+.h-ta-right{
+	text-align: right;
+}
+
 .h-valign{
 	@include vert-align;
 	position: absolute;
 }
 
 .c-brand{color: $brand-color;}
+.c-brand_dark{color: $bg-color-auctioneer-message;} 
 
 .h-mb-100{
 	margin-bottom: $default-padding/2;
@@ -15,6 +20,10 @@
 	@include vrampbreakpoint(medium){
 		margin-bottom: $default-padding;		
 	}
+}
+
+.h-mt-sub-100{
+	margin-top: -0.8vw;
 }
 
 

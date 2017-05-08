@@ -21,6 +21,13 @@
   }
 }
 
+@mixin aspectBreakpoint($point){
+  @if $point == wide{
+    @media screen and (min-aspect-ratio: 16/9) { @content; }  
+  }
+}
+
+
 @mixin ellipsize{
   overflow: hidden;
   white-space: nowrap;

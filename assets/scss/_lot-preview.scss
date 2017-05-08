@@ -79,43 +79,60 @@
 				//@include multiLineFadeEllipsis($lineHeight: 2.8vw, $lineCount: 2, $bgColor: white);  
 				@include lineclamp(2);
 			}
-
-			// &:after{
-			// 	content: "";
-			// 	position: absolute;
-			// 	right: 0;
-			// 	width: 200px;
-			// 	top: 50%;
-			// 	bottom: 0;
-			// 	background: linear-gradient(to right, rgba(white,0), rgba(white,1) 80%, rgba(white,1));
-			// }
 		}
 
-		.lot--unused{
+		.lot--qualifier-flag{
 			position: absolute;
 			bottom: 0;
-			right: 10px;
+			right: 5px;
 			background-color: $contrast-colour;
-			padding: 5px 20px 0;
 			color: white;
-			transform: translateY(50%);
+			transform: translateY(100%);
 			text-transform: uppercase;
+			text-align: center;
 
 			&:after{
 				content: "";
-				width: 11px;
+				width: 10px;
 				display: block;
 				position: absolute;
 				right: -10px;
 				top: 0;
 				bottom: 0;
-				background-color: darken($contrast-colour, 10%);
+				background-color: darken($contrast-colour, 15%);
 				transform: skewY(-20deg);
 				transform-origin: 0 0;
 			}
 		}
 
-	
+			.lot--quantity{
+				padding: 5px 20px 0;
+			}
+
+			.lot--unused{
+				padding: 5px 20px 0;
+				background-color: darken($contrast-colour,10%);
+			}
+
+
+@mixin positionphotos{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	@include aspectBreakpoint(wide){
+		width: auto;
+		max-width: auto;
+		top: 0;
+		height: 105%;
+		max-height: 105%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
 
 	.lot--media{
 		flex: 1 1 auto;
@@ -140,25 +157,9 @@
 		.media--photo{
 			@include absfill;
 			bottom: -30px;
-			// position: absolute;
-			// top: -50%;
-			// left: -50%;
-			// width: 200%;
-			// height: 200%;
-
+			
 			img{
-				// position: absolute; 
-				// top: 0; 
-				// left: 0; 
-				// right: 0; 
-				// bottom: 0; 
-				// margin: auto; 
-				// min-width: 50%;
-				// min-height: 50%;
-				height: 100%;
-				max-height: 100%;
-				margin-left: 50%;
-				transform: translateX(-50%)
+				@include positionphotos;
 			}
 		}
 	}
@@ -176,9 +177,6 @@
 			}
 
 			img{
-				height: 100%;
-	    		max-height: 100%;
-	    		display: block;
-	    		margin: 0 auto;
-	    	}
+				@include positionphotos;
+			}
 	    }

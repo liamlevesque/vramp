@@ -129,6 +129,13 @@ rivets.formatters.zeroToFalse = function(value){
 	else return true;
 }
 
+rivets.formatters.lengthgt = function(value,comparison){
+	console.log(value.length, comparison);
+	if(value.length > comparison) return true;
+	else return false;
+}
+
+
 rivets.formatters.zeroOrEmptyToFalse = function(value){
 	if(value === 0 || value === ''|| isNaN(value)) return false;
 	else return true;
@@ -181,7 +188,6 @@ rivets.binders.adderrorclass = function(el, value) {
 $(function(){
 
 	$(document).on('keyup',function(e){
-		console.log(e.which);
 		switch(e.which){
 			case 39:
 				navigateLot(1);
@@ -252,7 +258,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 9,
+		"currentLot": 3,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,

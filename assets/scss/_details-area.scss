@@ -163,7 +163,7 @@
 				vertical-align: top;
 				margin-right: 7px;
 				width: $flag-width;
-				height: $flag-height;
+				height: $flag-height - 0.1vw;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
 				background-image: url(../img/ccy-flags.png);
@@ -175,16 +175,17 @@
 			
 			padding: 0 10px;
 			overflow: hidden;
-			margin-bottom: 2vw;
+			margin-bottom: 0.8vw;
+			text-align: left;
 
 			@include vrampbreakpoint(medium){
 				padding: 0 $default-padding;
 			}
 
 			label{
-				
-				display: block;
+				display: inline-block;
 				margin-bottom: 0.6vw;
+				text-align: left;
 			}
 
 			i{
@@ -198,6 +199,7 @@
 			.ask--price{
 				//display: inline-block;
 				position: relative;
+				overflow: hidden;
 			
 				&:before{
 					@extend .font--180;
@@ -230,16 +232,16 @@
 		.conversions{
 			text-align: left;
 			margin: 0 0.8vw;
+			padding: 0.8vw 0.8vw 0.1vw;
+			background-color: rgba(0,0,0,0.1);
+				
 		}
 
 			.conversion{
-				padding: 0.8vw;
-				background-color: rgba(0,0,0,0.1);
+				padding-bottom: 0.8vw;
 				position: relative;
-				margin-bottom: 0.5vw;
 				overflow: hidden;
 
-				
 				&.ccy{
 					&:after{
 						position: absolute;
@@ -251,7 +253,6 @@
 						position: absolute;
 						width: $flag-width;
 						left: 0.6vw;
-						top: 0.6vw;
 
 						@extend .font--120;
 						text-align: center;

@@ -21,9 +21,16 @@
 				<div class="lot--description">
 					<span class="h-valign font--250">{ vrampObject.lotDetail.description }</span>
 				</div>
-				<div class="lot--unused font--200" rv-if="vrampObject.lotDetail.unused">
-					Unused
+				<div class="lot--qualifier-flag font--200" >
+					<div class="lot--quantity" rv-if="vrampObject.lotDetail.qty | gt 0">
+						<div class="font--200">Quantity</div>
+						<div class="font--300">{vrampObject.lotDetail.qty}</div>
+					</div>
+					<div class="lot--unused font--200" rv-if="vrampObject.lotDetail.unused">
+						Unused
+					</div>
 				</div>
+
 			</div>
 
 			<div class="lot--media"> 
@@ -117,18 +124,21 @@
 					<div class="h-valign">
 
 						<div class="ask">
-							<label rv-hide="vrampObject.lotDetail.status" class="font--300">ASK&nbsp;&nbsp;</label>
-							<label rv-show="vrampObject.lotDetail.status" class="font--300"><i class="c-brand icon-sold"></i>SOLD</label>
+							<label rv-hide="vrampObject.lotDetail.status" class="font--250">ASK PRICE</label>
+							<label rv-show="vrampObject.lotDetail.status" class="font--250"><i class="c-brand icon-sold"></i>SOLD</label>
+							<div class="h-float-right font--250" rv-if="vrampObject.lotDetail.qty | gt 0">{vrampObject.lotDetail.qty}x</div>
 							<div class="ask--price h-ta-right ccy CAD">
 								<span class="auction-ccy CAD"></span>
 								<div class="dollars font--400" rv-html="vrampObject.price | price"></div>
 							</div>
+							<div class="h-ta-right h-mt-sub-100 font--150" rv-if="vrampObject.lotDetail.qty | gt 0">each</div>
 						</div>
 
-						<div class="conversions">
+						<div class="conversions" rv-if="vrampObject.conversions | lengthgt 0">
 							<div rv-each-conversion="vrampObject.conversions" class="conversion ccy" rv-addccyclass="conversion.currency" rv-class-s-outofauction="conversion.currency">
 								<span class="dollars font--250" rv-html="conversion.rate | convertedVrampPrice vrampObject.price conversion.currency"></span>
 							</div>
+							<div class="h-ta-right h-mt-sub-100 font--120 c-brand_dark">(APPROXIMATE)</div> 
 						</div>
 					</div>
 

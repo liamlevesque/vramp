@@ -2,7 +2,6 @@
 $(function(){
 
 	$(document).on('keyup',function(e){
-		console.log(e.which);
 		switch(e.which){
 			case 39:
 				navigateLot(1);
@@ -73,7 +72,7 @@ var allConversions = [
 
 var vrampObject = {
 		"auctionCCY": "CAD",
-		"currentLot": 9,
+		"currentLot": 3,
 		"lotDetail":{},
 		"conversions": [],
 		"price" : 10000,

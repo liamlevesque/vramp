@@ -94,6 +94,13 @@ rivets.formatters.zeroToFalse = function(value){
 	else return true;
 }
 
+rivets.formatters.lengthgt = function(value,comparison){
+	console.log(value.length, comparison);
+	if(value.length > comparison) return true;
+	else return false;
+}
+
+
 rivets.formatters.zeroOrEmptyToFalse = function(value){
 	if(value === 0 || value === ''|| isNaN(value)) return false;
 	else return true;

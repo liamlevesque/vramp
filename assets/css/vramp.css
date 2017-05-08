@@ -382,29 +382,36 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2; }
 
-.lot--unused {
+.lot--qualifier-flag {
   position: absolute;
   bottom: 0;
-  right: 10px;
+  right: 5px;
   background-color: #36AE4F;
-  padding: 5px 20px 0;
   color: white;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  text-transform: uppercase; }
-  .lot--unused:after {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  text-transform: uppercase;
+  text-align: center; }
+  .lot--qualifier-flag:after {
     content: "";
-    width: 11px;
+    width: 10px;
     display: block;
     position: absolute;
     right: -10px;
     top: 0;
     bottom: 0;
-    background-color: #2a873d;
+    background-color: #247434;
     -webkit-transform: skewY(-20deg);
             transform: skewY(-20deg);
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0; }
+
+.lot--quantity {
+  padding: 5px 20px 0; }
+
+.lot--unused {
+  padding: 5px 20px 0;
+  background-color: #2a873d; }
 
 .lot--media {
   -webkit-box-flex: 1;
@@ -435,11 +442,23 @@ body {
     right: 0;
     bottom: -30px; }
     .lot--media .media--photo img {
-      height: 100%;
-      max-height: 100%;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      @media screen and (min-aspect-ratio: 16 / 9) {
+        .lot--media .media--photo img {
+          width: auto;
+          max-width: auto;
+          top: 0;
+          height: 105%;
+          max-height: 105%;
+          margin-left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
 
 .media--photos {
   position: absolute;
@@ -458,10 +477,23 @@ body {
   .swiper-container .swiper-slide {
     background-color: #333333; }
   .swiper-container img {
-    height: 100%;
-    max-height: 100%;
     display: block;
-    margin: 0 auto; }
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    @media screen and (min-aspect-ratio: 16 / 9) {
+      .swiper-container img {
+        width: auto;
+        max-width: auto;
+        top: 0;
+        height: 105%;
+        max-height: 105%;
+        margin-left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
 
 .details-area {
   position: absolute;
@@ -953,7 +985,7 @@ body {
   vertical-align: top;
   margin-right: 7px;
   width: 3vw;
-  height: 1.5vw;
+  height: 1.4vw;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-image: url(../img/ccy-flags.png); }
@@ -961,19 +993,22 @@ body {
 .ask {
   padding: 0 10px;
   overflow: hidden;
-  margin-bottom: 2vw; }
+  margin-bottom: 0.8vw;
+  text-align: left; }
   @media (min-width: 1280px) {
     .ask {
       padding: 0 1.2vw; } }
   .ask label {
-    display: block;
-    margin-bottom: 0.6vw; }
+    display: inline-block;
+    margin-bottom: 0.6vw;
+    text-align: left; }
   .ask i {
     margin-right: 1rem;
     font-size: 0.8em; }
 
 .ask--price {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .ask--price:before {
     vertical-align: top; }
   .ask--price:before, .ask--price:after {
@@ -992,13 +1027,13 @@ body {
 
 .conversions {
   text-align: left;
-  margin: 0 0.8vw; }
+  margin: 0 0.8vw;
+  padding: 0.8vw 0.8vw 0.1vw;
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .conversion {
-  padding: 0.8vw;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.8vw;
   position: relative;
-  margin-bottom: 0.5vw;
   overflow: hidden; }
   .conversion.ccy:after {
     position: absolute;
@@ -1008,7 +1043,6 @@ body {
     position: absolute;
     width: 3vw;
     left: 0.6vw;
-    top: 0.6vw;
     text-align: center; }
   .conversion .dollars {
     float: right;
@@ -1273,6 +1307,10 @@ body {
 .s-openOffers .choice--lot-flex:nth-last-child(n+3),
 .s-openOffers .choice--lot-flex:nth-last-child(n+3) ~ li {
   height: 26vw; }
+  @media screen and (min-aspect-ratio: 16 / 9) {
+    .s-openOffers .choice--lot-flex:nth-last-child(n+3),
+    .s-openOffers .choice--lot-flex:nth-last-child(n+3) ~ li {
+      height: 23.4vw; } }
 
 .s-openOffers .choice--lot-flex:nth-last-child(n+5),
 .s-openOffers .choice--lot-flex:nth-last-child(n+5) ~ li {
@@ -1282,7 +1320,11 @@ body {
 
 .s-openOffers .choice--lot-flex:nth-last-child(n+7),
 .s-openOffers .choice--lot-flex:nth-last-child(n+7) ~ li {
-  height: 17.2vw; }
+  height: 19.4vw; }
+  @media screen and (min-aspect-ratio: 16 / 9) {
+    .s-openOffers .choice--lot-flex:nth-last-child(n+7),
+    .s-openOffers .choice--lot-flex:nth-last-child(n+7) ~ li {
+      height: 15.5vw; } }
 
 .s-openOffers .choice--lot-flex:nth-last-child(n+10),
 .s-openOffers .choice--lot-flex:nth-last-child(n+10) ~ li {
@@ -1294,11 +1336,12 @@ body {
 .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
   min-width: 13vw;
   max-width: 13vw;
-  margin-bottom: 0.5vw; }
-
-.s-openOffers .choice--lot-flex:nth-last-child(n+13),
-.s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+  margin-bottom: 0.5vw;
   height: 12.5vw; }
+  @media screen and (min-aspect-ratio: 16 / 9) {
+    .s-openOffers .choice--lot-flex:nth-last-child(n+13),
+    .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
+      height: 11.5vw; } }
 
 .s-openOffers .choice--lot-flex:nth-last-child(n+21),
 .s-openOffers .choice--lot-flex:nth-last-child(n+21) ~ li {
@@ -1714,6 +1757,9 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
+.h-ta-right {
+  text-align: right; }
+
 .h-valign {
   top: 50%;
   position: relative;
@@ -1724,11 +1770,17 @@ body {
 .c-brand {
   color: #E87722; }
 
+.c-brand_dark {
+  color: #7d3d0d; }
+
 .h-mb-100 {
   margin-bottom: 0.6vw; }
   @media (min-width: 1280px) {
     .h-mb-100 {
       margin-bottom: 1.2vw; } }
+
+.h-mt-sub-100 {
+  margin-top: -0.8vw; }
 
 .h-font-50 {
   font-size: 65%; }

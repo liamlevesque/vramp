@@ -198,12 +198,6 @@
 				}
 			}
 		
-		$choice--height--oo-xxxlarge: 28vw;
-		$choice--height--oo-xxlarge: 26vw;
-		$choice--height--oo-xlarge: 19.5vw;
-		$choice--height--oo-large: 17.2vw; 
-		$choice--height--oo-mlarge: 15.5vw;
-		$choice--height--oo-medium: 12.5vw;
 		$choice--height--oo-small: 11vh;
 		
 		//OPEN OFFERS MODE - EVERYTHING CHANGES!!		
@@ -225,33 +219,41 @@
 				&:nth-last-child(n+2) ~ li {
 					min-width: 33vw;
 					max-width: 33vw;
-					height: $choice--height--oo-xxxlarge;
+					height: 28vw;
 					margin-bottom: $choice-item-spacing;
 					@include font-size(2);
 				}
 
 				&:nth-last-child(n+3),
 				&:nth-last-child(n+3) ~ li {
-					height: $choice--height--oo-xxlarge;
+					height: 26vw;
+
+					@include aspectBreakpoint(wide){
+						height: 23.4vw;
+					}
 				}
 
 				&:nth-last-child(n+5),
 				&:nth-last-child(n+5) ~ li {
 					min-width: 22vw;
 					max-width: 22vw;
-					height: $choice--height--oo-xlarge;
+					height: 19.5vw;
 				}
 
 				&:nth-last-child(n+7),
 				&:nth-last-child(n+7) ~ li {
-					height: $choice--height--oo-large;
+					height: 19.4vw;
+
+					@include aspectBreakpoint(wide){
+						height: 15.5vw;
+					}
 				}
 
 				&:nth-last-child(n+10),
 				&:nth-last-child(n+10) ~ li {
 					min-width: 16.4vw;
 					max-width: 16.4vw;
-					height: $choice--height--oo-mlarge;
+					height: 15.5vw;
 				}
 
 				&:nth-last-child(n+13),
@@ -259,11 +261,11 @@
 					min-width: 13vw;
 					max-width: 13vw;
 					margin-bottom: $choice-item-spacing;
-				}
+					height: 12.5vw;
 
-				&:nth-last-child(n+13),
-				&:nth-last-child(n+13) ~ li {
-					height: $choice--height--oo-medium;
+					@include aspectBreakpoint(wide){
+						height: 11.5vw;
+					}
 				}
 
 				&:nth-last-child(n+21),
