@@ -2,6 +2,10 @@
 	@include ellipsize;
 }
 
+.h-t-clamp-3{
+	@include lineclamp(3);
+}
+
 .h-ta-right{
 	text-align: right;
 }

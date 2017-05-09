@@ -1757,6 +1757,13 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
+.h-t-clamp-3 {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; }
+
 .h-ta-right {
   text-align: right; }
 
