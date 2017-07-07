@@ -74,3 +74,22 @@ body{
 		margin-bottom: 0.5vw;
 	}
 }
+
+
+
+.t-marquee{
+	animation-name: marqueetext;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	white-space: nowrap;
+}
+
+@keyframes marqueetext {
+  	0% {
+    	transform: translateX(0);
+	}
+  	100% {
+	 	transform: translateX(-100%);
+	} 
+}

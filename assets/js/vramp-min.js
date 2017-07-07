@@ -227,7 +227,7 @@ var allConversions = [
 			"lot": 5000,
 			"TAL":true,
 			"startTime" : "09:00",
-			"displayOrder" : 99
+			"displayOrder" : 99,
 		},
 		{
 			"index":1,
@@ -236,7 +236,8 @@ var allConversions = [
 			"lot": 945,
 			"TAL":false,
 			"startTime" : "09:00",
-			"displayOrder" : 1
+			"displayOrder" : 1,
+			"switching": false,
 		},
 		{
 			"index":2,
@@ -245,7 +246,9 @@ var allConversions = [
 			"lot": 1200,
 			"TAL":false,
 			"startTime" : "11:30",
-			"displayOrder" : 2
+			"displayOrder" : 2,
+			"switching": false,
+
 		}
 		
 
@@ -322,6 +325,13 @@ var vrampObject = {
 			//TOGGLE WHICH BIT OF THE OTHER RINGS AREA IS VISIBLE
 			if(vrampObject.otherRings.length === 1) $(".js--vramp-bidding").addClass('s-other-rings_single');
 			else $(".js--vramp-bidding").addClass('s-other-rings_all');
+		},
+
+		showNewCategory: function(){
+			vrampObject.otherRings[0].switching = true;
+			setTimeout(function(){
+			//	vrampObject.otherRings[0].switching = false;
+			},5000);
 		},
 
 		toggleActive: function(e,model){
@@ -472,7 +482,7 @@ rivets.bind($('.js--vramp-bidding'),{
 		else{
 			vrampObject.choiceGroup = null;
 			vrampObject.lotDetail = allLots[vrampObject.currentLot];
-			if(typeof vrampObject.lotDetail.photos != undefined){
+			if(typeof vrampObject.lotDetail.photos != 'undefined' && vrampObject.lotDetail.photos.length > 0){
 				var mySwiper = new Swiper ('.swiper-container', {
 					direction: 'horizontal',
 					loop: true,

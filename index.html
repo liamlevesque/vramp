@@ -250,24 +250,28 @@
 		
 		<footer class="other-rings">
 			<ul class="rings">
-				<li rv-each-ring="vrampObject.otherRings" class="ring" rv-ringstatusclass="ring.status" rv-on-click="vrampController.toggleOtherRingStatus">
+				<li rv-each-ring="vrampObject.otherRings" class="ring" rv-ringstatusclass="ring.status" rv-on-click="vrampController.toggleOtherRingStatus"  rv-class-s-switching="ring.switching">
 					<div rv-unless="ring.TAL">
 						<div class="ring--number">
 							<label>RING</label>
 							<span class="font--150" rv-text="ring.number"></span>
 						</div>
-						
+
 						<div class="ring--progress font--180">
 							<div rv-if="ring.status | comparison 'inprogress'">
-								Lot <span rv-text="ring.lot"></span>
+								Lot { ring.lot }
 							</div>
 							<div rv-if="ring.status | comparison 'notstarted'">
-								Starts ~ <span rv-text="ring.startTime"></span>
+								Starts ~ { ring.startTime }
 							</div>
 							<div rv-if="ring.status | comparison 'ended'">
-								Resumes tomorrow ~ <span rv-text="ring.startTime"></span>
+								Resumes tomorrow ~ { ring.startTime }
 							</div>
 
+						</div>
+
+						<div class="ring--announcement font--180">
+							<div class="t-marquee">Now Selling Excavators</div>
 						</div>
 					</div>
 
@@ -313,6 +317,7 @@
 				<label>Other Rings</label><br/>
 				<button rv-on-click="vrampController.toggleOtherRings">Toggle Other Rings</button>
 				<button rv-on-click="vrampController.incrementOtherRingLots">Change Other Rings</button>
+				<button rv-on-click="vrampController.showNewCategory">Show New Category</button>
 				<!-- <button rv-on-click="vrampController.toggleOpenOffer">Toggle Open Offer</button> -->
 			</div>
 

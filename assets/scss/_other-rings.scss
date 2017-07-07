@@ -72,12 +72,32 @@
 
 		}
 
+		.ring--announcement{
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			bottom: 5px;
+			left: $width-ring-number;
+			font-weight: 700;
+			overflow: hidden;
+
+			transform: translateX(100%);
+			background-color: rgba(black,0.4);
+			transition: transform $transition;
+
+			.s-switching &{
+				transform: translateX(0);
+			}
+		}
+
 
 		.ring--progress{
 			@include vert-align;
 			position: absolute;
 			right: 0;
 			left: $width-ring-number;
+			font-weight: 700;
+			transition: translate $transition;
 
 			div{
 				@include ellipsize;
@@ -87,7 +107,9 @@
 				left: $width-ring-number + 2vw;
 			}
 			
-			font-weight: 700;
+			.s-switching &{
+				transform: translate(-100%,-50%);
+			}
 		}
 
 

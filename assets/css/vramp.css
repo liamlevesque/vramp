@@ -25,7 +25,6 @@ body {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
   z-index: 2;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .prototype-controls.s-hidecontrols {
     -webkit-transform: translateX(-90%);
@@ -40,7 +39,6 @@ body {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   cursor: pointer;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .prototype--hide:hover i {
     color: #E87722; }
@@ -130,15 +128,15 @@ hr {
           transform: scale(1.15) translateX(15px); }
 
 @font-face {
-  font-family: 'ritchie-icons';
-  src: url("../fonts/ritchie-icons.eot?o9cbw0");
-  src: url("../fonts/ritchie-icons.eot?o9cbw0#iefix") format("embedded-opentype"), url("../fonts/ritchie-icons.ttf?o9cbw0") format("truetype"), url("../fonts/ritchie-icons.woff?o9cbw0") format("woff"), url("../fonts/ritchie-icons.svg?o9cbw0#ritchie-icons") format("svg");
+  font-family: 'ADMIcons';
+  src: url("../fonts/ADMIcons.eot?hiv67");
+  src: url("../fonts/ADMIcons.eot?hiv67#iefix") format("embedded-opentype"), url("../fonts/ADMIcons.ttf?hiv67") format("truetype"), url("../fonts/ADMIcons.woff?hiv67") format("woff"), url("../fonts/ADMIcons.svg?hiv67#ADMIcons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'ritchie-icons' !important;
+  font-family: 'ADMIcons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -153,116 +151,74 @@ hr {
   font-size: 20px;
   vertical-align: middle; }
 
-.icon-pause:before {
-  content: "\e926"; }
-
-.icon-arrow-left:before {
-  content: "\e925"; }
-
-.icon-max-4:before {
-  content: "\e923"; }
-
-.icon-max-1:before {
-  content: "\e922"; }
-
-.icon-max-3:before {
-  content: "\e924"; }
-
-.icon-mail:before {
-  content: "\e921"; }
-
-.icon-sold:before {
-  content: "\e920"; }
-
-.icon-error-1:before {
-  content: "\e91f"; }
-
-.icon-trash:before {
-  content: "\e91e"; }
-
-.icon-ccy:before {
-  content: "\e91a"; }
-
-.icon-calculator:before {
-  content: "\e91b"; }
-
-.icon-unlocked:before {
-  content: "\e918"; }
-
-.icon-lock:before {
-  content: "\e919"; }
-
-.icon-settings:before {
-  content: "\e917"; }
-
-.icon-check-inner:before {
-  content: "\e915"; }
-
-.icon-info:before {
-  content: "\e916"; }
-
-.icon-popout:before {
-  content: "\e90b"; }
-
-.icon-next:before {
-  content: "\e90e"; }
-
-.icon-prev:before {
-  content: "\e914"; }
-
-.icon-arrow-down:before {
+.icon-Photos:before {
   content: "\e900"; }
 
-.icon-audio:before {
+.icon-server:before {
+  content: "\e910"; }
+
+.icon-flag:before {
+  content: "\e928"; }
+
+.icon-play:before {
+  content: "\e929"; }
+
+.icon-Configure:before {
+  content: "\e92a"; }
+
+.icon-Media:before {
+  content: "\e92b"; }
+
+.icon-Presentation:before {
+  content: "\e92c"; }
+
+.icon-Reports:before {
+  content: "\e92d"; }
+
+.icon-arrow-down:before {
   content: "\e901"; }
 
-.icon-bid:before {
-  content: "\e902"; }
-
-.icon-cart:before {
-  content: "\e903"; }
-
 .icon-check:before {
-  content: "\e904"; }
-
-.icon-clock:before {
   content: "\e905"; }
 
 .icon-close:before {
-  content: "\e906"; }
-
-.icon-dei:before {
   content: "\e907"; }
 
 .icon-eye:before {
-  content: "\e908"; }
-
-.icon-help:before {
   content: "\e909"; }
 
-.icon-loading:before {
+.icon-help:before {
   content: "\e90a"; }
 
-.icon-Photos:before {
-  content: "\e90c"; }
-
 .icon-plus:before {
-  content: "\e90d"; }
-
-.icon-sale:before {
-  content: "\e90f"; }
-
-.icon-search:before {
-  content: "\e910"; }
-
-.icon-user:before {
-  content: "\e911"; }
+  content: "\e90e"; }
 
 .icon-warning:before {
-  content: "\e912"; }
-
-.icon-warranty:before {
   content: "\e913"; }
+
+.icon-check-inner:before {
+  content: "\e916"; }
+
+.icon-settings:before {
+  content: "\e918"; }
+
+.icon-ccy:before {
+  content: "\e91b"; }
+
+.icon-trash:before {
+  content: "\e91f"; }
+
+.icon-sold:before {
+  content: "\e921"; }
+
+.icon-arrow-left:before {
+  content: "\e926"; }
+
+.icon-pause:before {
+  content: "\e927"; }
+
+.icon-keyboard_arrow_up:before {
+  content: "\e92e"; }
 
 @font-face {
   font-family: 'Frutiger LT Std';
@@ -305,6 +261,33 @@ body {
 .font--600 {
   font-size: 5.6vw; }
 
+.t-marquee {
+  -webkit-animation-name: marqueetext;
+          animation-name: marqueetext;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  white-space: nowrap; }
+
+@-webkit-keyframes marqueetext {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+@keyframes marqueetext {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
 .lot-preview {
   position: absolute;
   top: 0;
@@ -322,7 +305,6 @@ body {
   background-color: #333333;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_all .lot-preview {
     bottom: 4.1vw; }
@@ -335,7 +317,6 @@ body {
       -ms-flex: 0 0 6.5vw;
           flex: 0 0 6.5vw;
   position: relative;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   z-index: 1;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
@@ -417,7 +398,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   position: relative; }
   .s-openOffers .lot--media {
@@ -512,7 +492,6 @@ body {
   text-align: left;
   color: white;
   overflow: hidden;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_single .details-area {
     bottom: 4.1vw; }
@@ -534,7 +513,6 @@ body {
   right: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-auction-paused .active-details, .s-auction-pre .active-details, .s-auction-post .active-details {
     -webkit-transform: translateX(100%);
@@ -1095,7 +1073,6 @@ body {
   padding: 1.2vw;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .auctioneers-message label {
     display: block;
@@ -1116,7 +1093,6 @@ body {
   text-align: center;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .persistent-message.s-shown {
     -webkit-transform: translateX(0);
@@ -1128,7 +1104,6 @@ body {
   width: 100%;
   background-color: #7d3d0d;
   padding: 1.2vw;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .open-offers label {
     display: block;
@@ -1142,7 +1117,6 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   z-index: 1; }
 
@@ -1150,14 +1124,11 @@ body {
   padding: 1.2vw;
   padding-bottom: 0.4vw;
   width: 100%;
-  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0), #333333 50%);
   background: linear-gradient(top, rgba(51, 51, 51, 0), #333333 50%);
   text-transform: uppercase;
   color: white;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-openOffers .choice--header {
-    background: -webkit-linear-gradient(top, #333333, #333333);
     background: linear-gradient(top, #333333, #333333); }
 
 .choice--body {
@@ -1197,7 +1168,6 @@ body {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   margin-right: 0.5vw;
   min-width: 6.2vw;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   color: #E87722;
   text-align: center; }
@@ -1250,7 +1220,6 @@ body {
   left: 0;
   right: 0;
   overflow: hidden;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-sold .choice-lot--status, .s-out .choice-lot--status, .s-openOffers .choice-lot--status {
     top: 3vw; }
@@ -1288,7 +1257,6 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .choice-lot--photo img {
     width: 100%;
@@ -1397,7 +1365,6 @@ body {
   height: 4.1vw;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_single .other-rings, .s-other-rings_all .other-rings {
     -webkit-transform: translateY(0);
@@ -1445,6 +1412,24 @@ body {
     margin-top: 8px;
     margin-bottom: -4px; }
 
+.ring--announcement {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  bottom: 5px;
+  left: 5vw;
+  font-weight: 700;
+  overflow: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: -webkit-transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
+  transition: transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1), -webkit-transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
+  .s-switching .ring--announcement {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
 .ring--progress {
   top: 50%;
   position: relative;
@@ -1453,13 +1438,17 @@ body {
   position: absolute;
   right: 0;
   left: 5vw;
-  font-weight: 700; }
+  font-weight: 700;
+  transition: translate 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .ring--progress div {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
   .ring_TAL .ring--progress {
     left: 7vw; }
+  .s-switching .ring--progress {
+    -webkit-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%); }
 
 .ring_TAL .ring--number label {
   text-align: left;
@@ -1474,7 +1463,6 @@ body {
   right: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   font-weight: 700; }
 
@@ -1576,10 +1564,8 @@ body {
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
+  transition-delay: 0.1s; }
   .s-other-rings_single .paused-message, .s-other-rings_all .paused-message, .s-other-rings_single .pre-message, .s-other-rings_all .pre-message, .s-other-rings_single .post-message, .s-other-rings_all .post-message {
     top: 46.6%; }
   .paused-message .h-valign, .pre-message .h-valign, .post-message .h-valign {
@@ -1688,10 +1674,8 @@ body {
   overflow: hidden;
   background-color: #E87722;
   color: white;
-  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s; }
+  transition-duration: 0.3s; }
 
 .sold--content {
   max-width: 800px;
@@ -1701,50 +1685,38 @@ body {
     opacity: 0;
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
-    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
     transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-    -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s; }
+    transition-duration: 0.4s; }
 
 .sold--content > div:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
+  transition-delay: 0.1s; }
 
 .sold--content > div:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s; }
+  transition-delay: 0.2s; }
 
 .sold--content > div:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s; }
+  transition-delay: 0.3s; }
 
 .sold--content > div:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s; }
+  transition-delay: 0.4s; }
 
 .sold--content > div:nth-child(5) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; }
+  transition-delay: 0.5s; }
 
 .sold--content > div:nth-child(6) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s; }
+  transition-delay: 0.6s; }
 
 .sold--content > div:nth-child(7) {
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s; }
+  transition-delay: 0.7s; }
 
 .sold--content > div:nth-child(8) {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s; }
+  transition-delay: 0.8s; }
 
 .sold--content > div:nth-child(9) {
-  -webkit-transition-delay: 0.9s;
-          transition-delay: 0.9s; }
+  transition-delay: 0.9s; }
 
 .sold--content > div:nth-child(10) {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s; }
+  transition-delay: 1s; }
 
 /***********************
 	SOLD STATE
