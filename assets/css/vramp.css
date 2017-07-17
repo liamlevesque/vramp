@@ -1444,16 +1444,13 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  .ring_TAL .ring--progress {
-    left: 7vw; }
   .s-switching .ring--progress {
     -webkit-transform: translate(-100%, -50%);
             transform: translate(-100%, -50%); }
 
-.ring_TAL .ring--number label {
-  text-align: left;
-  padding-left: 0.8vw;
-  margin-bottom: 0.7vw; }
+.ring_TAL .ring--number img {
+  height: 3.5vw;
+  margin-top: 0.5vw; }
 
 .paused-details, .pre-auction-details, .post-auction-details {
   position: absolute;

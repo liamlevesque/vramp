@@ -104,7 +104,7 @@
 			}
 
 			.ring_TAL &{
-				left: $width-ring-number + 2vw;
+				//left: $width-ring-number + 2vw;
 			}
 			
 			.s-switching &{
@@ -115,10 +115,9 @@
 
 			.ring_TAL{
 				
-				.ring--number label{
-					text-align: left;
-					padding-left: 0.8vw;
-					margin-bottom: 0.7vw;
+				.ring--number img{
+					height: 3.5vw;
+					margin-top: 0.5vw;
 				}
 			}
 
