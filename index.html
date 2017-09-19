@@ -126,12 +126,19 @@
 						<div class="ask">
 							<label rv-hide="vrampObject.lotDetail.status" class="font--250">ASK PRICE</label>
 							<label rv-show="vrampObject.lotDetail.status" class="font--250"><i class="c-brand icon-sold"></i>SOLD</label>
-							<div class="h-float-right font--250" rv-if="vrampObject.lotDetail.qty | gt 0">{vrampObject.lotDetail.qty}x</div>
+							<div class="h-float-right font--250" rv-if="vrampObject.lotDetail.qty | gt 0">
+								{vrampObject.lotDetail.qty}
+								<span rv-if="vrampObject.lotDetail.qtyunit">{ vrampObject.lotDetail.qtyunit }</span>
+								x
+							</div>
 							<div class="ask--price h-ta-right ccy CAD">
 								<span class="auction-ccy CAD"></span>
 								<div class="dollars font--400" rv-html="vrampObject.price | price"></div>
 							</div>
-							<div class="h-ta-right h-mt-sub-100 font--150" rv-if="vrampObject.lotDetail.qty | gt 0">each</div>
+							<div class="h-ta-right h-mt-sub-100 font--150" rv-if="vrampObject.lotDetail.qty | gt 0">
+								<span rv-if="vrampObject.lotDetail.qtyunit">per { vrampObject.lotDetail.qtyunit }</span>
+								<span rv-unless="vrampObject.lotDetail.qtyunit">each</span>
+							</div>
 						</div>
 
 						<div class="conversions" rv-if="vrampObject.conversions | lengthgt 0">

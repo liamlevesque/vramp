@@ -33,6 +33,8 @@ function formatprice(amt){
 	else 
 		price = amt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
 
+	console.log(amt, price);
+
 	return price;
 }
 

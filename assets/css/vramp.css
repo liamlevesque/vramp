@@ -22,9 +22,11 @@ body {
   top: 120px;
   left: 0;
   background-color: white;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
   z-index: 2;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .prototype-controls.s-hidecontrols {
     -webkit-transform: translateX(-90%);
@@ -39,6 +41,7 @@ body {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   cursor: pointer;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .prototype--hide:hover i {
     color: #E87722; }
@@ -54,7 +57,8 @@ body {
   overflow-x: hidden; }
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 ul {
   list-style-type: none;
@@ -305,6 +309,7 @@ body {
   background-color: #333333;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_all .lot-preview {
     bottom: 4.1vw; }
@@ -317,9 +322,11 @@ body {
       -ms-flex: 0 0 6.5vw;
           flex: 0 0 6.5vw;
   position: relative;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   z-index: 1;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-openOffers .lot--title {
@@ -398,6 +405,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   position: relative; }
   .s-openOffers .lot--media {
@@ -492,6 +500,7 @@ body {
   text-align: left;
   color: white;
   overflow: hidden;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_single .details-area {
     bottom: 4.1vw; }
@@ -501,7 +510,8 @@ body {
     bottom: auto;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5); }
   .s-auction-paused.s-other-rings_single .details-area, .s-auction-pre.s-other-rings_single .details-area, .s-auction-post.s-other-rings_single .details-area {
     top: 46.6%; }
 
@@ -513,6 +523,7 @@ body {
   right: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-auction-paused .active-details, .s-auction-pre .active-details, .s-auction-post .active-details {
     -webkit-transform: translateX(100%);
@@ -1073,6 +1084,7 @@ body {
   padding: 1.2vw;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .auctioneers-message label {
     display: block;
@@ -1093,6 +1105,7 @@ body {
   text-align: center;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .persistent-message.s-shown {
     -webkit-transform: translateX(0);
@@ -1104,6 +1117,7 @@ body {
   width: 100%;
   background-color: #7d3d0d;
   padding: 1.2vw;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .open-offers label {
     display: block;
@@ -1117,6 +1131,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   z-index: 1; }
 
@@ -1124,11 +1139,14 @@ body {
   padding: 1.2vw;
   padding-bottom: 0.4vw;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0)), color-stop(50%, #333333));
   background: linear-gradient(to bottom, rgba(51, 51, 51, 0), #333333 50%);
   text-transform: uppercase;
   color: white;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-openOffers .choice--header {
+    background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
     background: linear-gradient(to bottom, #333333, #333333); }
 
 .choice--body {
@@ -1165,9 +1183,11 @@ body {
   overflow: hidden;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   margin-right: 0.5vw;
   min-width: 6.2vw;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   color: #E87722;
   text-align: center; }
@@ -1220,6 +1240,7 @@ body {
   left: 0;
   right: 0;
   overflow: hidden;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-sold .choice-lot--status, .s-out .choice-lot--status, .s-openOffers .choice-lot--status {
     top: 3vw; }
@@ -1257,6 +1278,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .choice-lot--photo img {
     width: 100%;
@@ -1365,6 +1387,7 @@ body {
   height: 4.1vw;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .s-other-rings_single .other-rings, .s-other-rings_all .other-rings {
     -webkit-transform: translateY(0);
@@ -1423,6 +1446,7 @@ body {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: -webkit-transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1), -webkit-transform 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
@@ -1439,6 +1463,7 @@ body {
   right: 0;
   left: 5vw;
   font-weight: 700;
+  -webkit-transition: translate 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: translate 0.2s cubic-bezier(0.63, 0.005, 0.365, 1); }
   .ring--progress div {
     overflow: hidden;
@@ -1460,6 +1485,7 @@ body {
   right: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   font-weight: 700; }
 
@@ -1554,15 +1580,18 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   bottom: auto;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   padding: 80px;
   color: #E87722;
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-  transition-delay: 0.1s; }
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
   .s-other-rings_single .paused-message, .s-other-rings_all .paused-message, .s-other-rings_single .pre-message, .s-other-rings_all .pre-message, .s-other-rings_single .post-message, .s-other-rings_all .post-message {
     top: 46.6%; }
   .paused-message .h-valign, .pre-message .h-valign, .post-message .h-valign {
@@ -1671,8 +1700,10 @@ body {
   overflow: hidden;
   background-color: #E87722;
   color: white;
+  -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
   transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-  transition-duration: 0.3s; }
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .sold--content {
   max-width: 800px;
@@ -1682,38 +1713,50 @@ body {
     opacity: 0;
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
+    -webkit-transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
     transition: 0.2s cubic-bezier(0.63, 0.005, 0.365, 1);
-    transition-duration: 0.4s; }
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s; }
 
 .sold--content > div:nth-child(1) {
-  transition-delay: 0.1s; }
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
 
 .sold--content > div:nth-child(2) {
-  transition-delay: 0.2s; }
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
 
 .sold--content > div:nth-child(3) {
-  transition-delay: 0.3s; }
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; }
 
 .sold--content > div:nth-child(4) {
-  transition-delay: 0.4s; }
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s; }
 
 .sold--content > div:nth-child(5) {
-  transition-delay: 0.5s; }
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
 
 .sold--content > div:nth-child(6) {
-  transition-delay: 0.6s; }
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s; }
 
 .sold--content > div:nth-child(7) {
-  transition-delay: 0.7s; }
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s; }
 
 .sold--content > div:nth-child(8) {
-  transition-delay: 0.8s; }
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s; }
 
 .sold--content > div:nth-child(9) {
-  transition-delay: 0.9s; }
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s; }
 
 .sold--content > div:nth-child(10) {
-  transition-delay: 1s; }
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s; }
 
 /***********************
 	SOLD STATE

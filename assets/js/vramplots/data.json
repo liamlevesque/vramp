@@ -46,7 +46,18 @@
 			"photo" : "assets/img/vramp2.png",
 			"usage" : "4756 hrs",
 			"unused" : true,
-			"qty": 10
+			"qty": 10,
+			"qtyunit": "ft"
+		},{
+			"lotNumber" : "2745B",
+			"video":false,
+			"status" : null,
+			"description" : "2008 Manitou 4x4 Bucket Lift",
+			"photo" : "assets/img/vramp2.png",
+			"usage" : "4756 hrs",
+			"unused" : true,
+			"qty": 10,
+			"qtyunit": null
 		},
 		[
 			{

@@ -68,6 +68,8 @@ function formatprice(amt){
 	else 
 		price = amt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
 
+	console.log(amt, price);
+
 	return price;
 }
 
@@ -264,7 +266,7 @@ var vrampObject = {
 		"currentLot": 3,
 		"lotDetail":{},
 		"conversions": [],
-		"price" : 10000,
+		"price" : 10000.50,
 		"highBid" : 'Internet, SK, CAN',
 		"bidder" : '10005',
 		"auctioneerMessage": null,
