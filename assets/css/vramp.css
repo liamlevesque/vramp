@@ -543,6 +543,9 @@ body {
 .CAD .divider:before {
   content: ","; }
 
+.CAD .decimal-divider:before {
+  content: "."; }
+
 .CAD .dollars:before {
   content: "$"; }
 
@@ -568,6 +571,9 @@ body {
 
 .USD .divider:before {
   content: ","; }
+
+.USD .decimal-divider:before {
+  content: "."; }
 
 .USD .dollars:before {
   content: "$"; }
@@ -595,6 +601,9 @@ body {
 .SGD .divider:before {
   content: ","; }
 
+.SGD .decimal-divider:before {
+  content: "."; }
+
 .SGD .dollars:before {
   content: "$"; }
 
@@ -620,6 +629,9 @@ body {
 
 .NZD .divider:before {
   content: ","; }
+
+.NZD .decimal-divider:before {
+  content: "."; }
 
 .NZD .dollars:before {
   content: "$"; }
@@ -647,6 +659,9 @@ body {
 .AUD .divider:before {
   content: ","; }
 
+.AUD .decimal-divider:before {
+  content: "."; }
+
 .AUD .dollars:before {
   content: "$"; }
 
@@ -672,6 +687,9 @@ body {
 
 .MXN .divider:before {
   content: ","; }
+
+.MXN .decimal-divider:before {
+  content: "."; }
 
 .MXN .dollars:before {
   content: "$"; }
@@ -699,6 +717,9 @@ body {
 .ZAR .divider:before {
   content: ","; }
 
+.ZAR .decimal-divider:before {
+  content: "."; }
+
 .ZAR .dollars:before {
   content: "R"; }
 
@@ -724,6 +745,9 @@ body {
 
 .PLN .divider:before {
   content: " "; }
+
+.PLN .decimal-divider:before {
+  content: ","; }
 
 .PLN .dollars:before {
   content: ""; }
@@ -751,6 +775,9 @@ body {
 .GBP .divider:before {
   content: ","; }
 
+.GBP .decimal-divider:before {
+  content: "."; }
+
 .GBP .dollars:before {
   content: "£"; }
 
@@ -776,6 +803,9 @@ body {
 
 .EUR .divider:before {
   content: " "; }
+
+.EUR .decimal-divider:before {
+  content: ","; }
 
 .EUR .dollars:before {
   content: "€"; }
@@ -803,6 +833,9 @@ body {
 .CNY .divider:before {
   content: ","; }
 
+.CNY .decimal-divider:before {
+  content: "."; }
+
 .CNY .dollars:before {
   content: "¥"; }
 
@@ -828,6 +861,9 @@ body {
 
 .JPY .divider:before {
   content: ","; }
+
+.JPY .decimal-divider:before {
+  content: "."; }
 
 .JPY .dollars:before {
   content: "¥"; }
@@ -855,6 +891,9 @@ body {
 .INR .divider:before {
   content: ","; }
 
+.INR .decimal-divider:before {
+  content: "."; }
+
 .INR .dollars:before {
   content: " ₹"; }
 
@@ -880,6 +919,9 @@ body {
 
 .AED .divider:before {
   content: ","; }
+
+.AED .decimal-divider:before {
+  content: "."; }
 
 .AED .dollars:before {
   content: ""; }
@@ -907,6 +949,9 @@ body {
 .NOK .divider:before {
   content: ","; }
 
+.NOK .decimal-divider:before {
+  content: "."; }
+
 .NOK .dollars:before {
   content: "kr"; }
 
@@ -932,6 +977,9 @@ body {
 
 .TRY .divider:before {
   content: ","; }
+
+.TRY .decimal-divider:before {
+  content: "."; }
 
 .TRY .dollars:before {
   content: "₺"; }

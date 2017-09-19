@@ -3,6 +3,7 @@
 	"allOtherLots": [
 		{
 			"lotNumber" : "2741",
+			"price" : 10000,
 			"video":false,
 			"status" : null,
 			"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -20,6 +21,7 @@
 		},
 		{
 			"lotNumber" : "2745",
+			"price" : 10000,
 			"video":true,
 			"status" : null,
 			"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -30,6 +32,7 @@
 		},
 		{
 			"lotNumber" : "2745A",
+			"price" : 10000,
 			"video":false,
 			"status" : null,
 			"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -40,6 +43,7 @@
 		},
 		{
 			"lotNumber" : "2745A",
+			"price" : 10.50,
 			"video":false,
 			"status" : null,
 			"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -50,6 +54,7 @@
 			"qtyunit": "ft"
 		},{
 			"lotNumber" : "2745B",
+			"price" : 100.80,
 			"video":false,
 			"status" : null,
 			"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -62,6 +67,7 @@
 		[
 			{
 				"lotNumber" : "2743",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2012 Manitou 4x4 Bucket Lift #2",
@@ -74,6 +80,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
@@ -88,6 +95,7 @@
 		[
 			{
 				"lotNumber" : "2742",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -100,6 +108,7 @@
 			},
 			{
 				"lotNumber" : "2743",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2012 Manitou 4x4 Bucket Lift #2",
@@ -112,6 +121,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
@@ -126,6 +136,7 @@
 		[
 			{
 				"lotNumber" : "2742",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -138,6 +149,7 @@
 			},
 			{
 				"lotNumber" : "2743",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2012 Manitou 4x4 Bucket Lift #2",
@@ -150,6 +162,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
@@ -162,6 +175,7 @@
 			},
 			{
 				"lotNumber" : "2744",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
@@ -176,6 +190,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -188,6 +203,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -200,6 +216,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -212,6 +229,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -224,6 +242,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -239,6 +258,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -251,6 +271,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -263,6 +284,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -275,6 +297,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -287,6 +310,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -299,6 +323,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -313,6 +338,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -325,6 +351,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift with a long short description that will need to be truncated",
@@ -343,6 +370,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -355,6 +383,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -367,6 +396,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -379,6 +409,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -391,6 +422,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -405,6 +437,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -417,6 +450,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -429,6 +463,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -441,6 +476,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -453,6 +489,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -465,6 +502,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -477,6 +515,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -489,6 +528,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -503,6 +543,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -515,6 +556,7 @@
 			},
 			{
 				"lotNumber" : "27477A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -527,6 +569,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -539,6 +582,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -551,6 +595,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -563,6 +608,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -575,6 +621,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -587,6 +634,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -599,6 +647,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -613,6 +662,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -625,6 +675,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -637,6 +688,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -649,6 +701,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -661,6 +714,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -673,6 +727,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -685,6 +740,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -697,6 +753,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -709,6 +766,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -721,6 +779,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -736,6 +795,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -748,6 +808,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -760,6 +821,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -772,6 +834,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -784,6 +847,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -796,6 +860,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -808,6 +873,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -820,6 +886,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -832,6 +899,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -844,6 +912,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -856,6 +925,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -870,6 +940,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -882,6 +953,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -894,6 +966,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -906,6 +979,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -918,6 +992,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -930,6 +1005,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -942,6 +1018,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -954,6 +1031,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -966,6 +1044,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -978,6 +1057,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -990,6 +1070,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1002,6 +1083,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1014,6 +1096,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1026,6 +1109,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1038,6 +1122,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1050,6 +1135,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1064,6 +1150,7 @@
 		[
 			{
 				"lotNumber" : "2746",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1076,6 +1163,7 @@
 			},
 			{
 				"lotNumber" : "2747",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1088,6 +1176,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1100,6 +1189,7 @@
 			},
 			{
 				"lotNumber" : "2749",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1112,6 +1202,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1124,6 +1215,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1136,6 +1228,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1148,6 +1241,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1160,6 +1254,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1172,6 +1267,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1184,6 +1280,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1196,6 +1293,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1208,6 +1306,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1220,6 +1319,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1232,6 +1332,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1244,6 +1345,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1256,6 +1358,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1268,6 +1371,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1280,6 +1384,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1292,6 +1397,7 @@
 			},
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1306,6 +1412,7 @@
 		[
 			{
 				"lotNumber" : "2750",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1318,6 +1425,7 @@
 			},
 			{
 				"lotNumber" : "2751",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1330,6 +1438,7 @@
 			},
 			{
 				"lotNumber" : "27444A",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1342,6 +1451,7 @@
 			},
 			{
 				"lotNumber" : "2753",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1354,6 +1464,7 @@
 			},
 			{
 				"lotNumber" : "2754",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1366,6 +1477,7 @@
 			},
 			{
 				"lotNumber" : "2755",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1378,6 +1490,7 @@
 			},
 			{
 				"lotNumber" : "2756",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1390,6 +1503,7 @@
 			},
 			{
 				"lotNumber" : "2757",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1402,6 +1516,7 @@
 			},
 			{
 				"lotNumber" : "2758",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1414,6 +1529,7 @@
 			},
 			{
 				"lotNumber" : "2759",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1426,6 +1542,7 @@
 			},
 			{
 				"lotNumber" : "2760",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1438,6 +1555,7 @@
 			},
 			{
 				"lotNumber" : "2761",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1450,6 +1568,7 @@
 			},
 			{
 				"lotNumber" : "2762",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1462,6 +1581,7 @@
 			},
 			{
 				"lotNumber" : "2763",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1474,6 +1594,7 @@
 			},
 			{
 				"lotNumber" : "2764",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1486,6 +1607,7 @@
 			},
 			{
 				"lotNumber" : "2765",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1498,6 +1620,7 @@
 			},
 			{
 				"lotNumber" : "2766",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1510,6 +1633,7 @@
 			},
 			{
 				"lotNumber" : "2767",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1522,6 +1646,7 @@
 			},
 			{
 				"lotNumber" : "2768",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1534,6 +1659,7 @@
 			},
 			{
 				"lotNumber" : "2769",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1546,6 +1672,7 @@
 			},
 			{
 				"lotNumber" : "2770",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1558,6 +1685,7 @@
 			},
 			{
 				"lotNumber" : "2771",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1570,6 +1698,7 @@
 			},
 			{
 				"lotNumber" : "2772",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1582,6 +1711,7 @@
 			},
 			{
 				"lotNumber" : "2773",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1594,6 +1724,7 @@
 			},
 			{
 				"lotNumber" : "2774",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1606,6 +1737,7 @@
 			},
 			{
 				"lotNumber" : "2775",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1618,6 +1750,7 @@
 			},
 			{
 				"lotNumber" : "2776",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1630,6 +1763,7 @@
 			},
 			{
 				"lotNumber" : "2777",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1642,6 +1776,7 @@
 			},
 			{
 				"lotNumber" : "2778",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1654,6 +1789,7 @@
 			},
 			{
 				"lotNumber" : "2779",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1666,6 +1802,7 @@
 			},
 			{
 				"lotNumber" : "2780",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1678,6 +1815,7 @@
 			},
 			{
 				"lotNumber" : "2781",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1690,6 +1828,7 @@
 			},
 			{
 				"lotNumber" : "2782",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1702,6 +1841,7 @@
 			},
 			{
 				"lotNumber" : "2783",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1714,6 +1854,7 @@
 			},
 			{
 				"lotNumber" : "2784",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1726,6 +1867,7 @@
 			},
 			{
 				"lotNumber" : "2785",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1738,6 +1880,7 @@
 			},
 			{
 				"lotNumber" : "2786",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1750,6 +1893,7 @@
 			},
 			{
 				"lotNumber" : "2787",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1762,6 +1906,7 @@
 			},
 			{
 				"lotNumber" : "2788",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1774,6 +1919,7 @@
 			},
 			{
 				"lotNumber" : "2789",
+				"price" : 10000,
 				"video":false,
 				"status" : "sold",
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
@@ -1786,6 +1932,7 @@
 			},
 			{
 				"lotNumber" : "2790",
+				"price" : 10000,
 				"video":false,
 				"status" : null,
 				"description" : "2008 Manitou 4x4 Bucket Lift",
@@ -1798,6 +1945,7 @@
 			},
 			{
 				"lotNumber" : "2791",
+				"price" : 10000,
 				"video":false,
 				"status" : "out",
 				"description" : "2008 Manitou 4x4 Bucket Lift",

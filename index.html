@@ -133,7 +133,7 @@
 							</div>
 							<div class="ask--price h-ta-right ccy CAD">
 								<span class="auction-ccy CAD"></span>
-								<div class="dollars font--400" rv-html="vrampObject.price | price"></div>
+								<div class="dollars font--400" rv-html="vrampObject.lotDetail.price | price"></div>
 							</div>
 							<div class="h-ta-right h-mt-sub-100 font--150" rv-if="vrampObject.lotDetail.qty | gt 0">
 								<span rv-if="vrampObject.lotDetail.qtyunit">per { vrampObject.lotDetail.qtyunit }</span>

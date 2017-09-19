@@ -57,18 +57,22 @@ rivets.formatters.limitprice = function(value, spent, bid){
 }
 
 
-function formatprice(amt){
-	if(amt === 0) return 0;
-	else if(!amt) return null;
-
-	var price;
+function formatprice(value){
+	if(value === 0) return 0;
+	else if(!value) return null;
+	
+	var amt, price;
+	amt = value.toString().split('.');
 
 	if($('#js--body').hasClass('INR')) 
-		price = amt.toString().replace(/(\d)(?=(\d\d)+\d$)/g, '$1<span class="divider"></span>');
+		price = amt[0].replace(/(\d)(?=(\d\d)+\d$)/g, '$1<span class="divider"></span>');
 	else 
-		price = amt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
-
-	console.log(amt, price);
+		price = amt[0].replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
+	
+	if(amt[1] && amt[1].length === 1) {
+		amt[1]+= '0';
+		price += '<span class="decimal-divider"></span>' + amt[1];
+	}
 
 	return price;
 }
