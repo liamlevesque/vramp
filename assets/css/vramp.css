@@ -394,9 +394,6 @@ body {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0; }
 
-.lot--quantity {
-  padding: 5px 20px 0; }
-
 .lot--unused {
   padding: 5px 20px 0;
   background-color: #2a873d; }
@@ -540,6 +537,26 @@ body {
   .prices.s-sold {
     background-color: #585858; }
 
+.lot--quantity {
+  position: absolute;
+  top: -0.1vw;
+  right: 0;
+  padding: 0.2vw 0.6vw 0 20px;
+  background-color: #36AE4F;
+  color: white; }
+  .lot--quantity:before {
+    content: '';
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2010%2020%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolygon%20fill%3D%22#E87722%22%20points%3D%220%2C0%2010%2C10%200%2C20%22%2F%3E%3C%2Fsvg%3E");
+    background-size: 10px 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10px; }
+  .s-sold .lot--quantity:before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2010%2020%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolygon%20fill%3D%22#585858%22%20points%3D%220%2C0%2010%2C10%200%2C20%22%2F%3E%3C%2Fsvg%3E"); }
+
 .CAD .divider:before {
   content: ","; }
 
@@ -550,7 +567,7 @@ body {
   content: "$"; }
 
 .conversion.CAD .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .CAD .dollars:after {
   content: "";
@@ -579,7 +596,7 @@ body {
   content: "$"; }
 
 .conversion.USD .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .USD .dollars:after {
   content: "";
@@ -608,7 +625,7 @@ body {
   content: "$"; }
 
 .conversion.SGD .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .SGD .dollars:after {
   content: "";
@@ -637,7 +654,7 @@ body {
   content: "$"; }
 
 .conversion.NZD .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .NZD .dollars:after {
   content: "";
@@ -666,7 +683,7 @@ body {
   content: "$"; }
 
 .conversion.AUD .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .AUD .dollars:after {
   content: "";
@@ -695,7 +712,7 @@ body {
   content: "$"; }
 
 .conversion.MXN .dollars:before {
-  content: "≈ $"; }
+  content: "$"; }
 
 .MXN .dollars:after {
   content: "";
@@ -724,7 +741,7 @@ body {
   content: "R"; }
 
 .conversion.ZAR .dollars:before {
-  content: "≈ R"; }
+  content: "R"; }
 
 .ZAR .dollars:after {
   content: "";
@@ -753,7 +770,7 @@ body {
   content: ""; }
 
 .conversion.PLN .dollars:before {
-  content: "≈ "; }
+  content: ""; }
 
 .PLN .dollars:after {
   content: "zł";
@@ -782,7 +799,7 @@ body {
   content: "£"; }
 
 .conversion.GBP .dollars:before {
-  content: "≈ £"; }
+  content: "£"; }
 
 .GBP .dollars:after {
   content: "";
@@ -811,7 +828,7 @@ body {
   content: "€"; }
 
 .conversion.EUR .dollars:before {
-  content: "≈ €"; }
+  content: "€"; }
 
 .EUR .dollars:after {
   content: "";
@@ -840,7 +857,7 @@ body {
   content: "¥"; }
 
 .conversion.CNY .dollars:before {
-  content: "≈ ¥"; }
+  content: "¥"; }
 
 .CNY .dollars:after {
   content: "";
@@ -869,7 +886,7 @@ body {
   content: "¥"; }
 
 .conversion.JPY .dollars:before {
-  content: "≈ ¥"; }
+  content: "¥"; }
 
 .JPY .dollars:after {
   content: "";
@@ -898,7 +915,7 @@ body {
   content: " ₹"; }
 
 .conversion.INR .dollars:before {
-  content: "≈  ₹"; }
+  content: " ₹"; }
 
 .INR .dollars:after {
   content: "";
@@ -927,7 +944,7 @@ body {
   content: ""; }
 
 .conversion.AED .dollars:before {
-  content: "≈ "; }
+  content: ""; }
 
 .AED .dollars:after {
   content: "د.إ";
@@ -956,7 +973,7 @@ body {
   content: "kr"; }
 
 .conversion.NOK .dollars:before {
-  content: "≈ kr"; }
+  content: "kr"; }
 
 .NOK .dollars:after {
   content: "";
@@ -985,7 +1002,7 @@ body {
   content: "₺"; }
 
 .conversion.TRY .dollars:before {
-  content: "≈ ₺"; }
+  content: "₺"; }
 
 .TRY .dollars:after {
   content: "";
@@ -1005,10 +1022,6 @@ body {
   content: "TRY"; }
 
 .auction-ccy {
-  display: inline-block;
-  float: left;
-  vertical-align: top;
-  margin-left: 0.5vw;
   margin-top: 0.6vw; }
   .auction-ccy:after {
     content: '';
@@ -1050,15 +1063,23 @@ body {
 
 .ask--price {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .ask--price:before {
     vertical-align: top; }
   .ask--price:before, .ask--price:after {
     display: none; }
   .ask--price .dollars {
     display: inline-block;
-    float: right;
-    min-height: 1.3em; }
+    min-height: 1.3em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .ask--price .sellByPiece {
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .ask--price_sold .auction-ccy {
   float: none; }
@@ -1076,7 +1097,10 @@ body {
 .conversion {
   padding-bottom: 0.8vw;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .conversion.ccy:after {
     position: absolute;
     left: 0.6vw;
@@ -1087,8 +1111,13 @@ body {
     left: 0.6vw;
     text-align: center; }
   .conversion .dollars {
-    float: right;
-    display: inline-block; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: right; }
+  .conversion .sellByPiece {
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .high-bidder {
   position: absolute;
@@ -1332,6 +1361,27 @@ body {
     width: 100%;
     max-width: 100%;
     display: block; }
+
+.choice-lot--quantity {
+  position: absolute;
+  bottom: 0.4vw;
+  left: 0;
+  background-color: #36AE4F;
+  color: white;
+  padding: 0.4vw 0.4vw 0;
+  line-height: 1em; }
+  .choice-lot--quantity:after {
+    content: '';
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2010%2020%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolygon%20fill%3D%22#36AE4F%22%20points%3D%220%2C0%2010%2C0%200%2C10%2010%2C20%200%2C20%22%2F%3E%3C%2Fsvg%3E");
+    background-size: 10px 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    width: 10px; }
+  .s-active .choice-lot--quantity {
+    left: 5px; }
 
 .s-openOffers .choice--lot-flex.s-active .choice-lot--number {
   padding-top: 0.1em !important; }

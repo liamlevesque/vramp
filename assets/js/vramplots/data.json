@@ -46,9 +46,9 @@
 			"price" : 10.50,
 			"video":false,
 			"status" : null,
-			"description" : "2008 Manitou 4x4 Bucket Lift",
+			"description" : "Qty (10) Ft of Long Stuff",
 			"photo" : "assets/img/vramp2.png",
-			"usage" : "4756 hrs",
+			"usage" : null,
 			"unused" : false,
 			"qty": 10,
 			"qtyunit": "ft"
@@ -57,12 +57,12 @@
 			"price" : 100.80,
 			"video":false,
 			"status" : null,
-			"description" : "2008 Manitou 4x4 Bucket Lift",
+			"description" : "Qty (10) Acres of Land",
 			"photo" : "assets/img/vramp2.png",
-			"usage" : "4756 hrs",
+			"usage" : null,
 			"unused" : true,
 			"qty": 10,
-			"qtyunit": null
+			"qtyunit": "acres"
 		},
 		[
 			{
@@ -136,55 +136,59 @@
 		[
 			{
 				"lotNumber" : "2742",
-				"price" : 10000,
+				"price" : 10.50,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
 				"photo" : "assets/img/vramp2.png",
-				"usage" : "100000 hrs",
+				"usage" : null,
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
-				"qty": 0,
-				"active":false
+				"active":false,
+				"qty": 38,
+				"qtyunit": "ft"
 			},
 			{
 				"lotNumber" : "2743",
-				"price" : 10000,
+				"price" : 10.50,
 				"video":false,
-				"status" : "out",
+				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #2",
 				"photo" : "assets/img/vramp2.png",
-				"usage" : "90000 hrs",
+				"usage" : null,
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
-				"qty": 0,
-				"active":false
+				"active":false,
+				"qty": 40,
+				"qtyunit": "ft"
 			},
 			{
 				"lotNumber" : "27444A",
-				"price" : 10000,
+				"price" : 10.50,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
 				"photo" : "assets/img/vramp2.png",
-				"usage" : "110000 hrs",
+				"usage" : null,
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
-				"qty": 0,
-				"active":false
+				"active":false,
+				"qty": 25,
+				"qtyunit": "ft"
 			},
 			{
 				"lotNumber" : "2744",
-				"price" : 10000,
+				"price" : 10.50,
 				"video":false,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift #3",
 				"photo" : "assets/img/vramp2.png",
-				"usage" : "110000 hrs",
+				"usage" : null,
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
-				"qty": 0,
-				"active":false
+				"active":false,
+				"qty": 15,
+				"qtyunit": "ft"
 			}
 		],
 		[

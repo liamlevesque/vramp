@@ -63,6 +63,30 @@
 		}
 	}
 
+		.lot--quantity{
+			position: absolute;
+			top: -0.1vw;
+			right: 0;
+			padding: 0.2vw 0.6vw 0 20px;
+			background-color: $contrast-colour;
+			color: white;
+
+			&:before{
+				content: '';
+				background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2010%2020%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolygon%20fill%3D%22#{$brand-color}%22%20points%3D%220%2C0%2010%2C10%200%2C20%22%2F%3E%3C%2Fsvg%3E');
+				background-size: 10px 100%;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 10px;
+			}
+
+			.s-sold &:before{
+				background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2010%2020%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolygon%20fill%3D%22#{$grey-700}%22%20points%3D%220%2C0%2010%2C10%200%2C20%22%2F%3E%3C%2Fsvg%3E');
+			}
+		}
 
 		$ccys: 	"CAD" "$" "" "," "." true 2,
 			"USD" "$" "" "," "." true 14,
@@ -101,7 +125,7 @@
 			}
 			.dollars:before{
 				.conversion.#{nth($ccy,1)} &{
-					content: "≈ #{nth($ccy,2)}";
+					content: "#{nth($ccy,2)}";
 				}
 			}
 			.dollars:after{
@@ -138,11 +162,6 @@
 		}
 
 		.auction-ccy{
-			display: inline-block;
-			float: left;
-			vertical-align: top;
-
-			margin-left: 0.5vw;
 			margin-top: 0.6vw;
 			
 			&:after{
@@ -205,6 +224,7 @@
 				//display: inline-block;
 				position: relative;
 				overflow: hidden;
+				display: flex;
 			
 				&:before{
 					@extend .font--180;
@@ -217,8 +237,12 @@
 
 				.dollars{
 					display: inline-block;
-					float: right;
 					min-height: 1.3em;
+					flex: 1;
+				}
+
+				.sellByPiece{
+					align-self: center;
 				}
 			}
 
@@ -246,6 +270,7 @@
 				padding-bottom: 0.8vw;
 				position: relative;
 				overflow: hidden;
+				display: flex;
 
 				&.ccy{
 					&:after{
@@ -265,9 +290,12 @@
 				}
 
 				.dollars{
-					float: right;
-					display: inline-block;
+					flex: 1;
+					text-align: right;
+				}
 
+				.sellByPiece{
+					align-self: center;
 				}
 			}
 
