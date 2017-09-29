@@ -82,11 +82,29 @@
 			&:nth-last-child(n+5),
 			&:nth-last-child(n+5) ~ li {
 				@include font-size(1.4);
+
+				&.s-has-qty{
+					.choice-lot--number{
+						line-height: 4vw;
+					}
+					.choice-lot--quantity{
+						@include font-size(1.4);
+					}
+				}
 			}
 
 			&:nth-last-child(n+9),
 			&:nth-last-child(n+9) ~ li {
 				@include font-size(1.2);
+
+				&.s-has-qty{
+					.choice-lot--number{
+						line-height: 4vw;
+					}
+					.choice-lot--quantity{
+						@include font-size(1.2);
+					}
+				}
 			}
 
 			&:nth-last-child(n+11),
@@ -104,6 +122,17 @@
 				&.s-sold, &.s-out{
 					line-height: $lot-height_small/2;
 				}
+
+				&.s-has-qty{
+					.choice-lot--number{
+						line-height: $lot-height_small/2 + 0.2vw;
+					}
+					.choice-lot--quantity{
+						@include font-size(1.1);
+						padding: 0.2vw 0.2vw 0;
+						bottom: 0.2vw;
+					}
+				}
 			}
 
 			&.s-active {
@@ -117,7 +146,8 @@
 				    bottom: -8px;
 				    right: -8px;
 				    border: 14px solid $brand-color;
-				    border-radius: 18px;
+					border-radius: 18px;
+					z-index: 1000;
 				}
 			}
 
@@ -137,7 +167,7 @@
 			.choice-lot--status{
 				display: block;
 				position: absolute;
-				top: 100%;
+				top: 0;
 				bottom: 0;
 				left: 0;
 				right: 0;

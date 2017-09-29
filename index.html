@@ -60,7 +60,7 @@
 				</div>
 				<div class="choice--body" rv-class-s-show-photos="vrampObject.choiceGroup | lt 7">
 					<ul class="choice--lots">
-						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot-flex" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active">
+						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot-flex" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active" rv-class-s-has-qty="vrampObject.lotDetail.qty | gt 0">
 							<div class="choice-lot--number">{ choicelot.lotNumber }</div>
 							<div class="choice-lot--status">
 								<div class="choice-lot--photo">
