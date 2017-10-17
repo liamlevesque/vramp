@@ -1,0 +1,672 @@
+<div data-dojo-type='amd/display/Container' class="js--vramp-bidding s-auction-active"  
+data-dojo-props="
+    
+    newActionCallback: function(action, style) {
+    
+        var that = this;
+        require([
+            'dojo/dom-class',
+            'dojo/_base/connect'
+        
+        ], function(domClass, connect) {
+        
+            domClass.remove(that.domNode, 's-auction-active');
+            domClass.remove(that.domNode, 's-auction-paused');
+            domClass.remove(that.domNode, 's-auction-pre');
+            domClass.remove(that.domNode, 's-auction-post');
+            
+            domClass.add(that.domNode, style);
+            
+            connect.publish('Any/MediaContent/RenderOnScreen/' + that.laneID, [ action ]);
+        });
+    },
+    
+    setAltLanesCallback: function(lane2select, lane3select, talselect) {
+    
+        var that = this;
+        require([
+            'dojo/dom-class'
+        
+        ], function(domClass) {
+        
+            var noOfAltLanes = 0;
+            
+            if(lane2select != null && lane2select.trim().length > 0) {
+            
+                noOfAltLanes ++;
+            }
+            
+            if(lane3select != null && lane3select.trim().length > 0) {
+            
+                noOfAltLanes ++;
+            }
+            
+            if(talselect != null && talselect != 0 && talselect.trim().length > 0) {
+            
+                noOfAltLanes ++;
+            }
+            
+            if(noOfAltLanes == 1) {
+            
+                domClass.add(that.domNode, 's-other-rings_single');
+                
+            } else if(noOfAltLanes > 1) {
+            
+                domClass.add(that.domNode, 's-other-rings_single');
+                domClass.add(that.domNode, 's-other-rings_all');
+            }
+            
+        });
+    } 
+"
+>
+
+<img src="./images/rba/vramp-bg.png" class="fullscreenbg" />
+
+
+<div class="lot-preview">
+<div class="lot--title">
+    <div class="lot--number">
+        <label>
+            <span class="sale-ring">
+                <div data-dojo-type="amd/display/LanguageLabel" mytype="ring"></div>
+                <div data-dojo-type="amd/display/MessageLabel"  msgtype="ringNumber"></div>
+            </span>
+        </label>
+        <div class="font--180">
+            <div data-dojo-type="amd/display/LanguageLabel" mytype="headerNameLot"></div>
+            <div data-dojo-type="amd/display/DataLabel" fieldid="runname" listenToClientLotSelect="true"></div>
+        </div>
+    </div>
+    <div class="lot--description">
+        <span class="h-valign font--250" data-dojo-type="amd/display/DataLabel" fieldid="short_desc" listenToClientLotSelect="true"></span>
+    </div>
+</div>
+
+<div data-dojo-type='amd/display/MultiMediaSlideshow'  class="lot--media" data-dojo-props="
+    templateName: 'assetslideshow'
+    
+    , configurationType: 'assetslideshow'
+    
+    , videoType: 'assetvideo'
+    
+    , imageType: 'assetimage'
+    
+    , displayName: 'VRamp - Wall'
+    
+    , isRenderedOnScreen: true
+    
+    , videosPlayedOnLoop: false
+    
+    , imagesPlayedOnLoop: false
+    
+    , showImagesFromLocalInOnlineMode : false
+    
+    , isManualMode : 'false'
+
+    , localImageSuffix : '_local'
+    
+    , imageFieldIds: globImagesToModified
+    
+    , imageFieldArray: []
+    
+    , initPostMixInproperties: function() {
+    
+        var that = this;
+        require([
+            'dojo/_base/connect'
+        
+        ], function(connect) {
+        
+            var aSub = connect.subscribe('DataManager/Anyone/ItemNav/' + that.laneID, that, that.newItemNav);
+            that.mySubscriptions.push(aSub);
+            
+            var aSub = connect.subscribe('DataManager/Anyone/ClientLotSelect/' + that.laneID, that, that.clientLotSelect);
+            that.mySubscriptions.push(aSub);
+            
+            aSub = connect.subscribe('MessageProcessor/ItemImage/PhotoOverride/' + that.laneID, that, that.slideOverride);
+            that.mySubscriptions.push(aSub);
+            
+            aSub = connect.subscribe('Any/Slideshow/NewAction/' + that.laneID, that, that.newSlideshowAction);
+            that.mySubscriptions.push(aSub);
+            
+            aSub = connect.subscribe('DisplayManger/Any/SetShowImagesFromLocalInOnlineMode/' + that.laneID, that, that.setImagesFromLocalFlag);
+            that.mySubscriptions.push(aSub);
+        
+        });
+    
+        this.imageFieldArray = this.imageFieldIds.split(',');	
+    }
+    
+    , newSlideshowAction: function(slideshowAction) {
+    
+        if(slideshowAction == 'play') {
+        
+            this.resumeSlideshow();
+        
+        } else if(slideshowAction == 'pause') {
+        
+            this.pauseSlideshow();
+        }
+    }
+    
+    , renderOnScreen: function(configurationType) {
+
+        if(configurationType == 'activeauction') {
+            
+            this.isRenderedOnScreen = true;
+            this.refreshData();
+            
+        } else {
+            
+            this.isRenderedOnScreen = false;
+            this.clearData();
+        }
+    }
+
+    , newItemNav: function(dbRef, isManualMode) {
+    
+        this.isManualMode = isManualMode;
+        
+        var equipId = dbRef.getItemField(this.laneID, 'equip_id');
+        
+        this.lotNumber = dbRef.getItemField(this.laneID, 'runname');
+        
+        var imageURLs = this.getImageUrlsForItem(dbRef, false);
+        
+        var itemDisabledMedia = dbRef.getItemField(this.laneID, 'disabledMedia');
+        
+        this.createNewMultiMediaSlideshow(equipId, this.videoData[equipId], imageURLs, itemDisabledMedia);
+    }
+    
+    , clientLotSelect: function(dbRef) {
+    
+        var equipId = dbRef.getItemFieldOfClientSelectedItem(this.laneID, 'equip_id');
+        
+        this.lotNumber = dbRef.getItemFieldOfClientSelectedItem(this.laneID, 'runname');
+        
+        var imageURLs = this.getImageUrlsForItem(dbRef, true);
+        
+        var itemDisabledMedia = dbRef.getItemFieldOfClientSelectedItem(this.laneID, 'disabledMedia');
+        
+        this.createNewMultiMediaSlideshow(equipId, this.videoData[equipId], imageURLs, itemDisabledMedia);
+    }
+    
+    , createNewMultiMediaSlideshow(equipId, videoURLs, imageURLs, itemDisabledMedia) {
+    
+        this.videosPlayedOnLoop = false;
+        this.imagesPlayedOnLoop = false;
+        
+        var that = this;
+        require([
+            'dojo/_base/connect'
+        
+        ], function(connect) {
+        
+            connect.publish('Any/PhotoEnableDisable/Reset/' + that.laneID, [ itemDisabledMedia ]);
+        
+            that.runningSlideId = '';
+            connect.publish('Any/MultiMedia/PlaySlideshow/' + that.laneID, [ equipId, videoURLs, imageURLs, '' ]);
+        });
+    }
+    
+    , getImageUrlsForItem: function(dbRef, clientLotSelect) {
+    
+        var imageURLs = [];
+        var imageURL;
+        
+        for(var aFieldId in this.imageFieldArray) {
+         
+             if(clientLotSelect) {
+             
+                 imageURL = dbRef.getItemFieldOfClientSelectedItem(this.laneID, this.getImageUrlRealFieldId(this.imageFieldArray[aFieldId]));
+                 
+             } else {
+             
+                 imageURL = dbRef.getItemField(this.laneID, this.getImageUrlRealFieldId(this.imageFieldArray[aFieldId]));
+             }
+            
+            if(imageURL && imageURL.length > 0) {
+            
+                imageURLs.push(imageURL);
+            }
+        }
+        
+        return imageURLs;
+    }
+    
+    , getImageUrlRealFieldId: function(imageFieldId) {
+    
+        if(this.isManualMode == 'true' || this.showImagesFromLocalInOnlineMode ) {
+        
+            return imageFieldId + this.localImageSuffix;
+        }
+        
+        return imageFieldId;
+    }
+    
+    , slideOverride: function(mediaURL, fromADMClerk) {
+    
+        if(fromADMClerk === 'true') {
+        
+            var excludedMultmedia = this.videoType;
+        
+            if(mediaURL.indexOf('.mp4') > 0) {
+            
+                excludedMultmedia = this.imageType;				
+            }
+            
+            var that = this;
+            require([
+                'dojo/_base/connect'
+            
+            ], function(connect) {
+            
+                connect.publish('Any/MultiMedia/JumpToSlide/' + that.laneID, [ mediaURL, excludedMultmedia ]);
+            });
+            
+        } else {
+        
+            var that = this;
+            require([
+                'dojo/_base/connect'
+            
+            ], function(connect) {
+            
+                connect.publish('MessageProcessor/Any/PhotoEnableDisable/' + that.laneID, [ 'disable', 'allimages' ]);
+            });
+        }
+        
+    }
+    
+    , onVideoPlayed: function(videoUrl, index) {
+
+        var lotNo = 'EMPTY';
+        
+        if (this.lotNumber) {
+            
+            lotNo = this.lotNumber;
+        }
+
+        if( ! this.videosPlayedOnLoop) {
+        
+            console.videolog(videoUrl, globEventId, globDisplayName, this.displayName, 'VIDEO', lotNo);
+        }
+        
+    }
+    
+    , onImageDisplayed: function(imageUrl, index) {
+
+        var lotNo = 'EMPTY';
+        
+        if (this.lotNumber) {
+            
+            lotNo = this.lotNumber;
+        }
+        
+        if( ! this.imagesPlayedOnLoop) {
+        
+            console.photolog(imageUrl, globEventId, globDisplayName, this.displayName, 'MAIN', lotNo);
+        }
+        
+    }
+    
+    , refreshData : function() {
+    
+        var that = this;
+        require([
+            'dojo/_base/connect'
+        
+        ], function(connect) {
+        
+            connect.publish('Any/MultiMedia/ResumeSlideshow/' + that.laneID, [ ]);
+        });
+        
+    }
+    
+    , clearData: function() {
+    
+        var that = this;
+        require([
+            'dojo/_base/connect'
+        
+        ], function(connect) {
+        
+            connect.publish('Any/MultiMedia/PauseSlideshow/' + that.laneID, [ ]);
+        });	
+    }
+    
+    , setImagesFromLocalFlag : function (showImagesFromLocalInOnlineMode) {
+
+        this.showImagesFromLocalInOnlineMode = showImagesFromLocalInOnlineMode;
+    }
+    
+    ">
+</div>
+<div class="choice-area">
+    <div class="choice--header font--180" data-dojo-type="amd/display/CandPChoicesRemaining" preText="candpPreText" postText="candpPostText" rootElement="div"></div>
+    <div data-dojo-type="amd/display/CandPOuterBlockRBAvr" totalNumOfRows="6" needRecentering="false" mytype='vramp' showRemainingText="true"></div>
+</div>
+</div>
+
+
+
+
+
+
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'pausedauction'
+    
+    , configurationType: 'pausedauction'
+    
+    , refreshData : function() {
+    
+        var that = this;
+        
+        that.domAttrSetInnerHTMLSafe(that.message, that.data['message'], true);
+    }
+    
+    "></div>
+    
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'preauction'
+    
+    , configurationType: 'preauction'
+    
+    , setData : function(data) {
+    
+        if(data) {
+        
+            this.prePlayer.setupCache();
+            
+            this.inherited('setData', arguments);
+        }
+    }
+    
+    , refreshData : function() {
+    
+        var that = this;
+        require([
+            'dojo/dom-attr',
+            'dojo/dom-class',
+            'dojo'
+        
+        ], function(domAttr, domClass, dojo) {
+        
+            if(that.data['contentmessage'] !== undefined && that.data['contentmessage'].length > 0) {
+            
+                domAttr.set(that.contentmessage, 'innerHTML', that.data['contentmessage']);
+                
+            } else {
+            
+                dojo.empty(that.contentmessage);
+            } 
+            
+            that.clearData();
+            if (that.data['media[]'] !== undefined && that.data['media[]'].length > 0){
+            var mediaJson = JSON.parse(that.data['media[]'][0]);
+            
+                var mediaType = mediaJson.path.split('.').pop();
+            
+                if(mediaType === 'png' || mediaType === 'jpg') {
+                
+                    domClass.add(that.domNode, 'pre-post-image');
+                    domStyle.set(that.domNode, 'backgroundImage', 'url(' + mediaJson.path + ')');
+                    domStyle.set(that.domNode, 'backgroundColor', 'transparent');
+                    
+                } else if(mediaType === 'mp4') {
+                    
+                    domStyle.set(that.domNode, 'padding', '0px');
+                    that.prePlayer.createNewVideo(mediaJson.path, null, { 'autoplay':'autoplay' });
+                }
+            } else {
+            
+                domClass.remove(that.defaultimage, 'hide');
+                domStyle.set(that.domNode, 'backgroundImage', 'none');
+                domStyle.set(that.domNode, 'backgroundColor', 'white');
+            }
+            
+        });
+    }
+    
+    , clearData: function() {
+    
+        var that = this;
+        require([
+            'dojo/dom-attr',
+            'dojo/dom-class'
+        
+        ], function(domAttr, domClass) {
+        
+            domClass.add(that.defaultimage, 'hide');
+            that.prePlayer.disposeVideo();
+            domStyle.set(that.domNode, 'padding', '80px');
+            domClass.remove(that.domNode, 'pre-post-image');
+            domStyle.set(that.domNode, 'backgroundImage', '');
+            domStyle.set(that.domNode, 'backgroundColor', '');
+        });
+    }
+    
+    "></div>
+
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'postauction'
+    
+    , configurationType: 'postauction'
+    
+    , setData : function(data) {
+    
+        if(data) {
+        
+            this.postPlayer.setupCache();
+            
+            this.inherited('setData', arguments);
+        }
+    }
+    
+    , refreshData : function() {
+    
+        var that = this;
+        require([
+            'dojo/dom-attr',
+            'dojo/dom-class',
+            'dojo/dom-style',
+            'dojo'
+        
+        ], function(domAttr, domClass, domStyle, dojo) {
+        
+            if(that.data['contentmessage'] !== undefined && that.data['contentmessage'].length > 0) {
+            
+                domAttr.set(that.contentmessage, 'innerHTML', that.data['contentmessage']);
+                
+            } else {
+            
+                dojo.empty(that.contentmessage);
+            } 
+            
+            that.clearData();
+            if (that.data['media[]'] !== undefined && that.data['media[]'].length > 0){
+                var mediaJson = JSON.parse(that.data['media[]'][0]);
+                var mediaType = mediaJson.path.split('.').pop();
+
+                if(mediaType === 'png' || mediaType === 'jpg') {
+            
+                    domClass.add(that.domNode, 'pre-post-image');
+                    domStyle.set(that.domNode, 'backgroundImage', 'url(' + mediaJson.path + ')');
+                    domStyle.set(that.domNode, 'backgroundColor', 'transparent');
+                    
+                }  else if(mediaType === 'mp4') {
+
+                    domStyle.set(that.domNode, 'padding', '0px');
+                    that.postPlayer.createNewVideo(mediaJson.path, null, { 'autoplay':'autoplay' });
+                }
+                
+            }  else {
+            
+                domClass.remove(that.defaultimage, 'hide');
+                domStyle.set(that.domNode, 'backgroundImage', 'none');
+                domStyle.set(that.domNode, 'backgroundColor', 'white');
+            }
+            
+        });
+    }
+    
+    , clearData: function() {
+    
+        var that = this;
+        require([
+            'dojo/dom-attr',
+            'dojo/dom-class'
+        
+        ], function(domAttr, domClass) {
+        
+            domClass.add(that.defaultimage, 'hide');
+            that.postPlayer.disposeVideo();
+            domStyle.set(that.domNode, 'padding', '80px');
+            domClass.remove(that.domNode, 'pre-post-image');
+            domStyle.set(that.domNode, 'backgroundImage', '');
+            domStyle.set(that.domNode, 'backgroundColor', '');
+        });
+    }
+    
+    "></div>
+
+<div class="details-area">
+<div class="active-details">
+    <div class="prices">
+        <div class="h-valign">
+            
+            <div data-dojo-type="amd/display/BidInfoDisplayRBA" cssAskSoldLabel="ask--header font--200" cssAskSoldValue="ask_sold_value" cssAsk="ask" askLabel="asklabelsignboard" resetOnStartup="true" mytype="vrampWallBidInfo" askOnly="true"></div>
+            
+            <div class="conversions">
+            
+                <div data-dojo-type="amd/display/BidInfoDisplayRBA" cssAskSoldLabel="ask--header font--200" cssAskSoldValue="ask_sold_value" cssAsk="conversion ccy" askLabel="asklabelsignboard" resetOnStartup="true" requiresReCalculation="true" mytype="vrampWallMultiCurrencyAsk" myAltCurrencyType="alternateCurrency" askOnly="true"></div>
+                <div data-dojo-type="amd/display/CurrencyConverterRBAvr" myAltCurrencyType="alternateCurrency" showDopdown="false"></div>
+                
+                <div data-dojo-type="amd/display/BidInfoDisplayRBA" cssAskSoldLabel="ask--header font--200" cssAskSoldValue="ask_sold_value" cssAsk="conversion ccy" askLabel="asklabelsignboard" resetOnStartup="true" requiresReCalculation="true" mytype="vrampWallMultiCurrencyAsk" myAltCurrencyType="alternateCurrency2" askOnly="true"></div>
+                <div data-dojo-type="amd/display/CurrencyConverterRBAvr" myAltCurrencyType="alternateCurrency2" showDopdown="false"></div>
+                <div id ="altCurrLabel1" class="h-ta-right h-mt-sub-100 font--120 c-brand_dark remove-from-view">
+                    <div data-dojo-type="amd/display/LanguageLabel" mytype="altCurrencylabelsignboard" rootElement="label"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="high-bidder">
+        <div data-dojo-type="amd/display/LanguageLabel" mytype="highBidderNoColon" rootElement="label"></div>
+        <div class="font--200" data-dojo-type="amd/display/MessageLabel"  msgtype="highBidder" needLocalization="true"  hideParentforEmptyText="true"></div><div class="h-t-ellipsize font--200" data-dojo-type="amd/display/MessageLabel" msgtype="buyerPlace" prefixText=", "></div>
+    </div>
+
+    <div class="lot-details">
+        <div class="lot-detail" data-dojo-type="amd/display/DataLabelContainer" fieldid="usage" showTooltip="false" doNotShowText="true" listenToClientLotSelect="true" doNotChangeDisplayStyle="true">
+            <div data-dojo-type="amd/display/LanguageLabel" mytype="usage" rootElement="label"></div>
+            <div class="font--200" data-dojo-type="amd/display/DataLabel" fieldid="usage" listenToClientLotSelect="true"></div>
+        </div>
+        <div class="lot-detail" data-dojo-type="amd/display/DataLabelContainer" fieldid="comes_with" showTooltip="false" doNotShowText="true" listenToClientLotSelect="true" doNotChangeDisplayStyle="true">
+            <div data-dojo-type="amd/display/LanguageLabel" mytype="comesWith" rootElement="label"></div>
+            <div class="font--200" data-dojo-type="amd/display/DataLabel" fieldid="comes_with" listenToClientLotSelect="true" rootElement="div"></div>
+        </div>
+    </div>
+
+    <div data-dojo-type="amd/display/ClerkMessage" myType="vramp"></div>
+</div>
+
+<!-- PAUSED RIGHT HAND SIDE AREA -->
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'pausedauctiondetails'
+    
+    , configurationType: 'pausedauction'
+    
+    , postMixInProperties: function() {
+    
+        this.inherited('postMixInProperties', arguments);
+        
+        this.labelText = attendManager.getLanguageLabel('pausedAuctionText');
+    }
+    
+    "></div>
+
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'preauctiondetails'
+    
+    , configurationType: 'preauction'
+    
+    , refreshData : function() {
+    
+        var that = this;
+        
+        that.domAttrSetInnerHTMLSafe(that.message1, that.data['message'], true);
+        that.domAttrSetInnerHTMLSafe(that.message2, that.data['message2'], true);
+        
+    }
+    "></div>
+
+<div data-dojo-type='amd/display/MediaContent'   data-dojo-props="
+    templateName: 'postauctiondetails'
+    
+    , configurationType: 'postauction'
+    
+    , refreshData : function() {
+    
+        var that = this;
+        
+        that.domAttrSetInnerHTMLSafe(that.endmessage, that.data['endmessage'], true);
+        that.domAttrSetInnerHTMLSafe(that.startmessage, that.data['startmessage'], true);
+        that.domAttrSetInnerHTMLSafe(that.startmessage2, that.data['startmessage2'], true);
+        that.domAttrSetInnerHTMLSafe(that.lotrangemessage, that.data['lotrangemessage'], true);
+        
+    }
+    "></div>
+
+</div>
+
+
+<footer class="other-rings">
+
+<ul data-dojo-type='amd/display/Container' rootElement="ul" class="rings"  
+data-dojo-props="
+    
+    setAltLanesCallback: function(lane2select, lane3select, talselect) {
+    
+        var that = this;
+        var lane = this.laneID;
+        require([
+            'dojo/dom-class',
+            'dojo/dom-construct',
+            'amd/display/DisplayAlternateLaneVramp'
+        
+        ], function(domClass, domConstruct, DisplayAlternateLaneVRamp) {
+        
+            if(lane2select != null && lane2select.trim().length > 0) {
+            
+                var lane2 = new DisplayAlternateLaneVRamp({mytype:lane2select, laneID:lane, displayName: 'VRamp - Wall', removeBreaks: true});
+                
+                that.domNode.appendChild(lane2.domNode);
+            }
+            
+            if(lane3select != null && lane3select.trim().length > 0) {
+                
+                var lane3 = new DisplayAlternateLaneVRamp({mytype:lane3select, laneID:lane, displayName: 'VRamp - Wall', removeBreaks: true});
+                
+                that.domNode.appendChild(lane3.domNode);
+            }
+            
+            if(talselect != null && talselect != 0 && talselect.trim().length > 0) {
+                
+                var tal = new DisplayAlternateLaneVRamp({mytype:'tal', laneID:lane, displayName: 'VRamp - Wall', removeBreaks: true});
+                
+                that.domNode.appendChild(tal.domNode);
+            }
+            
+            
+        });
+    }
+    
+"
+>
+</ul>
+</footer>
+<div data-dojo-type="amd/display/CurrencyBidCalculator" myAltCurrencyType="alternateCurrency"></div>
+<div data-dojo-type="amd/display/CurrencyBidCalculator" myAltCurrencyType="alternateCurrency2"></div>
+</div>

@@ -61,6 +61,17 @@
 			.sale-ring{
 				opacity: 0.8;
 			}
+
+			&>div{
+				overflow: hidden;
+				white-space: nowrap;
+
+				& span:first-child{
+					.lang--jpy &, .lang--cn &{
+						@extend .font--120;
+					}
+				}
+			}
 		}
 
 		.lot--description{
