@@ -265,7 +265,14 @@
 		}
 		
 			.conversions--approx-text{
+				color: $bg-color-auctioneer-message;
+				text-align: right;
 				padding: 0 0.8vw 0.1vw;
+				margin-top: -0.8vw;
+
+				.s-sold &{
+					color: rgba(white,0.8);
+				}
 			}
 
 			.conversion{
@@ -346,6 +353,12 @@
 			div{
 				@include lineclamp(3);
 			}
+		}
+
+		.lot--location-icon{
+			opacity: 0.8;
+			@extend .font--150;
+			margin-right: $default-padding/2;
 		}
 
 

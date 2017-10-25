@@ -71,38 +71,32 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/assets\/fonts\/fjallaone-regular-webfont.eot": {
+	"\/assets\/fonts\/ADMIcons.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/fjallaone-regular-webfont.eot",
+		"oAP": "\/assets\/fonts\/ADMIcons.eot",
 		"oF": 0
 		},
-	"\/assets\/fonts\/fjallaone-regular-webfont.svg": {
+	"\/assets\/fonts\/ADMIcons.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/fjallaone-regular-webfont.svg",
+		"oAP": "\/assets\/fonts\/ADMIcons.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/fonts\/fjallaone-regular-webfont.ttf": {
+	"\/assets\/fonts\/ADMIcons.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/fjallaone-regular-webfont.ttf",
+		"oAP": "\/assets\/fonts\/ADMIcons.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/fjallaone-regular-webfont.woff": {
+	"\/assets\/fonts\/ADMIcons.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/fjallaone-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/fjallaone-regular-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/fjallaone-regular-webfont.woff2",
+		"oAP": "\/assets\/fonts\/ADMIcons.woff",
 		"oF": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BlackCn.eot": {
@@ -159,108 +153,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BoldCn.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/OpenSans-CondBold-demo.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/OpenSans-CondBold-demo.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/OpenSans-CondBold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/OpenSans-CondBold-webfont.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/OpenSans-CondBold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/OpenSans-CondBold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/OpenSans-CondBold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/OpenSans-CondBold-webfont.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/OpenSans-CondBold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/OpenSans-CondBold-webfont.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-bold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-bold-webfont.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-bold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-bold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/oswald-bold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-bold-webfont.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-bold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-bold-webfont.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-bold-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-bold-webfont.woff2",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-heavy-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-heavy-webfont.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-heavy-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-heavy-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/oswald-heavy-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-heavy-webfont.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-heavy-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-heavy-webfont.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/oswald-heavy-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/oswald-heavy-webfont.woff2",
 		"oF": 0
 		},
 	"\/assets\/img\/arrow.png": {

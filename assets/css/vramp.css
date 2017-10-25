@@ -250,7 +250,7 @@ body {
 .font--120, .lot--number label, .lang--jpy .lot--number > div span:first-child, .lang--cn .lot--number > div span:first-child, .auction-ccy:before, .conversion.ccy:before, .high-bidder label, .lot-details label, .auctioneers-message label, .open-offers label {
   font-size: 1.4vw; }
 
-.font--150 {
+.font--150, .lot--location-icon {
   font-size: 1.68vw; }
 
 .font--180, .ask--price:before {
@@ -1122,7 +1122,12 @@ body {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .conversions--approx-text {
-  padding: 0 0.8vw 0.1vw; }
+  color: #7d3d0d;
+  text-align: right;
+  padding: 0 0.8vw 0.1vw;
+  margin-top: -0.8vw; }
+  .s-sold .conversions--approx-text {
+    color: rgba(255, 255, 255, 0.8); }
 
 .conversion {
   padding-bottom: 0.8vw;
@@ -1186,6 +1191,10 @@ body {
   overflow-y: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; }
+
+.lot--location-icon {
+  opacity: 0.8;
+  margin-right: 0.6vw; }
 
 .auctioneers-message {
   position: absolute;

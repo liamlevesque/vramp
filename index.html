@@ -150,7 +150,7 @@
 								<span class="dollars font--250" rv-html="conversion.rate | convertedVrampPrice vrampObject.price conversion.currency"></span>
 								<span class="sellByPiece font--150" rv-if="vrampObject.lotDetail.qty | gt 0"> /{ vrampObject.lotDetail.qtyunit }</span>
 							</div>
-							<div class="h-ta-right h-mt-sub-100 font--120 c-brand_dark">(APPROXIMATE)</div> 
+							<div class="conversions--approx-text font--120">(APPROXIMATE)</div> 
 						</div>
 					</div>
 
@@ -167,6 +167,9 @@
 				</div>
 
 				<div class="lot-details">
+					<div class="lot-detail" rv-show="vrampObject.lotDetail.offsite">
+						<div class="font--200"><i class="icon-Location lot--location-icon"></i>Located Offsite</div>
+					</div>
 					<div class="lot-detail" rv-show="vrampObject.lotDetail.qty | gt 0">
 						<label>Quantity</label>
 						<div class="font--200">{vrampObject.lotDetail.qty} {vrampObject.lotDetail.qtyunit}</div>

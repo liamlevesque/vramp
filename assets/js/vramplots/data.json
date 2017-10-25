@@ -285,7 +285,8 @@
 				"unused" : false,
 				"qty": 0,
 				"active":false,
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "27444A",
@@ -299,7 +300,8 @@
 				"unused" : false,
 				"qty": 0,
 				"active":false,
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "2749",
@@ -313,7 +315,8 @@
 				"unused" : false,
 				"qty": 0,
 				"active":false,
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -327,7 +330,8 @@
 				"unused" : false,
 				"qty": 0,
 				"active":false,
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -377,7 +381,8 @@
 				"active":false,
 				"qty": 15,
 				"qtyunit": "ft",
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "27444A",
@@ -392,7 +397,8 @@
 				"active":false,
 				"qty": 15,
 				"qtyunit": "ft",
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "2749",
@@ -407,7 +413,8 @@
 				"active":false,
 				"qty": 15,
 				"qtyunit": "ft",
-				"ironclad": true
+				"ironclad": true,
+				"offsite":true
 			},
 			{
 				"lotNumber" : "2750",
