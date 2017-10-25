@@ -35,13 +35,19 @@
 		        </div>
 		        <div class="media--photo" rv-unless="vrampObject.lotDetail.photos">
 					<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
+					<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
+						<img src="assets/img/ironclad.png">
+					</div>
 				</div>
 				<div class="media--photos" rv-if="vrampObject.lotDetail.photos">
 					<div class="swiper-container">
 		                <div class="swiper-wrapper">
-		                    <!-- Slides -->
-		                    <div class="swiper-slide" rv-each-photo="vrampObject.lotDetail.photos">
-		                        <img rv-src="photo.src" />
+							<!-- Slides -->
+							<div class="swiper-slide" rv-each-photo="vrampObject.lotDetail.photos">
+								<img rv-src="photo.src" />
+								<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
+									<img src="assets/img/ironclad.png">
+								</div>
 		                    </div>
 		                </div>
 		                <!-- 
@@ -68,6 +74,9 @@
 								</div>
 								<div class="choice-lot--quantity font--180" rv-if="choicelot.qty | gt 0">
 									{choicelot.qty}{ choicelot.qtyunit }
+								</div>
+								<div class="choice-lot--ironclad" rv-if="choicelot.ironclad">
+									<i class="icon-IronClad-Cog"></i>
 								</div>
 								<div class="choice-lot--indicator" rv-if="choicelot.status | comparison 'out'">
 									<div class="choice-lot--status-text"><i class="icon-close"></i><span>OUT</span></div>

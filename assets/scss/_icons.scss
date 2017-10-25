@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ADMIcons';
-  src:  url('../fonts/ADMIcons.eot?hiv67');
-  src:  url('../fonts/ADMIcons.eot?hiv67#iefix') format('embedded-opentype'),
-    url('../fonts/ADMIcons.ttf?hiv67') format('truetype'),
-    url('../fonts/ADMIcons.woff?hiv67') format('woff'),
-    url('../fonts/ADMIcons.svg?hiv67#ADMIcons') format('svg');
+  src:  url('../fonts/ADMIcons.eot?pam1pr');
+  src:  url('../fonts/ADMIcons.eot?pam1pr#iefix') format('embedded-opentype'),
+    url('../fonts/ADMIcons.ttf?pam1pr') format('truetype'),
+    url('../fonts/ADMIcons.woff?pam1pr') format('woff'),
+    url('../fonts/ADMIcons.svg?pam1pr#ADMIcons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,12 @@
     font-size: 20px;
     vertical-align: middle;
 }
-
+.icon-Location:before {
+  content: "\e902";
+}
+.icon-IronClad-Cog:before {
+  content: "\e900";
+}
 .icon-Photos:before {
   content: "\e900";
 }

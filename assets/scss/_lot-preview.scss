@@ -123,7 +123,7 @@
 
 
 @mixin positionphotos{
-	display: block;
+	display: inline-block;
 	width: 100%;
 	max-width: 100%;
 	position: relative;
@@ -136,8 +136,7 @@
 		top: 0;
 		height: 105%;
 		max-height: 105%;
-		margin-left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(0);
 	}
 }
 
@@ -171,9 +170,34 @@
 		.media--photo{
 			@include absfill;
 			bottom: -30px;
+			text-align: center;
 			
-			img{
+			> img{
 				@include positionphotos;
+			}
+		}
+
+		.lot--ironclad{
+			position: absolute;
+			top: 0;
+			right: 0.5vw;
+			margin-top: 0.5vw;
+			color: $ironclad-colour;
+			font-size: 2em;
+			
+			@include aspectBreakpoint(wide){
+				position: relative;
+				vertical-align: top;
+				display: inline-block;
+				width: 0;
+				margin-left: -5vw;
+			}
+
+			img{
+				width: 4vw;
+				height: 4vw;
+				background-color: white;
+				border-radius: 50%;
 			}
 		}
 	}
@@ -188,9 +212,10 @@
 
 			.swiper-slide{
 				background-color: $grey-900;
-			}
+				text-align: center;
 
-			img{
-				@include positionphotos;
+				> img{
+					@include positionphotos;
+				}
 			}
 	    }

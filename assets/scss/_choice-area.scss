@@ -90,6 +90,11 @@
 					.choice-lot--quantity{
 						@include font-size(1.4);
 					}
+					.choice-lot--ironclad{
+						bottom: 0.4vw;
+						top: 50%;
+						height: auto;
+					}
 				}
 			}
 
@@ -253,6 +258,24 @@
 					left: 5px;
 				}
 			}
+			
+			.choice-lot--ironclad{
+				position: absolute;
+				top: 0.4vw;
+				bottom: auto;
+				height: 30px;
+				right: 0.4vw;
+				color: $ironclad-colour;
+				line-height: 50%;
+
+				i{
+					font-size: 1em;
+					top: 50%;
+					position: relative;
+					transform: translateY(-50%);
+					display: block;
+				}
+			}
 		
 		$choice--height--oo-small: 11vh;
 		
@@ -294,15 +317,15 @@
 					min-width: 22vw;
 					max-width: 22vw;
 					height: 19.5vw;
+
+					@include aspectBreakpoint(wide){
+						height: 15.5vw;
+					}
 				}
 
 				&:nth-last-child(n+7),
 				&:nth-last-child(n+7) ~ li {
 					height: 19.4vw;
-
-					@include aspectBreakpoint(wide){
-						height: 15.5vw;
-					}
 				}
 
 				&:nth-last-child(n+10),
