@@ -34,9 +34,13 @@
 		            <iframe src="https://www.youtube.com/embed/hWE7LRojEbQ" frameborder="0" allowfullscreen></iframe>
 		        </div>
 		        <div class="media--photo" rv-unless="vrampObject.lotDetail.photos">
-					<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
-					<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
-						<img src="assets/img/ironclad.png">
+					<div id="image_slideshow">
+						<div>
+							<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
+							<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
+								<img src="assets/img/ironclad.png">
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="media--photos" rv-if="vrampObject.lotDetail.photos">
@@ -66,7 +70,7 @@
 				</div>
 				<div class="choice--body" rv-class-s-show-photos="vrampObject.choiceGroup | lt 7">
 					<ul class="choice--lots">
-						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot-flex" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active" rv-class-s-has-qty="vrampObject.lotDetail.qty | gt 0">
+						<li rv-each-choicelot="vrampObject.choiceGroup" class="choice--lot-flex" rv-soldoroutclass="choicelot.status" rv-class-s-active="choicelot.active" rv-class-s-has-qty="vrampObject.lotDetail.qty | gt 0" rv-class-s-ironclad="vrampObject.lotDetail.ironclad">
 							<div class="choice-lot--number">{ choicelot.lotNumber }</div>
 							<div class="choice-lot--status">
 								<div class="choice-lot--photo">

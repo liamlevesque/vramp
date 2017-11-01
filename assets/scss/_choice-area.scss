@@ -83,7 +83,7 @@
 			&:nth-last-child(n+5) ~ li {
 				@include font-size(1.4);
 
-				&.s-has-qty{
+				&.s-has-qty, &.s-ironclad{
 					.choice-lot--number{
 						line-height: 4vw;
 					}
@@ -257,6 +257,10 @@
 				.s-active &{
 					left: 5px;
 				}
+
+				& + .choice-lot--ironclad{
+					left: auto;
+				}
 			}
 			
 			.choice-lot--ironclad{
@@ -265,6 +269,7 @@
 				bottom: auto;
 				height: 30px;
 				right: 0.4vw;
+				left: 0.4vw;
 				color: $ironclad-colour;
 				line-height: 50%;
 
