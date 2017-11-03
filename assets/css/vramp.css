@@ -1314,24 +1314,25 @@ body {
   text-align: center; }
   .choice--lot-flex:nth-last-child(n+2),
   .choice--lot-flex:nth-last-child(n+2) ~ li {
-    font-size: 2.8vw; }
-  .choice--lot-flex:nth-last-child(n+5),
-  .choice--lot-flex:nth-last-child(n+5) ~ li {
+    font-size: 2.52vw; }
+  .choice--lot-flex:nth-last-child(n+7),
+  .choice--lot-flex:nth-last-child(n+7) ~ li {
     font-size: 1.96vw; }
-    .choice--lot-flex:nth-last-child(n+5).s-has-qty .choice-lot--number, .choice--lot-flex:nth-last-child(n+5).s-ironclad .choice-lot--number,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-has-qty .choice-lot--number,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-ironclad .choice-lot--number {
+    .choice--lot-flex:nth-last-child(n+7).s-has-qty .choice-lot--number, .choice--lot-flex:nth-last-child(n+7).s-ironclad .choice-lot--number,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-has-qty .choice-lot--number,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-ironclad .choice-lot--number {
       line-height: 4vw; }
-    .choice--lot-flex:nth-last-child(n+5).s-has-qty .choice-lot--quantity, .choice--lot-flex:nth-last-child(n+5).s-ironclad .choice-lot--quantity,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-has-qty .choice-lot--quantity,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-ironclad .choice-lot--quantity {
+    .choice--lot-flex:nth-last-child(n+7).s-has-qty .choice-lot--quantity, .choice--lot-flex:nth-last-child(n+7).s-ironclad .choice-lot--quantity,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-has-qty .choice-lot--quantity,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-ironclad .choice-lot--quantity {
       font-size: 1.96vw; }
-    .choice--lot-flex:nth-last-child(n+5).s-has-qty .choice-lot--ironclad, .choice--lot-flex:nth-last-child(n+5).s-ironclad .choice-lot--ironclad,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-has-qty .choice-lot--ironclad,
-    .choice--lot-flex:nth-last-child(n+5) ~ li.s-ironclad .choice-lot--ironclad {
+    .choice--lot-flex:nth-last-child(n+7).s-has-qty .choice-lot--ironclad, .choice--lot-flex:nth-last-child(n+7).s-ironclad .choice-lot--ironclad,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-has-qty .choice-lot--ironclad,
+    .choice--lot-flex:nth-last-child(n+7) ~ li.s-ironclad .choice-lot--ironclad {
       bottom: 0.4vw;
       top: 50%;
-      height: auto; }
+      height: auto;
+      text-align: center; }
   .choice--lot-flex:nth-last-child(n+9),
   .choice--lot-flex:nth-last-child(n+9) ~ li {
     font-size: 1.68vw; }
@@ -1472,7 +1473,8 @@ body {
   right: 0.4vw;
   left: 0.4vw;
   color: #da4620;
-  line-height: 50%; }
+  line-height: 50%;
+  text-align: right; }
   .choice-lot--ironclad i {
     font-size: 1em;
     top: 50%;

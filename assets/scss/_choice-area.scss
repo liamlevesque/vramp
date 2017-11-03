@@ -76,11 +76,11 @@
 		//FONT SIZE DEPENDS ON NUMBER OF ITEMS
 			&:nth-last-child(n+2),
 			&:nth-last-child(n+2) ~ li {
-				@include font-size(2);
+				@include font-size(1.8);
 			}
 
-			&:nth-last-child(n+5),
-			&:nth-last-child(n+5) ~ li {
+			&:nth-last-child(n+7),
+			&:nth-last-child(n+7) ~ li {
 				@include font-size(1.4);
 
 				&.s-has-qty, &.s-ironclad{
@@ -94,6 +94,7 @@
 						bottom: 0.4vw;
 						top: 50%;
 						height: auto;
+						text-align: center;
 					}
 				}
 			}
@@ -234,6 +235,10 @@
 					max-width: 100%;
 					display: block;
 				}
+
+				& ~ .choice-lot--ironclad{
+					//text-align: right;
+				}
 			}
 
 			.choice-lot--quantity{
@@ -275,6 +280,7 @@
 				left: 0.4vw;
 				color: $ironclad-colour;
 				line-height: 50%;
+				text-align: right;
 
 				i{
 					font-size: 1em;
