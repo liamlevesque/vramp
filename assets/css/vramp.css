@@ -1355,14 +1355,20 @@ body {
     .choice--lot-flex:nth-last-child(n+11) ~ li.s-sold,
     .choice--lot-flex:nth-last-child(n+11) ~ li.s-out {
       line-height: 2vw; }
-    .choice--lot-flex:nth-last-child(n+11).s-has-qty .choice-lot--number,
-    .choice--lot-flex:nth-last-child(n+11) ~ li.s-has-qty .choice-lot--number {
+    .choice--lot-flex:nth-last-child(n+11).s-has-qty .choice-lot--number, .choice--lot-flex:nth-last-child(n+11).s-ironclad .choice-lot--number,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-has-qty .choice-lot--number,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-ironclad .choice-lot--number {
       line-height: 2.2vw; }
-    .choice--lot-flex:nth-last-child(n+11).s-has-qty .choice-lot--quantity,
-    .choice--lot-flex:nth-last-child(n+11) ~ li.s-has-qty .choice-lot--quantity {
+    .choice--lot-flex:nth-last-child(n+11).s-has-qty .choice-lot--quantity, .choice--lot-flex:nth-last-child(n+11).s-ironclad .choice-lot--quantity,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-has-qty .choice-lot--quantity,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-ironclad .choice-lot--quantity {
       font-size: 1.54vw;
       padding: 0.2vw 0.2vw 0;
       bottom: 0.2vw; }
+    .choice--lot-flex:nth-last-child(n+11).s-has-qty .choice-lot--ironclad, .choice--lot-flex:nth-last-child(n+11).s-ironclad .choice-lot--ironclad,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-has-qty .choice-lot--ironclad,
+    .choice--lot-flex:nth-last-child(n+11) ~ li.s-ironclad .choice-lot--ironclad {
+      top: 0; }
   .choice--lot-flex.s-active:before {
     content: "";
     position: absolute;

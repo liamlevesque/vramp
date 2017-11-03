@@ -808,7 +808,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -821,7 +822,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			}
 		],
 
@@ -955,7 +957,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -968,7 +971,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			}
 		],
 		[
@@ -1165,7 +1169,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -1178,7 +1183,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			}
 		],
 		[
@@ -1323,7 +1329,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -1336,7 +1343,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2750",
@@ -1455,7 +1463,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2751",
@@ -1468,7 +1477,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "27444A",
@@ -1481,7 +1491,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2753",
@@ -1494,7 +1505,8 @@
 				"comeswith" : "Cummins B3.9-C, 40 m boom, pwr to platform, hyd rotation, extendable axles, hyd leveling, EPA",
 				"unused" : false,
 				"qty": 0,
-				"active":false
+				"active":false,
+				"ironclad":true
 			},
 			{
 				"lotNumber" : "2754",

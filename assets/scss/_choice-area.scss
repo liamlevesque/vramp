@@ -128,7 +128,7 @@
 					line-height: $lot-height_small/2;
 				}
 
-				&.s-has-qty{
+				&.s-has-qty, &.s-ironclad{
 					.choice-lot--number{
 						line-height: $lot-height_small/2 + 0.2vw;
 					}
@@ -136,6 +136,9 @@
 						@include font-size(1.1);
 						padding: 0.2vw 0.2vw 0;
 						bottom: 0.2vw;
+					}
+					.choice-lot--ironclad{
+						top: 0;
 					}
 				}
 			}
