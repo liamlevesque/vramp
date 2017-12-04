@@ -4,10 +4,12 @@ $(function(){
 	$(document).on('keyup',function(e){
 		switch(e.which){
 			case 39:
+				e.preventDefault();
 				navigateLot(1);
 				break;
 
 			case 37:
+				e.preventDefault();
 				navigateLot(-1);
 				break;
 

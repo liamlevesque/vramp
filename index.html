@@ -30,15 +30,20 @@
 			</div>
 
 			<div class="lot--media"> 
-				<div class="custom--media" rv-if="vrampObject.lotDetail.video">
-		            <iframe src="https://www.youtube.com/embed/hWE7LRojEbQ" frameborder="0" allowfullscreen></iframe>
-		        </div>
-		        <div class="media--photo" rv-unless="vrampObject.lotDetail.photos">
-					<div id="image_slideshow">
-						<div>
-							<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
-							<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
-								<img src="assets/img/ironclad.png">
+				<div>
+					<div class="media--photo" rv-unless="vrampObject.lotDetail.photos">
+						<div id="image_slideshow">
+							<div>
+								<img rv-src="vrampObject.lotDetail.photo" rv-unless="vrampObject.lotDetail.video"/>
+								<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
+									<img src="assets/img/IronClad-Large.svg">
+								</div>
+							</div>
+						</div>
+						<div class="media_video" rv-if="vrampObject.lotDetail.video">
+							<video src="./assets/small.mp4"  autoplay="true" loop="true"></video>
+							<div class="lot--ironclad">
+								<img src="assets/img/IronClad-Large.svg">
 							</div>
 						</div>
 					</div>
@@ -50,7 +55,7 @@
 							<div class="swiper-slide" rv-each-photo="vrampObject.lotDetail.photos">
 								<img rv-src="photo.src" />
 								<div class="lot--ironclad" rv-if="vrampObject.lotDetail.ironclad">
-									<img src="assets/img/ironclad.png">
+									<img src="assets/img/IronClad-Large.svg">
 								</div>
 		                    </div>
 		                </div>

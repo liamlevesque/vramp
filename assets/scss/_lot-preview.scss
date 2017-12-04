@@ -133,10 +133,10 @@
 	@include aspectBreakpoint(wide){
 		width: auto;
 		max-width: auto;
-		top: 0;
+		top: 50%;
 		height: 105%;
 		max-height: 105%;
-		transform: translateX(0);
+		transform: translateX(0) translateY(-50%);
 	}
 }
 
@@ -155,32 +155,25 @@
 			bottom: -30px;
 		}
 
-		//FOR VIDEOS TO BE CENTERED CORRECTLY!
-		.custom--media div{
-			top: 50%;
-			transform: translateY(-50%);
-			position: relative;
-		}
-
 		iframe{
 			width: 100%;
 			height: 100%;
 		}
 
 		.media--photo{
-			// @include absfill;
-			// bottom: -30px;
-			// text-align: center;
-		}
-
-		#image_slideshow > div{
 			@include absfill;
 			bottom: -30px;
 			text-align: center;
+		}
 
-			> img{
-				@include positionphotos;
-			}
+		#image_slideshow > div, .media_video{
+			@include absfill;
+			bottom: -30px;
+			text-align: center;
+		}
+
+		#image_slideshow > div > img, .media_video video{
+			@include positionphotos;
 		}
 
 		.lot--ironclad{
@@ -190,28 +183,24 @@
 			margin-top: 0.5vw;
 			color: $ironclad-colour;
 			font-size: 2em;
+			z-index: 1000;
 			
 			@include aspectBreakpoint(wide){
 				position: relative;
 				vertical-align: top;
 				display: inline-block;
 				width: 0;
-				transform: translateX(-5vw);
+				transform: translateX(-6.5vw);
 			}
 
 			img{
-				width: 4vw;
-				height: 4vw;
+				width: 6vw;
+				height: 6vw;
 				background-color: white;
 				border-radius: 50%;
 			}
 		}
 	}
-
-		.media--photos{
-		    @include absfill;
-		    bottom: -30px;
-		}
 
 		.swiper-container{
 			@include absfill;
@@ -224,4 +213,4 @@
 					@include positionphotos;
 				}
 			}
-	    }
+		}

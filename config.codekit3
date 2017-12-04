@@ -7,12 +7,20 @@
 		"uuidString": "D0AEAAE6-2C0B-4DAD-9424-680A4C1631B0"
 		}
 	],
-"creatorBuild": "25900",
+"creatorBuild": "26097",
 "files": {
 	"\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/assets\/10263428_1.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/10263428_1.mp4",
 		"oF": 0
 		},
 	"\/assets\/css\/prod.css": {
@@ -56,6 +64,7 @@
 		"oS": 0
 		},
 	"\/assets\/css\/test.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/css\/test.txt",
@@ -72,6 +81,7 @@
 		"oS": 0
 		},
 	"\/assets\/fonts\/ADMIcons.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/ADMIcons.eot",
@@ -88,18 +98,21 @@
 		"prP": 0
 		},
 	"\/assets\/fonts\/ADMIcons.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/ADMIcons.ttf",
 		"oF": 0
 		},
 	"\/assets\/fonts\/ADMIcons.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/ADMIcons.woff",
 		"oF": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BlackCn.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BlackCn.eot",
@@ -116,18 +129,21 @@
 		"prP": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BlackCn.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BlackCn.ttf",
 		"oF": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BlackCn.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BlackCn.woff",
 		"oF": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BoldCn.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BoldCn.eot",
@@ -144,12 +160,14 @@
 		"prP": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BoldCn.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BoldCn.ttf",
 		"oF": 0
 		},
 	"\/assets\/fonts\/FrutigerLTStd-BoldCn.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/FrutigerLTStd-BoldCn.woff",
@@ -293,6 +311,7 @@
 		"q": 100
 		},
 	"\/assets\/img\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/img\/favicon.ico",
@@ -308,16 +327,15 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/IronClad.png": {
-		"ft": 32768,
-		"iS": 12954,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IronClad.png",
+	"\/assets\/img\/IronClad-Large.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/IronClad-Large.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/img\/logo-rb-only.png": {
 		"ft": 32768,
@@ -682,342 +700,399 @@
 		"oS": 1
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_base.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_base.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_bidding.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_bidding.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_buttons.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_buttons.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_ccy-converter.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_ccy-converter.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_currencies.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_currencies.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_grid.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_grid.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_group-bidding.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_group-bidding.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_header.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_header_V1.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_header_V1.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_helpers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_helpers.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_icons.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_icons.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_inputs.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_inputs.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lightbox.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lightbox.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-info-section.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-info-section.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-table.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-table.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-table_v1.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_lot-table_v1.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_states.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_states.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_swiper.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_swiper.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_tooltip.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_tooltip.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_tooltipster.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/_tooltipster.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/main.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/main.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/release1.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/2a141b84ffc424511de01a1d07aa3b2d56a3114d\/release1.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_base.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_base.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_bidding.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_bidding.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_buttons.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_buttons.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_ccy-converter.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_ccy-converter.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_currencies.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_currencies.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_grid.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_grid.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_group-bidding.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_group-bidding.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_header.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_helpers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_helpers.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_icons.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_icons.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_inputs.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_inputs.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lightbox.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lightbox.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lot-info-section.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lot-info-section.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lot-table.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_lot-table.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_states.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_states.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_swiper.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_swiper.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_tooltip.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_tooltip.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_tooltipster.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/_tooltipster.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/customizable-grid.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/customizable-grid.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/main.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/main.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/petrowsky.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/petrowsky.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/vramp.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/6704c76d85f15b6ca45c83d256b92e8b398b7422\/vramp.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_base.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_base.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_choice-area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_choice-area.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_details-area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_details-area.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_font.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_font.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_helpers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_helpers.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_icons.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_icons.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_lot-preview.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_lot-preview.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_other-rings.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_other-rings.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_pre-post-paused.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_pre-post-paused.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_reset.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/_reset.scssc",
 		"oF": 0
 		},
 	"\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/vramp.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/scss\/.sass-cache\/fb4dd779369ba081ac800e2d805c5a45b3ebac76\/vramp.scssc",
@@ -1205,7 +1280,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/small.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/small.mp4",
+		"oF": 0
+		},
 	"\/assets\/UpdatedIcons.zip": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/UpdatedIcons.zip",
@@ -1238,6 +1321,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/jquery\/AUTHORS.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/AUTHORS.txt",
@@ -1282,6 +1366,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.min.map",
@@ -1308,6 +1393,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.slim.min.map",
@@ -1334,28 +1420,31 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/LICENSE.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/LICENSE.txt",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2406,6 +2495,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/.gitignore",
@@ -2420,10 +2510,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/CHANGELOG.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2476,12 +2566,14 @@
 		"tS": 0
 		},
 	"\/bower_components\/rivets\/doc.sh": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/doc.sh",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/_layout.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -2490,6 +2582,7 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/CNAME": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/CNAME",
@@ -2560,10 +2653,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2578,10 +2671,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters\/creating.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2596,10 +2689,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters\/default.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2614,10 +2707,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2632,10 +2725,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/api.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2650,10 +2743,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/one-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2668,10 +2761,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/two-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2686,10 +2779,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/components.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2704,10 +2797,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/computed-properties.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2722,10 +2815,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2740,10 +2833,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/arguments.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2758,10 +2851,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/one-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2776,10 +2869,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/two-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2794,10 +2887,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/functions-call.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2812,10 +2905,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/index.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2830,10 +2923,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/install.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2848,10 +2941,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/iteration\/index.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2866,10 +2959,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/iteration\/iteration.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2884,10 +2977,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/binding.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2902,10 +2995,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/configuring.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2920,10 +3013,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/templates.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2938,6 +3031,7 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -2946,10 +3040,10 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/[attribute].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2964,10 +3058,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/checked.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2982,10 +3076,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/class-[classname].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3000,10 +3094,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/disabled.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3018,10 +3112,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/each-[item].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3036,10 +3130,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/enabled.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3054,10 +3148,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/hide.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3072,10 +3166,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/html.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3090,10 +3184,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/if.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3108,10 +3202,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/on-[event].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3126,10 +3220,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/show.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3144,10 +3238,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/text.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3162,10 +3256,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/unchecked.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3180,10 +3274,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/unless.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3198,10 +3292,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/value.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3224,6 +3318,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -3232,6 +3327,7 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.eot",
@@ -3248,18 +3344,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.eot",
@@ -3276,18 +3375,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.eot",
@@ -3304,18 +3406,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.eot",
@@ -3332,18 +3437,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.eot",
@@ -3360,18 +3468,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.eot",
@@ -3388,18 +3499,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.eot",
@@ -3416,18 +3530,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.eot",
@@ -3444,18 +3561,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.eot",
@@ -3472,18 +3592,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.eot",
@@ -3500,18 +3623,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.eot",
@@ -3528,18 +3654,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.eot",
@@ -3556,18 +3685,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.eot",
@@ -3584,18 +3716,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.eot",
@@ -3612,18 +3747,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.eot",
@@ -3640,18 +3778,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.eot",
@@ -3668,12 +3809,14 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.woff",
@@ -3745,6 +3888,7 @@
 		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -3803,6 +3947,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/rivets\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/LICENSE",
@@ -3817,10 +3962,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3842,7 +3987,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/adapter.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/binders.coffee": {
 		"ft": 32,
@@ -3852,7 +3998,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/binders.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/bindings.coffee": {
 		"ft": 32,
@@ -3862,7 +4009,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/bindings.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/export.coffee": {
 		"ft": 32,
@@ -3872,7 +4020,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/export.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/formatters.coffee": {
 		"ft": 32,
@@ -3882,7 +4031,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/formatters.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/parsers.coffee": {
 		"ft": 32,
@@ -3892,7 +4042,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/parsers.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/rivets.coffee": {
 		"ft": 32,
@@ -3902,7 +4053,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/rivets.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/util.coffee": {
 		"ft": 32,
@@ -3912,7 +4064,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/util.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/view.coffee": {
 		"ft": 32,
@@ -3922,7 +4075,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/view.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/sightglass\/.bower.json": {
 		"ft": 524288,
@@ -3959,6 +4113,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/sightglass\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/sightglass\/LICENSE",
@@ -3973,10 +4128,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/sightglass\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -4007,10 +4162,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/swiper\/CHANGELOG.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -4053,18 +4208,21 @@
 		"oS": 0
 		},
 	"\/bower_components\/swiper\/dist\/js\/maps\/swiper.jquery.min.js.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/swiper\/dist\/js\/maps\/swiper.jquery.min.js.map",
 		"oF": 0
 		},
 	"\/bower_components\/swiper\/dist\/js\/maps\/swiper.jquery.umd.min.js.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/swiper\/dist\/js\/maps\/swiper.jquery.umd.min.js.map",
 		"oF": 0
 		},
 	"\/bower_components\/swiper\/dist\/js\/maps\/swiper.min.js.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/swiper\/dist\/js\/maps\/swiper.min.js.map",
@@ -4141,6 +4299,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/swiper\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/swiper\/LICENSE",
@@ -4165,10 +4324,10 @@
 		"tS": 0
 		},
 	"\/bower_components\/swiper\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -4633,24 +4792,48 @@
 		"sU": 0
 		},
 	"\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/plain-markup.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/plain-markup.html",
 		"oF": 0
 		},
 	"\/rbavrampwall.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/rbavrampwall.html",
 		"oF": 0
 		},
+	"\/scpencerCSS-ck.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/scpencerCSS-ck-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/scpencerCSS_video.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/scpencerCSS_video-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/VrampChanges.zip": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/VrampChanges.zip",
@@ -5233,6 +5416,10 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
@@ -5297,9 +5484,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -5329,6 +5516,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -5338,14 +5529,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -6449,7 +6632,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 2,
@@ -6482,6 +6666,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -6523,7 +6708,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -6555,13 +6741,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -6570,7 +6756,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -6590,7 +6777,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -6618,7 +6806,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,

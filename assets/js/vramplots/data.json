@@ -476,7 +476,7 @@
 			{
 				"lotNumber" : "2747",
 				"price" : 10000,
-				"video":false,
+				"video":true,
 				"status" : null,
 				"description" : "2012 Manitou 4x4 Bucket Lift for Liam",
 				"photo" : "assets/img/vramp2.png",
