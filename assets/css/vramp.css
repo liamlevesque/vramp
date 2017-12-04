@@ -1478,6 +1478,16 @@ body {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     display: block; }
+    .choice-lot--ironclad i:after {
+      z-index: -1;
+      content: '';
+      height: 0.6em;
+      width: 0.6em;
+      top: 0.2em;
+      right: 0.2em;
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
 
 .s-openOffers .choice--lot-flex.s-active .choice-lot--number {
   padding-top: 0.1em !important; }
