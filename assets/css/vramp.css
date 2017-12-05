@@ -123,6 +123,9 @@ hr {
   color: #E87722;
   text-decoration: underline; }
 
+img {
+  image-rendering: -webkit-optimize-contrast; }
+
 .logo {
   display: inline-block;
   width: 200px;
@@ -449,7 +452,7 @@ body {
     width: 100%;
     max-width: 100%;
     position: relative;
-    top: 50%;
+    top: calc(50% - 15px);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
     @media screen and (min-aspect-ratio: 16 / 9) {
@@ -469,6 +472,9 @@ body {
     color: #da4620;
     font-size: 2em;
     z-index: 1000; }
+    @media screen and (max-aspect-ratio: 375 / 256) {
+      .lot--media .lot--ironclad {
+        top: calc((50% - 26.25vw) - 15px); } }
     @media screen and (min-aspect-ratio: 16 / 9) {
       .lot--media .lot--ironclad {
         position: relative;
@@ -482,6 +488,12 @@ body {
       height: 6vw;
       background-color: white;
       border-radius: 50%; }
+
+.media_video .lot--ironclad {
+  top: calc((50% - 19.7vw) - 15px); }
+  @media screen and (min-aspect-ratio: 16 / 9) {
+    .media_video .lot--ironclad {
+      top: 0; } }
 
 .swiper-container {
   position: absolute;
@@ -497,7 +509,7 @@ body {
       width: 100%;
       max-width: 100%;
       position: relative;
-      top: 50%;
+      top: calc(50% - 15px);
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
       @media screen and (min-aspect-ratio: 16 / 9) {

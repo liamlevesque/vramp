@@ -127,7 +127,7 @@
 	width: 100%;
 	max-width: 100%;
 	position: relative;
-	top: 50%;
+	top: calc(50% - 15px);
 	transform: translateY(-50%);
 
 	@include aspectBreakpoint(wide){
@@ -184,7 +184,11 @@
 			color: $ironclad-colour;
 			font-size: 2em;
 			z-index: 1000;
-			
+
+			@media screen and (max-aspect-ratio: 375/256) { //Handle overlapping of ironclad badge on the image
+				top: calc((50% - 26.25vw) - 15px);
+			}
+
 			@include aspectBreakpoint(wide){
 				position: relative;
 				vertical-align: top;
@@ -201,6 +205,14 @@
 			}
 		}
 	}
+
+		.media_video .lot--ironclad{
+			top: calc((50% - 19.7vw) - 15px);
+
+			@include aspectBreakpoint(wide){
+				top: 0;
+			}
+		}
 
 		.swiper-container{
 			@include absfill;

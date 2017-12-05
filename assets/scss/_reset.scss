@@ -96,6 +96,10 @@ hr{
 }
 
 
+img{
+	image-rendering: -webkit-optimize-contrast;
+}
+
 
 	.logo{
 		display: inline-block;
