@@ -80,6 +80,13 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/assets\/fonts\/20171105-ADM-UpdatedIcons.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/20171105-ADM-UpdatedIcons.zip",
+		"oF": 0
+		},
 	"\/assets\/fonts\/ADMIcons.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -4819,6 +4826,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/scpencerCSS-ck-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/scpencerCSS_video-ck.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/scpencerCSS_video-ck-ck.css",
 		"oF": 0,
 		"oS": 0
 		},

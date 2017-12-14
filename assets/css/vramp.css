@@ -455,7 +455,7 @@ body {
     top: calc(50% - 15px);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-    @media screen and (min-aspect-ratio: 16 / 9) {
+    @media screen and (min-aspect-ratio: 17 / 9) {
       .lot--media #image_slideshow > div > img, .lot--media .media_video video {
         width: auto;
         max-width: auto;
@@ -475,7 +475,7 @@ body {
     @media screen and (max-aspect-ratio: 375 / 256) {
       .lot--media .lot--ironclad {
         top: calc((50% - 26.25vw) - 15px); } }
-    @media screen and (min-aspect-ratio: 16 / 9) {
+    @media screen and (min-aspect-ratio: 17 / 9) {
       .lot--media .lot--ironclad {
         position: relative;
         vertical-align: top;
@@ -491,7 +491,7 @@ body {
 
 .media_video .lot--ironclad {
   top: calc((50% - 19.7vw) - 15px); }
-  @media screen and (min-aspect-ratio: 16 / 9) {
+  @media screen and (min-aspect-ratio: 17 / 9) {
     .media_video .lot--ironclad {
       top: 0; } }
 
@@ -512,7 +512,7 @@ body {
       top: calc(50% - 15px);
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-      @media screen and (min-aspect-ratio: 16 / 9) {
+      @media screen and (min-aspect-ratio: 17 / 9) {
         .swiper-container .swiper-slide > img {
           width: auto;
           max-width: auto;
@@ -1518,7 +1518,7 @@ body {
 .s-openOffers .choice--lot-flex:nth-last-child(n+3),
 .s-openOffers .choice--lot-flex:nth-last-child(n+3) ~ li {
   height: 26vw; }
-  @media screen and (min-aspect-ratio: 16 / 9) {
+  @media screen and (min-aspect-ratio: 17 / 9) {
     .s-openOffers .choice--lot-flex:nth-last-child(n+3),
     .s-openOffers .choice--lot-flex:nth-last-child(n+3) ~ li {
       height: 23.4vw; } }
@@ -1528,7 +1528,7 @@ body {
   min-width: 22vw;
   max-width: 22vw;
   height: 19.5vw; }
-  @media screen and (min-aspect-ratio: 16 / 9) {
+  @media screen and (min-aspect-ratio: 17 / 9) {
     .s-openOffers .choice--lot-flex:nth-last-child(n+5),
     .s-openOffers .choice--lot-flex:nth-last-child(n+5) ~ li {
       height: 15.5vw; } }
@@ -1549,7 +1549,7 @@ body {
   max-width: 13vw;
   margin-bottom: 0.5vw;
   height: 12.5vw; }
-  @media screen and (min-aspect-ratio: 16 / 9) {
+  @media screen and (min-aspect-ratio: 17 / 9) {
     .s-openOffers .choice--lot-flex:nth-last-child(n+13),
     .s-openOffers .choice--lot-flex:nth-last-child(n+13) ~ li {
       height: 11.5vw; } }
